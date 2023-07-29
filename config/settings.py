@@ -30,7 +30,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-yannickferenczi-hands-ho-oh2srey7x1.us2.codeanyapp.com', ]
+ALLOWED_HOSTS = [
+    'hands-home-helpers-website-a2058240b625.herokuapp.com',
+    '8000-yannickferenczi-hands-ho-oh2srey7x1.us2.codeanyapp.com',
+]
 
 
 # Application definition
