@@ -84,6 +84,16 @@ a {
     color: #3f3f9d;
 }
 
+.extra-ressources a {
+    text-align: center;
+}
+
+.extra-ressources a:hover {
+    background-color: white;
+    color: #3f3f9d;
+    font-weight: bold;
+}
+
 .copyright {
     margin: 0;
     padding: 15px;
@@ -106,7 +116,7 @@ a {
     .footer-rule {
         border-left: 2px solid white;
         width: 0;
-        height: 100px;
+        height: 150px;
         margin: 15px auto;
     }
 }
