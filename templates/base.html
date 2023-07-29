@@ -83,6 +83,52 @@
         </nav>
     </header>
 
+    <main class="main-content">
+        {% block content %}
+        {% endblock content %}
+    </main>
+
+    <footer class="main-footer bg-dark">
+        <div class="container-fluid">
+            <div class="row p-4">
+                <div class="col-md-5 p-0 centered-content">
+                    <a class="navbar-brand" href="#">
+                        <div class="main-logo d-inline-block">
+                            <img class="img-logo" src="{% static 'images/hands_home_helpers_logo.png' %}"
+                                alt="Hands Home Helpers company logo">
+                            <div class="name-logo">
+                                <h2>Hands Home Helpers</h2>
+                                <h3 class="red-ant p-0">Premium Housekeeping</h3>
+                                <div class="address">
+                                    <p class="centered-content m-0">Einsteinstrasse 17</p>
+                                    <p class="centered-content m-0">59 069 Hamm</p>
+                                    <p class="centered-content m-0"><a class="white-text" href="tel:+49111111111">+49 111 111
+                                            111</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-1">
+                    <div class="footer-rule"></div>
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="copyright bg-black">
+                        <p>Created with passion by <a class="white-text" href="https://github.com/yannickferenczi"
+                                target="_blank">Yannick
+                                Ferenczi <i class="fa-brands fa-github"></i></a> | Copyright {% now "Y" %}, All right reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>

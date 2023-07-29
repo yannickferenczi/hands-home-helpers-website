@@ -8,6 +8,10 @@
     color: #3f9d3f;
 }
 
+.white-text {
+    color: white;
+}
+
 /* ------------------------------------------- */
 /* Styling base.html */
 /* ------------------------------------------- */
@@ -25,6 +29,11 @@ body {
 
 .navbar-nav {
     background-color: #ddd;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .img-logo {
@@ -47,6 +56,27 @@ body {
 .name-logo h3 {
     padding-top: 0;
     margin-top: 0;
+}
+
+.main-footer {
+    margin-top: auto;
+    color: white;
+}
+
+.footer-rule {
+    border-top: 2px solid white;
+    width: 60%;
+    margin: 15px auto;
+}
+
+.copyright {
+    margin: 0;
+    padding: 15px;
+}
+
+.copyright p {
+    margin: 0;
+    text-align: center;
 }
 
 /* ------------------------------------------- */
