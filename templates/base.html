@@ -1,0 +1,171 @@
+{% load static %}
+
+{% url 'home' as home_url %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>{% block title %}{% endblock title %} | Hands Home Helpers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md py-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <div class="main-logo">
+                        <img class="img-logo" src="{% static 'images/hands_home_helpers_logo.png' %}"
+                            alt="Hands Home Helpers company logo">
+                        <div class="name-logo">
+                            <h1><span class="d-block d-md-inline">Hands</span>
+                                <span class="d-block d-md-inline">Home</span>
+                                <span class="d-block d-md-inline">Helpers</span>
+                            </h1>
+                            <h2 class="red-ant d-none d-md-block">Premium Housekeeping</h2>
+                        </div>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-0 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link centered-content {% if request.path == home_url %}active{%endif%}"
+                                aria-current="page" aria-label="go to home page" href="{% url 'home' %}">Our offers <i
+                                    class="fa-solid fa-hand-sparkles d-block centered-content"></i></a>
+                        </li>
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-link centered-content {% if request.path == home_url %}active{%endif%}" aria-current="page"
+                                href="{% url 'home' %}">My account <i
+                                    class="fa-solid fa-key d-block centered-content"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link red-ant centered-content {% if request.path == home_url %}active{%endif%}" aria-current="page" aria-label="go to logout page"
+                                href="{% url 'home' %}">Logout <i
+                                    class="fa-solid fa-arrow-right-from-bracket red-ant d-block centered-content"></i></a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link green-success centered-content {% if request.path == home_url %}active{%endif%}" aria-current="page" aria-label="go to login page"
+                                href="{% url 'home' %}">Login <i
+                                    class="fa-solid fa-arrow-right-to-bracket green-success d-block centered-content"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link green-success centered-content {% if request.path == home_url %}active{%endif%}" aria-current="page" aria-label="go to registration page"
+                                href="{% url 'home' %}">Register <i
+                                    class="fa-solid fa-user-plus green-success d-block centered-content"></i></a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        {% block content %}
+        {% endblock content %}
+    </main>
+
+    <footer class="main-footer bg-dark">
+        <div class="container-fluid">
+            <div class="row p-4">
+                <div class="col-md-5 p-0 centered-content">
+                    <a class="navbar-brand" href="#">
+                        <div class="main-logo d-inline-block mt-2">
+                            <img class="img-logo" src="{% static 'images/hands_home_helpers_logo.png' %}"
+                                alt="Hands Home Helpers company logo">
+                            <div class="name-logo">
+                                <h2>Hands Home Helpers</h2>
+                                <h3 class="red-ant p-0">Premium Housekeeping</h3>
+                                <div class="address">
+                                    <p class="centered-content m-0">Einsteinstrasse 17</p>
+                                    <p class="centered-content m-0">59 069 Hamm</p>
+                                    <p class="centered-content m-0"><a class="white-text" href="tel:+49111111111">+49 111 111
+                                            111</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-1">
+                    <div class="footer-rule"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row m-1">
+                        <div class="col">
+                            <ul class="navbar-nav bg-dark d-flex flex-row align-items-center justify-content-evenly">
+                                <li class="nav-item">
+                                    <a class="nav-link social-media p-0" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link social-media p-0" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link social-media p-0" href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link social-media p-0" href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row m-1">
+                        <div class="col extra-ressources">
+                            <ul class="navbar-nav bg-dark">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="copyright bg-black">
+                        <p>Created with passion by <a class="white-text" href="https://github.com/yannickferenczi"
+                                target="_blank">Yannick
+                                Ferenczi <i class="fa-brands fa-github"></i></a> | Copyright {% now "Y" %}, All right reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>

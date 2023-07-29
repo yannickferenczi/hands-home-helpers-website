@@ -1,0 +1,122 @@
+/* Colors */
+
+.red-ant {
+    color: #9d3f3f;
+}
+
+.green-success {
+    color: #3f9d3f;
+}
+
+.white-text {
+    color: white;
+}
+
+/* ------------------------------------------- */
+/* Styling base.html */
+/* ------------------------------------------- */
+
+body {
+    display: flex;
+    font-family: 'Merriweather Sans', sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.centered-content {
+    text-align: center;
+}
+
+.navbar-nav {
+    background-color: #ddd;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.img-logo {
+    height: 80px;
+    vertical-align: baseline;
+}
+
+.name-logo {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.name-logo h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.name-logo h3 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.main-footer {
+    margin-top: auto;
+    color: white;
+}
+
+.footer-rule {
+    border-top: 2px solid white;
+    width: 60%;
+    margin: 15px auto;
+}
+
+.social-media {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.social-media:hover {
+    background-color: white;
+    color: #3f3f9d;
+}
+
+.extra-ressources a {
+    text-align: center;
+}
+
+.extra-ressources a:hover {
+    background-color: white;
+    color: #3f3f9d;
+    font-weight: bold;
+}
+
+.copyright {
+    margin: 0;
+    padding: 15px;
+}
+
+.copyright p {
+    margin: 0;
+    text-align: center;
+}
+
+/* ------------------------------------------- */
+/* RESPONSIVENESS */
+/* ------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+    .navbar-nav {
+        background-color: white;
+    }
+
+    .footer-rule {
+        border-left: 2px solid white;
+        width: 0;
+        height: 150px;
+        margin: 15px auto;
+    }
+}
