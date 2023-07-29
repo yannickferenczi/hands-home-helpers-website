@@ -1,0 +1,51 @@
+/* Colors */
+
+.red-ant {
+    color: #9d3f3f;
+}
+
+.green-success {
+    color: #3f9d3f;
+}
+
+/* ------------------------------------------- */
+/* Styling base.html */
+/* ------------------------------------------- */
+
+body {
+    display: flex;
+    font-family: 'Merriweather Sans', sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.centered-content {
+    text-align: center;
+}
+
+.navbar-nav {
+    background-color: #ddd;
+}
+
+.img-logo {
+    height: 80px;
+    vertical-align: baseline;
+}
+
+.name-logo {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.name-logo h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.name-logo h3 {
+    padding-top: 0;
+    margin-top: 0;
+}
+

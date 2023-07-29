@@ -1,5 +1,7 @@
 {% load static %}
 
+{% url 'home' as home_url %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,3 +23,63 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md py-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <div class="main-logo">
+                        <img class="img-logo" src="{% static 'images/hands_home_helpers_logo.png' %}"
+                            alt="Hands Home Helpers company logo">
+                        <div class="name-logo">
+                            <h1><span class="d-block d-md-inline">Hands</span>
+                                <span class="d-block d-md-inline">Home</span>
+                                <span class="d-block d-md-inline">Helpers</span>
+                            </h1>
+                            <h2 class="red-ant d-none d-md-block">Premium Housekeeping</h2>
+                        </div>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-0 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link centered-content {% if request.path == home_url %}active{%endif%}"
+                                aria-current="page" aria-label="go to home page" href="{% url 'offers' %}">Our offers <i
+                                    class="fa-solid fa-hand-sparkles d-block centered-content"></i></a>
+                        </li>
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-link centered-content {% if request.path == home_url %}active{%endif%}" aria-current="page"
+                                href="{% url 'dashboard' %}">My account <i
+                                    class="fa-solid fa-key d-block centered-content"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link red-ant centered-content {% if request.path == home_url %}active{%endif%}" aria-current="page" aria-label="go to logout page"
+                                href="{% url 'account_logout' %}">Logout <i
+                                    class="fa-solid fa-arrow-right-from-bracket red-ant d-block centered-content"></i></a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link green-success centered-content {% if request.path == home_url %}active{%endif%}" aria-current="page" aria-label="go to login page"
+                                href="{% url 'account_login' %}">Login <i
+                                    class="fa-solid fa-arrow-right-to-bracket green-success d-block centered-content"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link green-success centered-content {% if request.path == home_url %}active{%endif%}" aria-current="page" aria-label="go to registration page"
+                                href="{% url 'account_signup' %}">Register <i
+                                    class="fa-solid fa-user-plus green-success d-block centered-content"></i></a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
