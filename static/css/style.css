@@ -69,6 +69,21 @@ a {
     margin: 15px auto;
 }
 
+.social-media {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.social-media:hover {
+    background-color: white;
+    color: #3f3f9d;
+}
+
 .copyright {
     margin: 0;
     padding: 15px;
