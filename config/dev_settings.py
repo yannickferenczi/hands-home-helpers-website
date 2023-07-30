@@ -5,7 +5,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-yannickferenczi-hands-ho-oh2srey7x1.us2.codeanyapp.com',
-    'localhost'
+    'localhost',
 ]
 
 # Database
