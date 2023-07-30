@@ -8,6 +8,10 @@
     color: #3f9d3f;
 }
 
+.btn-success {
+    background-color: #3f9d3f;
+}
+
 .white-text {
     color: white;
 }
@@ -23,8 +27,55 @@ body {
     min-height: 100vh;
 }
 
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Andika', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    font-size: 22px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+h3 {
+    font-size: 20px;
+    padding: 15px;
+}
+
+h4 {
+    font-size: 19px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 17px;
+}
+
+h4 {
+    background-color: #3f3f9d;
+    color: white;
+    padding: 25px;
+}
+
 .centered-content {
     text-align: center;
+}
+
+.container-fluid {
+    padding: 0;
 }
 
 .navbar-nav {
@@ -105,10 +156,83 @@ a {
 }
 
 /* ------------------------------------------- */
+/* Styling index.html */
+/* ------------------------------------------- */
+
+.hero-img {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/landing_page/hero_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.catching-text {
+    position: relative;
+    max-width: 500px;
+    top: 50px;
+    color: white;
+    background-color: black;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+
+.cta-btn {
+    position: relative;
+    width: 100px;
+    top: 32%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+}
+
+.card {
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.card-title {
+    height: 65px;
+    line-height: 65px;
+    vertical-align: middle;
+}
+
+/* ------------------------------------------- */
 /* RESPONSIVENESS */
 /* ------------------------------------------- */
 
 @media only screen and (min-width: 768px) {
+    /* ------------------------------------------- */
+    /* Styling base.html */
+    /* ------------------------------------------- */
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+    
     .navbar-nav {
         background-color: white;
     }
