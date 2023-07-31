@@ -87,6 +87,11 @@ a {
     color: black;
 }
 
+.link-style {
+    text-decoration: underline;
+    color: blue;
+}
+
 .img-logo {
     height: 80px;
     vertical-align: baseline;
