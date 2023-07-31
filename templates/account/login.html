@@ -5,8 +5,6 @@
 
 {% block title %}{% trans "Sign In" %}{% endblock title %}
 
-{% block login_page_active %}active{% endblock login_page_active %}
-
 {% block content %}
 
 <div class="container-fluid">
@@ -17,11 +15,9 @@
     </div>
     <div class="row dashboard-item">
         <div class="col-md-8 mt-3 offset-md-2">
-
             <p class="centered-content">{% blocktrans %}If you have not created an account yet, then please
                 <a class="link-style" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
             </p>
-
             <form class="login centered-content py-4" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
                 <div class="custom-form centered-content">
