@@ -12,8 +12,24 @@
     background-color: #3f9d3f;
 }
 
+.btn-danger {
+    background-color: #9d3f3f;
+}
+
 .white-text {
     color: white;
+}
+
+/* ------------------------------------------- */
+/* Styling forms */
+/* ------------------------------------------- */
+
+.form-btn {
+    padding: 5px 30px;
+    text-align: center;
+    margin: 15px 15px 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
 }
 
 /* ------------------------------------------- */
