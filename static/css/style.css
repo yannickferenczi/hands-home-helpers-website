@@ -12,8 +12,24 @@
     background-color: #3f9d3f;
 }
 
+.btn-danger {
+    background-color: #9d3f3f;
+}
+
 .white-text {
     color: white;
+}
+
+/* ------------------------------------------- */
+/* Styling forms */
+/* ------------------------------------------- */
+
+.form-btn {
+    padding: 5px 30px;
+    text-align: center;
+    margin: 15px 15px 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
 }
 
 /* ------------------------------------------- */
@@ -87,6 +103,11 @@ a {
     color: black;
 }
 
+.link-style {
+    text-decoration: underline;
+    color: blue;
+}
+
 .img-logo {
     height: 80px;
     vertical-align: baseline;
@@ -107,6 +128,14 @@ a {
 .name-logo h3 {
     padding-top: 0;
     margin-top: 0;
+}
+
+.greetings {
+    margin-bottom: 0;
+    text-align: right;
+    padding: 5px 25px;
+    background-color: #3f3f9d;
+    color: white;
 }
 
 .main-footer {

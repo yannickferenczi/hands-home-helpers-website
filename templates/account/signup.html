@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Signup" %}{% endblock title%}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h4>{% trans "Sign Up" %}</h4>
+        </div>
+    </div>
+    <div class="row dashboard-item">
+        <div class="col-md-6 mt-3 offset-md-3">
+            <p class="centered-content">{% blocktrans %}Already have an account? Then please <a class="link-style" href="{{ login_url }}">sign
+                    in</a>.{%endblocktrans %}</p>
+            <form class="signup centered-content py-4" id="signup_form" method="post" action="{% url 'account_signup' %}">
+                {% csrf_token %}
+                <div class="custom-form centered-content">
+                    {{ form.as_p }}
+                </div>
+                {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                {% endif %}
+                <button class="form-btn btn btn-success" type="submit">{% trans "Sign Up" %} &raquo;</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
