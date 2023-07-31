@@ -62,18 +62,18 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link red-ant centered-content {% if request.path == home_url %}active{%endif%}" aria-current="page" aria-label="go to logout page"
-                                href="{% url 'home' %}">Logout <i
+                                href="{% url 'account_logout' %}">Logout <i
                                     class="fa-solid fa-arrow-right-from-bracket red-ant d-block centered-content"></i></a>
                         </li>
                         {% else %}
                         <li class="nav-item">
                             <a class="nav-link green-success centered-content {% if request.path == home_url %}active{%endif%}" aria-current="page" aria-label="go to login page"
-                                href="{% url 'home' %}">Login <i
+                                href="{% url 'account_login' %}">Login <i
                                     class="fa-solid fa-arrow-right-to-bracket green-success d-block centered-content"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link green-success centered-content {% if request.path == home_url %}active{%endif%}" aria-current="page" aria-label="go to registration page"
-                                href="{% url 'home' %}">Register <i
+                                href="{% url 'account_signup' %}">Register <i
                                     class="fa-solid fa-user-plus green-success d-block centered-content"></i></a>
                         </li>
                         {% endif %}
@@ -81,6 +81,13 @@
                 </div>
             </div>
         </nav>
+        <div class="container-fluid">
+            <div class="row">
+                {% if user.is_authenticated %}
+                <p class="col greetings">Hi, {{ user.username }}</p>
+                {% endif %}
+            </div>
+        </div>
     </header>
 
     <main class="main-content">
