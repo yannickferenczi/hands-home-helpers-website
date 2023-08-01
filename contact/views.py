@@ -15,4 +15,4 @@ def contact(request):
             return redirect("home")
     else:
         form = ContactForm()
-        return render(request, "contact.html", {"form": form})
+        return render(request, "contact/contact.html", {"form": form})
