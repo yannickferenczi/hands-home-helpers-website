@@ -313,8 +313,11 @@ The first color (#9d3f3f) is the color of the logo: The ant. This logo has been 
 
 #### Font Choices
 
+Two fonts have been used within the whole website. They both are sans-serif. Andika has been picked for the titles to give users a feeling of sober and neat. And Merriweather Sans has been picked for the standard text has it is a good match to Andika.
+
 ### 1.2.6. Database Schema
 
+At minimum viable product:
 ![Database schema for the minimum viable product](documentation/erd_mvp.png)
 
 
