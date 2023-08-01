@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block emailjs %}
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("Sg1gXZ_d6IdZWX13f");
+    })();
+</script>
+{% endblock emailjs %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h4>Contact us</h4>
+        </div>
+    </div>
+    <div class="row dashboard-item">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <form class="login centered-content py-4" onsubmit="return sendEmail(this);" method="POST">
+                {% csrf_token %}
+                <div class="custom-form centered-content">
+                    {{ form.as_p }}
+                    <!-- <label class="mt-3" for="first-name">First name: </label>
+                    <input class="form-control" type="text" id="first-name" name="first-name" required>
+                    <label class="mt-3" for="last-name">Last name: </label>
+                    <input class="form-control" type="text" id="last-name" name="last-name" required>
+                    <label class="mt-3" for="email-address">Email address: </label>
+                    <input class="form-control" type="text" id="email-address" name="email-address" required>
+                    <label class="mt-3" for="message">Your message: </label>
+                    <textarea class="form-control" rows="10" id="message" name="message" required></textarea> -->
+                </div>
+                <button class="primaryAction form-btn btn btn-success" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/sendEmail.js' %}"></script>
+{% endblock content %}

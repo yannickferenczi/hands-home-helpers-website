@@ -5,7 +5,9 @@
 ![deployment](https://img.shields.io/static/v1?label=deployed&message=Yes&color=success&style=plastic)
 ![deployment](https://img.shields.io/static/v1?label=plateform&message=Heroku&color=634987&style=plastic)
 
-This project aims to create a website for the Hands Home Helpers company, based in NRW, GERMANY, so they can have an online presence to promote their activity and reach new customers.
+This project aims to create a website for the Hands Home Helpers company, based in NRW, GERMANY, so they can have an online presence to promote their activity and reach new customers. The website also aims to provide a user-friendly interface to make contacts between the company and its customers easier.
+
+Hands Home Helpers is a premium housekeeping company with a wide range of services. They offer to take care of your house and garden duties as well as maintening your swimming pool and fixing small issues or doing small renovation. Finally, they also provide a home care service to assist you in your everyday life.
 
 ![Mockup responsive]()
 
@@ -13,6 +15,7 @@ This project aims to create a website for the Hands Home Helpers company, based 
 
 **[Live site](https://hands-home-helpers-website-a2058240b625.herokuapp.com/) | [Repository](https://github.com/yannickferenczi/hands-home-helpers-website)**
 
+-- built with --
 <p style="background-color: white; padding: 5px; display: inline-block; margin: 0 auto;">
 
 <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="html5" width="40" height="40"/>
@@ -303,7 +306,7 @@ Error 500 page:
 
 #### Color Palette
 
-Four colors have been chosen on top of black and white.
+Three colors have been chosen on top of black and white.
 The first color (#9d3f3f) is the color of the logo: The ant. This logo has been pick to communicate how brave and hardworking are the employees and how efficient will be the working hours. The other colors have been selected using a color calculator to be the best fit to this very first color.
 
 ![Color palette of the project](documentation/color_palette.png)
