@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'tasks',
+    'contact',
 ]
 
 SITE_ID = 1
