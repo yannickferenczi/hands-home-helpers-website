@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ task.owner }}{% endblock title %}
+
+{% block content %}
+
+<div class="container-fluid p-2">
+    <div class="row">
+        <div class="col-8 offset-2 dashboard-item">
+            <div class="row">
+                <div class="col">
+                    <p class="content-centered">{{ task.name }}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    {{ task.done }}
+                </div>
+                <div class="col-1">
+                    {{ task.repeat }}
+                </div>
+                <div class="col-1">
+                    {{ task.category }}
+                </div>
+                <div class="col-1">
+                    {{ task.created_on }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col centered-content">
+            <a class="form-btn btn btn-success" href="{% url 'task_detail' task.pk %}">Modify</a>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
