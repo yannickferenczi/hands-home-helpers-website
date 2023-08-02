@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}{{ task.owner }}{% endblock title %}
+{% block title %}Task detail{% endblock title %}
 
 {% block content %}
 
@@ -31,7 +31,7 @@
     </div>
     <div class="row">
         <div class="col centered-content">
-            <a class="form-btn btn btn-success" href="{% url 'task_detail' task.pk %}">Modify</a>
+            <a class="form-btn btn btn-success" href="{% url 'task_update' task.pk %}">Modify</a>
         </div>
     </div>
 </div>

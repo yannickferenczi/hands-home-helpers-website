@@ -29,3 +29,9 @@ class TaskCreateView(CreateView):
     def form_valid(self, form):
         form.instance.owner = self.request.user
         return super().form_valid(form)
+
+
+class TaskUpdateView(UpdateView):
+    model = Task
+    template_name = "tasks/update_task.html"
+    fields = ["name", "repeat", "category", ]

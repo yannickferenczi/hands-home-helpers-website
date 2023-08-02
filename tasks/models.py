@@ -18,12 +18,12 @@ class Employee(models.Model):
 
 class Task(models.Model):
     CATEGORIES = [
-        ("GARDENING", "Gardening"),
-        ("CLEANING", "Cleaning"),
-        ("GARDEN_PATCH", "Garden patch"),
-        ("SWIMMING_POOL", "Swimming pool"),
-        ("INSTALLATION_AND_REPAIR", "Renovation and repair"),
-        ("HOME_CARE", "Home care"),
+        ("Gardening", "Gardening"),
+        ("Cleaning", "Cleaning"),
+        ("Garden patch", "Garden patch"),
+        ("Swimming pool", "Swimming pool"),
+        ("Renovation and repair", "Renovation and repair"),
+        ("Home care", "Home care"),
     ]
     name = models.CharField(max_length=250, )
     done = models.BooleanField(default=False)
