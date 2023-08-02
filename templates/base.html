@@ -44,6 +44,23 @@
                         </div>
                     </div>
                 </a>
+                <div class="user-options">
+                    {% if request.user.is_superuser %}
+                    <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Go to admin panel">
+                        <a href="/administration_panel/"><i class="fa-solid fa-screwdriver-wrench d-inline-block mt-1"></i></a>
+                    </div>
+                    {% endif %}
+                
+                    {% if request.user.is_authenticated %}
+                    <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Add a task">
+                        <a href="{% url 'task_create' %}">
+                            <i class="fa-solid fa-plus d-inline-block mt-1"></i></p>
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
 
                 <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

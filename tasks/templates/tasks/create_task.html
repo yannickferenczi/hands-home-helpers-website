@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Add Task{% endblock title %}
+
+{% block content %}
+<h3>Add a new task</h3>
+<form class="centered-content" action="" method="POST">
+    {% csrf_token %}
+    <div class="custom-form centered-content">
+        {{ form.as_p }}
+    </div>
+    <input class="form-btn btn btn-success" type="submit" value="Add">
+</form>
+{% endblock content %}

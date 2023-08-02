@@ -152,6 +152,37 @@ a {
     color: white;
 }
 
+.user-options {
+    position: fixed;
+    right: 25px;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 2;
+}
+
+.fixed-btn {
+    background-color: #3f3f9d;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 15px white;
+}
+
+.fixed-btn a {
+    display: inline-block;
+    margin: 5px 0;
+    line-height: 50px;
+    vertical-align: middle;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #9d3f3f;
+    color: white;
+    border: 2px solid white;
+}
+
 .main-footer {
     margin-top: auto;
     color: white;
