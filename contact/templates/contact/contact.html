@@ -23,7 +23,7 @@
     </div>
     <div class="row dashboard-item">
         <div class="col-md-8 mt-3 offset-md-2">
-            <form class="login centered-content py-4" onsubmit="return sendEmail(this);" method="POST">
+            <form class="login centered-content py-4" onsubmit="return sendMail(this);" method="POST">
                 {% csrf_token %}
                 <div class="custom-form centered-content">
                     {{ form.as_p }}

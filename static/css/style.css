@@ -147,9 +147,40 @@ a {
 .greetings {
     margin-bottom: 0;
     text-align: right;
-    padding: 5px 25px;
+    padding: 5px 50px;
     background-color: #3f3f9d;
     color: white;
+}
+
+.user-options {
+    position: fixed;
+    right: 25px;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 2;
+}
+
+.fixed-btn {
+    background-color: #3f3f9d;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 15px white;
+}
+
+.fixed-btn a {
+    display: inline-block;
+    margin: 5px 0;
+    line-height: 50px;
+    vertical-align: middle;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #9d3f3f;
+    color: white;
+    border: 2px solid white;
 }
 
 .main-footer {
@@ -240,6 +271,24 @@ a {
     height: 65px;
     line-height: 65px;
     vertical-align: middle;
+}
+
+/* ------------------------------------------- */
+/* Styling dashboard.html */
+/* ------------------------------------------- */
+
+.dashboard-item {
+    margin: 15px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    overflow: hidden;
+}
+
+.btn-delete {
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+    background-color: #9d3f3f;
 }
 
 /* ------------------------------------------- */
