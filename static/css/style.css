@@ -243,6 +243,24 @@ a {
 }
 
 /* ------------------------------------------- */
+/* Styling dashboard.html */
+/* ------------------------------------------- */
+
+.dashboard-item {
+    margin: 15px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    overflow: hidden;
+}
+
+.btn-delete {
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+    background-color: #9d3f3f;
+}
+
+/* ------------------------------------------- */
 /* RESPONSIVENESS */
 /* ------------------------------------------- */
 

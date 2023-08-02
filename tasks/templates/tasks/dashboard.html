@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Dashboard{% endblock title %}
+
+{% block content %}
+
+<div class="container-fluid container-lg p-2">
+    <div class="row">
+        <div class="col-12 col-md-8 order-2 order-md-1">
+            <!-- Open tasks -->
+            <div class="dashboard-item">
+                <div class="row">
+                    <div class="col-6 align-self-center">
+                        <h3>My Tasks</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <p class="centered-content">Repeat</p>
+                    </div>
+                    <div class="col-4">
+                        <p>Description</p>
+                    </div>
+                    <div class="col-3">
+                        <p>Category</p>
+                    </div>
+                </div>
+                {% for task in task_list %}
+                {% if not task.done %}
+                <div class="row">
+                    <hr>
+                    <div class="col-2 centered-content">
+                        {% if task.repeat %} <i class="fa-solid fa-square-check green-success"></i>
+                        {%endif %}
+                    </div>
+                    <div class="col-5">
+                        <a href="{% url 'task_detail' task.id %}">{{ task.name }}</a>
+                    </div>
+                    <div class="col-4">
+                        <p>{{ task.category }}</p>
+                    </div>
+                    <div class="col-1">
+                        <div class="btn-delete">
+                            <a href="{% url 'task_delete' task.pk %}">
+                                <p class="centered-content"><i class="fa-regular fa-trash-can"></i></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            <!-- Closed tasks -->
+            <div class="dashboard-item bg-dark-subtle">
+                <div class="row">
+                    <h3>Completed tasks</h3>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <p class="centered-content">Date</p>
+                    </div>
+                    <div class="col-3">
+                        <p>Description</p>
+                    </div>
+                    <div class="col-3">
+                        <p class="centered-content">Employee's name</p>
+                    </div>
+                    <div class="col-4">
+                        <p>Comments</p>
+                    </div>
+                </div>
+                {% for task in task_list %}
+                {% if task.done %}
+                <div class="row">
+                    <div class="col-2">
+                        <p class="centered-content">{{ task.created_on|date:"Y/m/d" }}</p>
+                    </div>
+                    <div class="col-3">
+                        <a href="#">{{ task.name }}</a>
+                    </div>
+                    <div class="col-3">
+                        <p class="centered-content">{{ task.employee.full_name }}</p>
+                    </div>
+                    <div class="col-4">
+                        {{ task.comments }}
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}
