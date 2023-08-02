@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Delete task{% endblock title %}
+
+{% block content %}
+
+<div class="container-fluid container-lg p-2">
+    <div class="row">
+        <div class="col">
+            <h3>Do you really want to delete the following task?</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-8 offset-md-2">
+            <form class="centered-content" method="post" class="dashboard-item">
+                {% csrf_token %}
+                <div class="custom-form centered-content">
+                    <p class="centered-content">{{ task.name }}</p>
+                    <p class="centered-content">{{ task.category }}</p>
+                </div>
+                <input class="form-btn btn btn-danger" type="submit" value="Delete">
+                <a class="form-btn btn btn-secondary" href="{% url 'dashboard' %}">Cancel</a>
+            </form>
+        </div>    
+    </div>
+</div>
+
+{% endblock content %}

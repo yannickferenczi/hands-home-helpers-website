@@ -5,26 +5,42 @@
 
 {% block content %}
 
-<div class="container-fluid p-2">
+<div class="container-fluid container-lg p-2">
     <div class="row">
-        <div class="col-8 offset-2 dashboard-item">
+        <div class="col">
+            <div class="m-2">
+                <a href="{% url 'dashboard' %}"><i class="fa-solid fa-left-long"></i> Back to your dashboard</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3>Your task details</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-8 offset-md-2 dashboard-item">
             <div class="row">
                 <div class="col">
                     <p class="content-centered">{{ task.name }}</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-1">
-                    {{ task.done }}
+                <div class="col-2">
+                    <p>Archived:</p>
+                    <p>{% if task.done %}Yes{% else %}No{% endif %}</p>
                 </div>
-                <div class="col-1">
-                    {{ task.repeat }}
+                <div class="col-2">
+                    <p>Repeat:</p>
+                    <p>{% if task.repeat %}Yes{% else %}No{% endif %}</p>
                 </div>
-                <div class="col-1">
-                    {{ task.category }}
+                <div class="col-5">
+                    <p>Category:</p>
+                    <p>{{ task.category }}</p>
                 </div>
-                <div class="col-1">
-                    {{ task.created_on }}
+                <div class="col-3">
+                    <p>Created on:</p>
+                    <p>{{ task.created_on }}</p>
                 </div>
             </div>
         </div>
