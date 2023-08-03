@@ -236,7 +236,6 @@ a {
 .hero-img {
     width: 100vw;
     height: 100vh;
-    background-image: url(../images/landing_page/hero_img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
