@@ -317,7 +317,7 @@ Two fonts have been used within the whole website. They both are sans-serif. And
 
 ### 1.2.6. Database Schema
 
-At minimum viable product:
+For the minimum viable product:
 ![Database schema for the minimum viable product](documentation/erd_mvp.png)
 
 
