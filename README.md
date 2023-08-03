@@ -337,6 +337,44 @@ At minimum viable product:
 
 </div>
 
+- Languages, Databases and Frameworks:
+
+  - HTML5
+  - CSS3
+  - Javascript
+  - Bootstrap 5.3.0
+  - Python 3.9.17
+  - Django 3.2.20
+  - PostgreSQL
+  - psycopg2 2.9.6
+  - Markdown
+
+- Other tools:
+
+  - [Git](https://git-scm.com/) has been used for version control
+  - [GitHub](https://github.com/) has been used to store the project code
+  - [Code Anywhere](https://codeanywhere.com/) has been used as cloud ide
+  - [Google Fonts](https://fonts.google.com/) has been used for the fonts
+  - [LucidCharts](https://lucid.app/) has been used to create the erd and the flowchart
+  - [Balsamiq](https://balsamiq.com/) has been used to create the wireframes
+  - [Font Awesome](https://fontawesome.com/) has been used for the icons
+  - [Pexels](https://www.pexels.com/) has been used to find free pictures
+  - [Tiny PNG](https://tinypng.com/) has been used to further optimise the images for the site and reduce file size
+  - [EmailJS](https://www.emailjs.com/) has been used to link the contact form to an email address
+  - [ElephantSQL](https://customer.elephantsql.com/) has been used to store the database
+  - [Heroku](https://www.heroku.com/) has been used to deploy the live website
+  - [Google Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools) has been used to debug during the development process
+  - Used to inspect page elements, debug issues with the site & test responsiveness on different mockup devices
+  - [Markup Validation Service](https://validator.w3.org/) has been used to check the HTML code
+  - [CSS Validation Service](https://jigsaw.w3.org/css-validator/) has been used to check the CSS code
+  - [CI Python Linter](https://pep8ci.herokuapp.com/) has been used to check the Python code
+  - [JSHint](https://jshint.com/) has been used to check the Javascript code
+  - [Website Grader](https://website.grader.com/) has been used to create a report on the website performance
+  - [PageSpeed Insights](https://pagespeed.web.dev/) has been used to check the speed of the website
+  - [Wave](https://wave.webaim.org/) has been used to test the accessibility of the website
+  - [Accessibility Checker](https://www.accessibilitychecker.org/) has been used to test the accessibility of the website
+  - [Am I responsive](https://ui.dev/amiresponsive) has been used to create a mockup of responsiveness
+
 ---
 
 <div align="center">
@@ -352,6 +390,75 @@ At minimum viable product:
 ## Deployment
 
 </div>
+
+### Project Creation
+
+I have created the project from the [ci-full-template](https://github.com/Code-Institute-Org/ci-full-template) following the steps below:
+
+1. From the link above, click on 'Use this template' and select 'Create a new repository'
+2. Enter a name for the new repository
+3. Click 'Create Repository'
+4. From the new GitHub repository, click on the button '<> Code', then select local and copy the https link of the repository
+5. Open Code Anywhere and navigate to the 'workspaces' page
+6. Click on 'New Workspace'
+7. Paste the GitHub repo URL in to the 'Repository URL' box
+8. Click 'Create'
+
+### Deployment to Heroku
+
+I used Heroku to deploy this project.
+
+To deploy to Heroku:
+
+1. In Code Anywhere CLI from the main directory, to create/update a requirements.txt file containing project dependencies, run
+
+   `pip3 freeze --local > requirements.txt`
+
+2. In Code Anywhere CLI from the main directory, to create a Procfile, run
+
+   `echo web: gunicorn config.wsgi > Procfile`
+
+3. Push the 2 new files to the GitHub repository
+
+4. Login to Heroku, select 'Create New App', create a unique name for the app and select your nearest region. Click 'Create App'
+
+5. Navigate to 'settings', click reveal config vars and input the the following:
+
+| Key | Value |
+| :---: | :---: |
+| CLOUDINARY_URL | cloudinary_url |
+| PORT | 8000 |
+| DATABASE_URL | elephantSQL_url |
+| SECRET_KEY | django_secret_key |
+
+1. Navigate to the Deploy tab on Heroku dashboard and select Github, search for your repository by name and click 'connect'.
+2. Click deploy branch
+3. Once build is complete click on 'Open app' to launch the new app
+
+### Local Development
+
+> NB: To run this project locally, you will need to create an env.py file (within the root directory) configuring the above environment variables as these are not included in the GitHub files for security reasons.
+> This file should look like this:
+
+```
+import os
+
+os.environ["DATABASE_URL"] = "elephantSQL_url"
+os.environ["SECRET_KEY"] = "django_secret_key"
+os.environ["CLOUDINARY_URL"] = "cloudinary_url"
+os.environ["DEVELOPMENT"] = "True"
+```
+
+To Run Locally:
+
+1. Navigate to the [GitHub Repository](https://github.com/yannickferenczi/hands-home-helpers-website)
+2. Click on the button '<> Code', then 'Local' and select 'Download Zip' to download the files locally and open with an IDE
+
+To Fork the project:
+
+1. Navigate to the [GitHub Repository](https://github.com/yannickferenczi/hands-home-helpers-website)
+2. Click on the 'Fork' button at the top right of the page and select 'Create a new fork'
+3. This will duplicate the project for you to work on
 
 ---
 
