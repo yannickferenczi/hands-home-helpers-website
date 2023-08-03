@@ -391,6 +391,75 @@ At minimum viable product:
 
 </div>
 
+### Project Creation
+
+I have created the project from the [ci-full-template](https://github.com/Code-Institute-Org/ci-full-template) following the steps below:
+
+1. From the link above, click on 'Use this template' and select 'Create a new repository'
+2. Enter a name for the new repository
+3. Click 'Create Repository'
+4. From the new GitHub repository, click on the button '<> Code', then select local and copy the https link of the repository
+5. Open Code Anywhere and navigate to the 'workspaces' page
+6. Click on 'New Workspace'
+7. Paste the GitHub repo URL in to the 'Repository URL' box
+8. Click 'Create'
+
+### Deployment to Heroku
+
+I used Heroku to deploy this project.
+
+To deploy to Heroku:
+
+1. In Code Anywhere CLI from the main directory, to create/update a requirements.txt file containing project dependencies, run
+
+   `pip3 freeze --local > requirements.txt`
+
+2. In Code Anywhere CLI from the main directory, to create a Procfile, run
+
+   `echo web: gunicorn config.wsgi > Procfile`
+
+3. Push the 2 new files to the GitHub repository
+
+4. Login to Heroku, select 'Create New App', create a unique name for the app and select your nearest region. Click 'Create App'
+
+5. Navigate to 'settings', click reveal config vars and input the the following:
+
+| Key | Value |
+| :---: | :---: |
+| CLOUDINARY_URL | cloudinary_url |
+| PORT | 8000 |
+| DATABASE_URL | elephantSQL_url |
+| SECRET_KEY | django_secret_key |
+
+1. Navigate to the Deploy tab on Heroku dashboard and select Github, search for your repository by name and click 'connect'.
+2. Click deploy branch
+3. Once build is complete click on 'Open app' to launch the new app
+
+### Local Development
+
+> NB: To run this project locally, you will need to create an env.py file (within the root directory) configuring the above environment variables as these are not included in the GitHub files for security reasons.
+> This file should look like this:
+
+```
+import os
+
+os.environ["DATABASE_URL"] = "elephantSQL_url"
+os.environ["SECRET_KEY"] = "django_secret_key"
+os.environ["CLOUDINARY_URL"] = "cloudinary_url"
+os.environ["DEVELOPMENT"] = "True"
+```
+
+To Run Locally:
+
+1. Navigate to the [GitHub Repository](https://github.com/yannickferenczi/hands-home-helpers-website)
+2. Click on the button '<> Code', then 'Local' and select 'Download Zip' to download the files locally and open with an IDE
+
+To Fork the project:
+
+1. Navigate to the [GitHub Repository](https://github.com/yannickferenczi/hands-home-helpers-website)
+2. Click on the 'Fork' button at the top right of the page and select 'Create a new fork'
+3. This will duplicate the project for you to work on
+
 ---
 
 <div align="center">
