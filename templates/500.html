@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<h3>Error 500 - Internal Servor Error</h3>
+
+<p>We are sorry for the inconvenience, the server encountered an internal error or misconfiguration and was unable to
+    complete your request.</p>
+
+<a href="{% url 'contact' %}">Contact us <i class="fa-solid fa-user-tie"></i></a>
+
+{% endblock content %}

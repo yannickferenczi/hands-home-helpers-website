@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<h2>Error 400 - Bad Request</h2>
+
+<h3>For sacurity matter, your request could not be treated!</h3>
+
+<div class="centered-content">
+    <div class="btn-luxus d-inline-block">
+        <a href="{% url 'home' %}">Let's go back home <i class="fa-solid fa-house-flag"></i></a>
+    </div>
+</div>
+
+{% endblock content %}
