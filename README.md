@@ -468,6 +468,14 @@ To Fork the project:
 
 </div>
 
+- The [PP4_masterclass](https://github.com/Code-Institute-Solutions/PP4_masterclass) repository from Code Institute has been used as a reference to implement the minimum viable product.
+
+- To display a message after deleting a task, some code needed to be added. The solution has been taken from [Stackoverflow](https://stackoverflow.com/questions/24822509/success-message-in-deleteview-not-shown)
+
+- The [Code Institute course](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+BSR102+2021_T1/courseware/5961b57ece7d4ef18749778768a9376e/3b58b5a90e7048c8a4f2344f2401cf4a/) has been used as a guideline to link EmailJS to the contact form and the [sendEmail.js](static/js/sendEmail.js) file has been entirely copied from that course.
+
+
+
 ---
 
 <div align="center">
