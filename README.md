@@ -383,6 +383,166 @@ For the minimum viable product:
 
 </div>
 
+### Code Validation
+
+- HTML
+- CSS
+- JavaScript
+- Python
+
+### Lighthouse
+
+### Manual Testing
+
+#### User Stories Testing
+
+<details>
+<summary>User Story 9 : As a Site User, I can register so that I can access restricted features.</summary>
+
+- Browser compatibility and responsiveness testing:
+
+|  | chrome-desktop | chrome-mobile | safari-desktop | safari-mobile | firefox-desktop | firefox-mobile |
+| :---: | --- | --- | --- | --- | --- | --- |
+| there is a link to the registration form | pass | pass | pass | pass | pass | pass |
+| the registration form is properly displayed | pass | pass | pass | pass | pass | pass |
+| Errors are displayed if the form is not valid | pass | pass | pass | pass | pass | pass |
+| the database is updated when a valid form is submitted | pass | pass | pass | pass | pass | pass |
+| users are redirected to their personal account when registered successfully | pass | pass | pass | pass | pass | pass |
+| a username is required | pass | pass | pass | pass | pass | pass |
+| a password is required | pass | pass | pass | pass | pass | pass |
+| a password confirmation is required | pass | pass | pass | pass | pass | pass |
+| an email address is optional | pass | pass | pass | pass | pass | pass |
+</details>
+
+<details>
+<summary>User Story 10 : As a Site User, I can log into my personal account so that I can access personal settings and data.</summary>
+
+- Browser compatibility and responsiveness testing:
+
+|  | chrome-desktop | chrome-mobile | safari-desktop | safari-mobile | firefox-desktop | firefox-mobile |
+| :---: | --- | --- | --- | --- | --- | --- |
+| there is a link to the login form | pass | pass | pass | pass | pass | pass |
+| the login form is properly displayed | pass | pass | pass | pass | pass | pass |
+| Errors are displayed if the form is not valid | pass | pass | pass | pass | pass | pass |
+| users are redirected to their personal account when successfully logged in | pass | pass | pass | pass | pass | pass |
+| a username is required | pass | pass | pass | pass | pass | pass |
+| a password is required | pass | pass | pass | pass | pass | pass |
+</details>
+
+<details>
+<summary>User Story 11 : As a Logged in Site User, I can log out so that my personal data are safe.</summary>
+
+- Browser compatibility and responsiveness testing:
+
+|  | chrome-desktop | chrome-mobile | safari-desktop | safari-mobile | firefox-desktop | firefox-mobile |
+| :---: | --- | --- | --- | --- | --- | --- |
+| there is a button to logout | pass | pass | pass | pass | pass | pass |
+| users are asked to confirm to logout | pass | pass | pass | pass | pass | pass |
+| users are redirected to the home page when successfully logged out | pass | pass | pass | pass | pass | pass |
+| users cannot access their personal account anymore | pass | pass | pass | pass | pass | pass |
+</details>
+
+<details>
+<summary>User Story 12 : As a Registered Site User, I can create a new task so that I can add it to my list of tasks.</summary>
+
+- Browser compatibility and responsiveness testing:
+
+|  | chrome-desktop | chrome-mobile | safari-desktop | safari-mobile | firefox-desktop | firefox-mobile |
+| :---: | --- | --- | --- | --- | --- | --- |
+| there is a button to create a task | pass | pass | pass | pass | pass | pass |
+| the form to create a task is properly displayed | pass | pass | pass | pass | pass | pass |
+| Errors are displayed if the form is not valid | pass | pass | pass | pass | pass | pass |
+| There is a field for the name of the task | pass | pass | pass | pass | pass | pass |
+| There is an option to repeat the task | pass | pass | pass | pass | pass | pass |
+| There is a multiple choice field to select the category | pass | pass | pass | pass | pass | pass |
+| There is a button to validate the form | pass | pass | pass | pass | pass | pass |
+| users are redirected to their personal account when the task has been successfully created | pass | pass | pass | pass | pass | pass |
+| the database is updated when a valid form is submitted | pass | pass | pass | pass | pass | pass |
+</details>
+
+<details>
+<summary>User Story 13 : As a Registered Site User, I can access my tasks so that I can list them.</summary>
+
+- Browser compatibility and responsiveness testing:
+
+|  | chrome-desktop | chrome-mobile | safari-desktop | safari-mobile | firefox-desktop | firefox-mobile |
+| :---: | --- | --- | --- | --- | --- | --- |
+| tasks are listed on the personal account | pass | pass | pass | pass | pass | pass |
+| when clicking on a task, I am redirected to a task detail page | pass | pass | pass | pass | pass | pass |
+| tasks are properly displayed | pass | pass | pass | pass | pass | pass |
+</details>
+
+<details>
+<summary>User Story 14 : As a Registered Site User, I can modify my personal tasks so that I can update their information.</summary>
+
+- Browser compatibility and responsiveness testing:
+
+|  | chrome-desktop | chrome-mobile | safari-desktop | safari-mobile | firefox-desktop | firefox-mobile |
+| :---: | --- | --- | --- | --- | --- | --- |
+| there is a button to modify a task | pass | pass | pass | pass | pass | pass |
+| the form to modify a task is properly displayed | pass | pass | pass | pass | pass | pass |
+| Errors are displayed if the form is not valid | pass | pass | pass | pass | pass | pass |
+| There is a field for the name of the task | pass | pass | pass | pass | pass | pass |
+| There is an option to repeat the task | pass | pass | pass | pass | pass | pass |
+| There is a multiple choice field to select the category | pass | pass | pass | pass | pass | pass |
+| All field are prepopulated with the information from the selected task | pass | pass | pass | pass | pass | pass |
+| There is a button to validate the form | pass | pass | pass | pass | pass | pass |
+| There is a button to cancel the modification and go back to the personal account | pass | pass | pass | pass | pass | pass |
+| users are redirected to their personal account when the task has been successfully created | pass | pass | pass | pass | pass | pass |
+| the database is updated when a valid form is submitted | pass | pass | pass | pass | pass | pass |
+</details>
+
+<details>
+<summary>User Story 15 : As a Registered Site User, I can delete my personal tasks so that I can get rid of them.</summary>
+
+- Browser compatibility and responsiveness testing:
+
+|  | chrome-desktop | chrome-mobile | safari-desktop | safari-mobile | firefox-desktop | firefox-mobile |
+| :---: | --- | --- | --- | --- | --- | --- |
+| there is a button to delete a task | pass | pass | pass | pass | pass | pass |
+| users are asked to confirm when clicking the delete button | pass | pass | pass | pass | pass | pass |
+| There is a button to confirm the deletion | pass | pass | pass | pass | pass | pass |
+| There is a button to cancel the deletion and go back to the personal account | pass | pass | pass | pass | pass | pass |
+| users are redirected to their personal account when the task has been successfully deleted | pass | pass | pass | pass | pass | pass |
+| the database is updated when a task has been successfully deleted | pass | pass | pass | pass | pass | pass |
+</details>
+
+<details>
+<summary>EPIC 4 : As a Site User, I can get notified of my actions so that I know if theY were successful or not.</summary>
+
+- Browser compatibility and responsiveness testing:
+
+|  | chrome-desktop | chrome-mobile | safari-desktop | safari-mobile | firefox-desktop | firefox-mobile |
+| :---: | --- | --- | --- | --- | --- | --- |
+| User gets notified when signing up | pass | pass | pass | pass | pass | pass |
+| User gets notified when signing in | pass | pass | pass | pass | pass | pass |
+| User gets notified when login out | pass | pass | pass | pass | pass | pass |
+| User gets notified when creating a task | pass | pass | pass | pass | pass | pass |
+| User is asked to confirm before deleting a task | pass | pass | pass | pass | pass | pass |
+| User gets notified when deleting a task | pass | pass | pass | pass | pass | pass |
+| User gets notified when modifying a task | pass | pass | pass | pass | pass | pass |
+</details>
+
+#### Features Testing
+
+<details><summary>Desktop</summary></details>
+
+<details><summary>Mobile</summary></details>
+
+### Bugs
+
+- Deployment not working - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
+
+  Deployment did not work at first. I have created 3 setting files. One for development, one for production and one common to both. Therefore, I needed to modify the manage.py and the wsgi.py files. However, I only had modified the manage.py file so the deployment work fine but the application was not working. I fixed this issue by modifying the wsgi.py file.
+
+- Hero image was not displayed - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
+  
+  On the deployed version, the Hero image on the landing page would not show up. It was a background-image of a div element. So the file path to the image was used within the css file. I had the background-image property to the style attribute of the div within the html file using the static tag. This fixed the problem.
+
+- Emailjs does not work - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
+
+  On the deployed version, the EmailJS API would not send email. I realised that I called my file and my function with the same name. I changed it to give them different names and the problem was solved.
+
 ---
 
 <div align="center">
