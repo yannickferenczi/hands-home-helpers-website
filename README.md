@@ -7,7 +7,7 @@
 
 This project aims to create a website for the Hands Home Helpers company, based in NRW, GERMANY, so they can have an online presence to promote their activity and reach new customers. The website also aims to provide a user-friendly interface to make contacts between the company and its customers easier.
 
-Hands Home Helpers is a premium housekeeping company with a wide range of services. They offer to take care of your house and garden duties as well as maintening your swimming pool and fixing small issues or doing small renovation. Finally, they also provide a home care service to assist you in your everyday life.
+Hands Home Helpers is a premium housekeeping company with a wide range of services. They offer to take care of your house and garden duties as well as maintain your swimming pool and fix small issues or do small renovations. Finally, they also provide a home care service to assist you in your everyday life.
 
 ![Mockup responsive]()
 
