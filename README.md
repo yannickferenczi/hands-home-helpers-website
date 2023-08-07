@@ -383,6 +383,8 @@ For the minimum viable product:
 
 </div>
 
+Testing details can be found separately in the [TESTING.md](TESTING.md) file
+
 ---
 
 <div align="center">
