@@ -107,15 +107,13 @@
         </nav>
         <div class="container-fluid">
             <div class="row">
-                {% if user.is_authenticated %}
-                <p class="col greetings">Hi, {{ user.username }}</p>
-                {% endif %}
+                <p class="col greetings">{% if user.is_authenticated %}Hi, {{ user.username }}{% else %} {% endif %}</p>
             </div>
         </div>
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 offset-md-2">
+            <div class="col">
                 {% for message in messages %}
                 <div class="alert {{ message.tags }} alert-dismissable fade show" id="msg" role="alert">
                     {{ message | safe }}
@@ -145,8 +143,7 @@
                                 <div class="address">
                                     <p class="centered-content m-0">Dierhagenweg</p>
                                     <p class="centered-content m-0">59 069 Hamm</p>
-                                    <p class="centered-content m-0"><a class="white-text" href="tel:+4917111111111">+49 1711 111
-                                            1111</a></p>
+                                    <p class="centered-content m-0">+49 1711 111 1111</p>
                                 </div>
                             </div>
                         </div>
@@ -178,16 +175,16 @@
                         <div class="col extra-ressources">
                             <ul class="navbar-nav bg-dark">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'about' %}#about-section">About us</a>
+                                    <a class="nav-link" href="{% url 'about' %}#about-section">About us <i class="fa-regular fa-address-card"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'about' %}#team-section">Meet our Team</a>
+                                    <a class="nav-link" href="{% url 'about' %}#team-section">Meet our Team <i class="fa-solid fa-people-group"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'about' %}#faq-section">FAQ</a>
+                                    <a class="nav-link" href="{% url 'about' %}#faq-section">FAQ <i class="fa-solid fa-question"></i><i class="fa-solid fa-question"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'contact' %}">Contact us</a>
+                                    <a class="nav-link" href="{% url 'contact' %}">Contact us <i class="fa-solid fa-file-signature"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -199,9 +196,10 @@
             <div class="row">
                 <div class="col">
                     <div class="copyright bg-black">
-                        <p>Created with passion by <a class="white-text" href="https://github.com/yannickferenczi"
-                                target="_blank">Yannick
-                                Ferenczi <i class="fa-brands fa-github"></i></a> | Copyright {% now "Y" %}, All right reserved
+                        <p>Created with passion by 
+                            <a class="white-text" href="https://github.com/yannickferenczi" target="_blank">
+                                Yannick Ferenczi <i class="fa-brands fa-github"></i>
+                            </a> | Copyright {% now "Y" %}, All right reserved
                         </p>
                     </div>
                 </div>

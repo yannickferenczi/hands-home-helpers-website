@@ -329,6 +329,52 @@ For the minimum viable product:
 
 </div>
 
+This project is a full stack web application using a cloud-based database (PostgreSQL) to record data.
+
+### Features currently available
+
+- A branding with a logo, a name, and the colors of the company
+
+![Hands Home Helpers branding big screens](documentation/hands_home_helpers_branding.png)
+![Hands Home Helpers branding small screens](documentation/hands_home_helpers_branding_small.png)
+
+- A navigation menu
+
+![Navigation menu big screens](documentation/navigation_menu.png)
+![Navigation menu small screens](documentation/navigation_menu_small.png)
+
+- Greetings
+
+![Greetings](documentation/greetings.png)
+
+- A call to action (CTA) on a Hero-image
+
+![Call to action](documentation/cta_on_hero-image.png)
+
+- Caroussels to present the company's activities
+
+![Company's activities](documentation/caroussel_of_activities.png)
+
+- A footer with links to social medias and extra resources
+
+![Footer](documentation/footer.png)
+
+- A copyright
+
+![Copyright](documentation/copyright.png)
+
+- A personal dashboard
+
+![Personal dashboard](documentation/personal_dashboard.png)
+
+- A notification system
+
+![Notification system](documentation/notification_system.png)
+
+- An authentication system
+
+![Authentication system](documentation/authentication_system.png)
+
 ---
 
 <div align="center">
@@ -374,6 +420,7 @@ For the minimum viable product:
   - [Wave](https://wave.webaim.org/) has been used to test the accessibility of the website
   - [Accessibility Checker](https://www.accessibilitychecker.org/) has been used to test the accessibility of the website
   - [Am I responsive](https://ui.dev/amiresponsive) has been used to create a mockup of responsiveness
+  - [Shields.io](https://shields.io/) has been used to create badges within the README.md file
 
 ---
 
