@@ -34,6 +34,9 @@
   
 ### Python
 
+Every python file has been ran through the [CI Python Linter](https://pep8ci.herokuapp.com/) and for all of them the result was:
+> All clear, no errors found
+
 ## Lighthouse
 
 ## Manual Testing

@@ -4,6 +4,9 @@ from django.contrib.auth.models import User
 
 
 class Employee(models.Model):
+    """
+    This class creates a table to save Employee instances in the database.
+    """
     first_name = models.CharField(max_length=250)
     last_name = models.CharField(max_length=250)
     active = models.BooleanField(default=True)
@@ -17,6 +20,9 @@ class Employee(models.Model):
 
 
 class Task(models.Model):
+    """
+    This class creates a table to save Task instances in the database.
+    """
     CATEGORIES = [
         ("Gardening", "Gardening"),
         ("Cleaning", "Cleaning"),
@@ -25,6 +31,7 @@ class Task(models.Model):
         ("Renovation and repair", "Renovation and repair"),
         ("Home care", "Home care"),
     ]
+
     name = models.CharField(max_length=250, )
     done = models.BooleanField(default=False)
     owner = models.ForeignKey(
