@@ -1,3 +1,5 @@
+import dj_database_url
+
 from .base_settings import *
 
 # SECURITY WARNING: don't run with debug turned on in production!

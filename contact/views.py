@@ -2,13 +2,11 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib import messages
 
-
 from .forms import ContactForm
-
-# Create your views here.
 
 
 def contact(request):
+    """This function render the contact form"""
     if request.method == "POST":
         form = ContactForm(request.POST)
         if form.is_valid():

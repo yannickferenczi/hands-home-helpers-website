@@ -489,7 +489,7 @@ To deploy to Heroku:
 > NB: To run this project locally, you will need to create an env.py file (within the root directory) configuring the above environment variables as these are not included in the GitHub files for security reasons.
 > This file should look like this:
 
-```
+```python
 import os
 
 os.environ["DATABASE_URL"] = "elephantSQL_url"

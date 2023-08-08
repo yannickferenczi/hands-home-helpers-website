@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Contact(models.Model):
+    """This class creates a table to save instances of the contact form."""
     SUBJECT_OPTIONS = [
         ("feedback", "Feedback"),
         ("general", "General"),
