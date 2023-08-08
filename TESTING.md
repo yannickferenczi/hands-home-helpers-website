@@ -2,7 +2,7 @@
 
 # Hands Home Helpers
 
-**- TESTING -**
+***- TESTING DOCUMENTATION -***
 
 </div>
 
@@ -15,7 +15,8 @@
 ![w3c css validator results](documentation/w3c_css_validator_results.png)
 
 ### JavaScript
-- Python
+  
+### Python
 
 ## Lighthouse
 
@@ -283,9 +284,114 @@
 
 ### Features Testing
 
-<details><summary>Desktop</summary></details>
+<details>
+<summary style="background-color: #005500;">A branding with a logo, a name, and the colors of the company.</summary>
 
-<details><summary>Mobile</summary></details>
+- Browser compatibility and responsiveness testing:
+
+|  | chrome-desktop | chrome-mobile | safari-desktop | safari-mobile | firefox-desktop | firefox-mobile |
+| :--- | --- | --- | --- | --- | --- | --- |
+| The logo is properly displayed | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+| Clicking on the logo lead back to the landing page | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+| The branding appears on every page | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+</details>
+
+---
+
+<details>
+<summary style="background-color: #005500;">A navigation menu.</summary>
+
+- Browser compatibility and responsiveness testing:
+
+|  | chrome-desktop | chrome-mobile | safari-desktop | safari-mobile | firefox-desktop | firefox-mobile |
+| :--- | --- | --- | --- | --- | --- | --- |
+| The navigation menu is properly displayed | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+| Each link leads to the relevant page / section | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+| Links to restricted pages only appear for authorized users | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+</details>
+
+---
+
+<details>
+<summary style="background-color: #005500;">Greetings.</summary>
+
+- Browser compatibility and responsiveness testing:
+
+|  | chrome-desktop | chrome-mobile | safari-desktop | safari-mobile | firefox-desktop | firefox-mobile |
+| :--- | --- | --- | --- | --- | --- | --- |
+| Greetings are displayed when logged in | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+</details>
+
+---
+
+<details>
+<summary style="background-color: #005500;">A call to action (CTA) on a Hero-image.</summary>
+
+- Browser compatibility and responsiveness testing:
+
+|  | chrome-desktop | chrome-mobile | safari-desktop | safari-mobile | firefox-desktop | firefox-mobile |
+| :--- | --- | --- | --- | --- | --- | --- |
+| The Hero-image is properly displayed | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+| The call to action is obvious | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+| The call to action leads to the registration page | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+</details>
+
+---
+
+<details>
+<summary style="background-color: #005500;">Caroussels to present the company's activities.</summary>
+
+- Browser compatibility and responsiveness testing:
+
+|  | chrome-desktop | chrome-mobile | safari-desktop | safari-mobile | firefox-desktop | firefox-mobile |
+| :--- | --- | --- | --- | --- | --- | --- |
+| Carroussels are properly displayed | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+| Caroussels show the relevant images | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+</details>
+
+---
+
+<details>
+<summary style="background-color: #005500;">A footer with links to social medias and extra resources.</summary>
+
+- Browser compatibility and responsiveness testing:
+
+|  | chrome-desktop | chrome-mobile | safari-desktop | safari-mobile | firefox-desktop | firefox-mobile |
+| :--- | --- | --- | --- | --- | --- | --- |
+| The footer is properly displayed | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+| The social media links open in a new tab and lead to the relevant platform | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+| The extra resources lead to the relevant page / section | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+</details>
+
+---
+
+<details>
+<summary style="background-color: #005500;">A copyright.</summary>
+
+- Browser compatibility and responsiveness testing:
+
+|  | chrome-desktop | chrome-mobile | safari-desktop | safari-mobile | firefox-desktop | firefox-mobile |
+| :--- | --- | --- | --- | --- | --- | --- |
+| The copyright is properly displayed | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+| The copyright shows the current year | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+| The to GitHub open in a new tab and lead to the relevant page | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+</details>
+
+---
+
+<details>
+<summary style="background-color: #bb0000;">A personal dashboard.</summary>
+
+- Browser compatibility and responsiveness testing:
+
+|  | chrome-desktop | chrome-mobile | safari-desktop | safari-mobile | firefox-desktop | firefox-mobile |
+| :--- | --- | --- | --- | --- | --- | --- |
+| The content is properly displayed | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=FAIL&color=bb0000&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=FAIL&color=bb0000&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=FAIL&color=bb0000&style=plastic" alt="test status"> |
+| Each link leads to the relevant content | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+| Each button acts as expected | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+| Each button acts as expected | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+| Only content related to the user is displayed | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
+</details>
 
 ## Bugs
 
