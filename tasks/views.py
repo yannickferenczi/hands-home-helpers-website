@@ -15,6 +15,7 @@ class TaskList(LoginRequiredMixin, generic.ListView):
 
     Users must be logged into their personal account to access this content.
     """
+
     model = Task
     template_name = "tasks/dashboard.html"
     paginated_by = 50
@@ -29,6 +30,7 @@ class TaskDetailView(LoginRequiredMixin, generic.DetailView):
 
     Users must be logged into their personal account to access this content.
     """
+
     model = Task
     template_name = "tasks/task_detail.html"
     context_object_name = "task"
@@ -40,6 +42,7 @@ class TaskCreateView(SuccessMessageMixin, LoginRequiredMixin, CreateView):
 
     Users must be logged into their personal account to access this content.
     """
+
     model = Task
     template_name = "tasks/create_task.html"
     fields = ["name", "repeat", "category", ]
@@ -56,6 +59,7 @@ class TaskUpdateView(SuccessMessageMixin, LoginRequiredMixin, UpdateView):
 
     Users must be logged into their personal account to access this content.
     """
+
     model = Task
     template_name = "tasks/update_task.html"
     fields = ["name", "repeat", "category", ]
@@ -68,6 +72,7 @@ class TaskDeleteView(SuccessMessageMixin, LoginRequiredMixin, DeleteView):
 
     Users must be logged into their personal account to access this content.
     """
+    
     model = Task
     template_name = "tasks/delete_task.html"
     success_url = reverse_lazy("dashboard")
