@@ -8,9 +8,13 @@
 
 ## Code Validation
 
-- HTML
-- CSS
-- JavaScript
+### HTML
+
+### CSS <a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a></p>
+
+![w3c css validator results](documentation/w3c_css_validator_results.png)
+
+### JavaScript
 - Python
 
 ## Lighthouse
@@ -92,7 +96,7 @@
 ---
 
 <details>
-<summary style="background-color: #005500;">User Story 13 : As a Registered Site User, I can access my tasks so that I can list them.</summary>
+<summary style="background-color: #bb0000;">User Story 13 : As a Registered Site User, I can access my tasks so that I can list them.</summary>
 
 - Browser compatibility and responsiveness testing:
 
