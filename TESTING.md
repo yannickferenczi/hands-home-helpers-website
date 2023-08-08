@@ -22,6 +22,9 @@
 
 ![w3c markup validator results for the personal dashboard](documentation/w3c_markup_validator_results_dashboard.png)
 
+- w3c markup validator results for the contact page:
+
+![w3c markup validator results for the contact page](documentation/w3c_markup_validator_results_contact-page.png)
 
 ### CSS <a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a></p>
 
