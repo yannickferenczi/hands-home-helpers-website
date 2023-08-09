@@ -286,6 +286,10 @@ a {
     background-color: #9d3f3f;
 }
 
+.right-content {
+    text-align: right;
+}
+
 /* ------------------------------------------- */
 /* Styling about.html */
 /* ------------------------------------------- */
@@ -336,6 +340,81 @@ textarea {
 }
 
 /* ------------------------------------------- */
+/* Styling calendar.html */
+/* ------------------------------------------- */
+
+.month {
+    text-align: center;
+}
+
+th,
+td {
+    width: 10vw;
+    height: 5vh;
+    text-align: center;
+}
+
+.today {
+    border: 3px solid black;
+}
+
+.sun {
+    background-color: lightgrey;
+}
+
+.prev-month,
+.next-month {
+    margin: 0 auto;
+}
+
+i {
+    font-size: 20px;
+}
+
+.fa-circle-chevron-left,
+.fa-circle-chevron-right {
+    font-size: 25px;
+}
+
+.past-day {
+    background-color: grey;
+    color: darkgrey;
+}
+
+.high-availability {
+    color: white;
+    background-color: #3f9d3f;
+}
+
+.low-availability {
+    color: white;
+    background-color: #9d6e3f;
+}
+
+.fully-booked {
+    color: white;
+    background-color: #9d3f3f;
+}
+
+.high-availability a,
+.low-availability a,
+.fully-booked a {
+    color: white;
+}
+
+.half-hour {
+    height: 20.5px;
+}
+
+.full-hour {
+    min-height: 41px;
+}
+
+.oclock {
+    border-top: 1px dotted black;
+}
+
+/* ------------------------------------------- */
 /* RESPONSIVENESS */
 /* ------------------------------------------- */
 
@@ -383,5 +462,19 @@ textarea {
     .custom-form {
         width: 75%;
         margin: 15px auto;
+    }
+
+    th,
+    td {
+        width: 7vw;
+    }
+
+    .half-hour {
+        height: 35px;
+    }
+
+    .oclock {
+        border-top: none;
+        border-left: 1px dotted black;
     }
 }

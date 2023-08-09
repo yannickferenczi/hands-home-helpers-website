@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'tasks',
     'contact',
     'offers',
+    'appointments',
 ]
 
 SITE_ID = 1
