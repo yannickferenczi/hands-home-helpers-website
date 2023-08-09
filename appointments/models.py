@@ -57,9 +57,6 @@ class Appointment(models.Model):
         related_name="associated_tasks",
     )
 
-    class Meta:
-        verbose_name = 'appointments'
-
     def __str__(self):
         return f"{self.appointment_day}"
 
@@ -98,8 +95,8 @@ class Appointment(models.Model):
 
     def has_minimum_time(self):
         return timedelta((self.ending_time_as_date_time
-                - self.starting_time_as_date_time).total_seconds()
-                / 60) >= timedelta(minutes=60)
+            - self.starting_time_as_date_time).total_seconds()
+            / 60) >= timedelta(minutes=60)
 
     # ---------------------------------------------
     # THE FOLLOWING FUNCTION HAS BEEN IMPORTED AND ONLY A LITTLE BIT MODIFIED
