@@ -82,19 +82,28 @@ class Appointment(models.Model):
     def get_absolute_url(self):
         return reverse('dashboard')
 
+    # ---------------------------------------------
+    # THE FOLLOWING FUNCTION HAS BEEN IMPORTED AND ONLY A LITTLE BIT MODIFIED
+    # MORE DETAILS IN THE CREDITS SECTION OF THE README.md FILE
     def check_overlap(self, fixed_start, fixed_end, new_start, new_end):
         overlap = False
         if new_start == fixed_end or new_end == fixed_start:
             overlap = False
-        elif (new_start >= fixed_start and new_start <= fixed_end) or (new_end >= fixed_start and new_end <= fixed_end):  # innner limits
+        elif ((new_start >= fixed_start and new_start <= fixed_end)
+                or (new_end >= fixed_start and new_end <= fixed_end)):
             overlap = True
         elif new_start <= fixed_start and new_end >= fixed_end:
             overlap = True
         return overlap
 
     def has_minimum_time(self):
-        return timedelta((self.ending_time_as_date_time - self.starting_time_as_date_time).total_seconds() / 60) <= timedelta(minutes=60)
+        return timedelta((self.ending_time_as_date_time
+                - self.starting_time_as_date_time).total_seconds()
+                / 60) >= timedelta(minutes=60)
 
+    # ---------------------------------------------
+    # THE FOLLOWING FUNCTION HAS BEEN IMPORTED AND ONLY A LITTLE BIT MODIFIED
+    # MORE DETAILS IN THE CREDITS SECTION OF THE README.md FILE
     def clean(self):
         if self.ending_time_as_date_time <= self.starting_time_as_date_time:
             raise ValidationError('Ending time must be after starting time')
@@ -103,20 +112,30 @@ class Appointment(models.Model):
             appointment_day=self.appointment_day)
         if appointments.exists():
             for appointment in appointments:
-                if self.check_overlap(appointment.appointment_start_time, appointment.appointment_end_time, self.appointment_start_time, self.appointment_end_time):
+                if self.check_overlap(
+                    appointment.appointment_start_time,
+                    appointment.appointment_end_time,
+                    self.appointment_start_time,
+                    self.appointment_end_time
+                ):
                     raise ValidationError(
-                        'There is an overlap with another event: ' + str(appointment.appointment_day) + ', ' + str(
-                            appointment.appointment_start_time) + '-' + str(appointment.appointment_end_time))
+                        'There is an overlap with another appointment: '
+                        + str(appointment.appointment_day) + ', '
+                        + str(appointment.appointment_start_time) + '-'
+                        + str(appointment.appointment_end_time)
+                    )
 
         if not self.has_minimum_time():
             raise ValidationError('You cannot schedule less than 1 hour.')
 
-
+# ---------------------------------------------
+# THE FOLLOWING CLASS HAS BEEN IMPORTED AND ONLY A LITTLE BIT MODIFIED
+# MORE DETAILS IN THE CREDITS SECTION OF THE README.md FILE
 class CustomHTMLCalendar(HTMLCalendar):
     """
     This class creates an html calendar.
-
-    Each day is a link to a daily view of the calendar
+    
+    Each upcoming day is a link to a daily view of the calendar.
     """
 
     def formatday(self, day, weekday):

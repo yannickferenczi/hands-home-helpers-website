@@ -1,10 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
+from django.contrib.auth.decorators import login_required
 from django.views import generic, View
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.urls import reverse
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib import messages
 from django.views import View
 from datetime import datetime, date, time, timedelta
 
@@ -12,10 +14,9 @@ from .models import CustomHTMLCalendar, Appointment
 from .forms import BookingForm
 
 
-class CustomHTMLCalendarView(View):
+class CustomHTMLCalendarView(LoginRequiredMixin, View):
     def get(self, request, month, *args, **kwargs):
         current_year = datetime.now().year
-        # current_month = datetime.now().month
         cal = CustomHTMLCalendar().formatmonth(current_year, month)
         return render(
             request,
@@ -24,6 +25,7 @@ class CustomHTMLCalendarView(View):
         )
 
 
+@login_required
 def booking(request, year, month, day):
     selected_day = date(year, month, day)
     day_before = selected_day - timedelta(days=1)
@@ -32,6 +34,8 @@ def booking(request, year, month, day):
     daily_appointments = Appointment.objects.filter(
         appointment_day=selected_day
     )
+
+    # check for every half-hour if it is already booked or not
     daily_schedule = []
     for i in range(7, 19):
         hourly_schedule = [False, False]
@@ -66,6 +70,11 @@ def booking(request, year, month, day):
             new_appointment.appointment_owner = request.user
             new_appointment.save()
             form.save_m2m()
+            messages.add_message(
+                request,
+                messages.SUCCESS,
+                "Your appointment has been successfully created!",
+            )
             return HttpResponseRedirect(reverse('dashboard'))
     else:
         form = BookingForm(request=request)
