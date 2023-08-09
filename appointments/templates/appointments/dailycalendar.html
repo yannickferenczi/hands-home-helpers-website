@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Calendar{% endblock title %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row my-3">
+        <div class="col-3 col-md-4">
+            <a href="{% url 'dailycalendar' day_before.year day_before.month day_before.day %}">
+                <i class="fa-solid fa-backward"></i>
+                <span class="d-none d-md-inline">{{ day_before|date:"l jS" }}</span>
+            </a>
+        </div>
+        <div class="col-6 col-md-4 centered-content">
+            <a href="{% url 'calendar' selected_day|date:'n' %}">
+                <h3 class="d-inline">{{ selected_day|date:'F Y' }}</h3>
+                <i class="fa-solid fa-arrow-rotate-left"></i>
+            </a>
+        </div>
+        <div class="col-3 col-md-4 right-content">
+            <a href="{% url 'dailycalendar' day_after.year day_after.month day_after.day %}">
+                <span class="d-none d-md-inline">{{ day_after|date:"l jS" }}</span>
+                <i class="fa-solid fa-forward"></i>
+            </a>
+        </div>
+    </div>
+    <div class="row centered-content">
+        <div class="col mb-3">
+            {{ selected_day|date:"l jS" }}
+        </div>
+    </div>
+    <div class="row g-0">
+        <div class="col-4 offset-2 col-md-12 offset-md-0">
+            <div class="row g-0">
+                <div class="col-12 col-md-1 full-hour oclock">
+                    <p>7:00</p>
+                </div>
+                <div class="col-12 col-md-1 full-hour oclock">
+                    <p>8:00</p>
+                </div>
+                <div class="col-12 col-md-1 full-hour oclock">
+                    <p>9:00</p>
+                </div>
+                <div class="col-12 col-md-1 full-hour oclock">
+                    <p>10:00</p>
+                </div>
+                <div class="col-12 col-md-1 full-hour oclock">
+                    <p>11:00</p>
+                </div>
+                <div class="col-12 col-md-1 full-hour oclock">
+                    <p>12:00</p>
+                </div>
+                <div class="col-12 col-md-1 full-hour oclock">
+                    <p>13:00</p>
+                </div>
+                <div class="col-12 col-md-1 full-hour oclock">
+                    <p>14:00</p>
+                </div>
+                <div class="col-12 col-md-1 full-hour oclock">
+                    <p>15:00</p>
+                </div>
+                <div class="col-12 col-md-1 full-hour oclock">
+                    <p>16:00</p>
+                </div>
+                <div class="col-12 col-md-1 full-hour oclock">
+                    <p>17:00</p>
+                </div>
+                <div class="col-12 col-md-1 full-hour oclock">
+                    <p>18:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-md-12">
+            <div class="row g-0">
+                {% for time_zone_booked in daily_schedule %}
+                <div class="col-12 col-md-1 full-hour">
+                    <div class="row g-0">
+                        {% if time_zone_booked.0 is True %}
+                        <div class="col-12 col-md-6 half-hour fully-booked oclock"></div>
+                        {% else %}
+                        <div class="col-12 col-md-6 half-hour high-availability oclock"></div>
+                        {% endif %}
+                        {% if time_zone_booked.1 is True %}
+                        <div class="col-12 col-md-6 half-hour fully-booked"></div>
+                        {% else %}
+                        <div class="col-12 col-md-6 half-hour high-availability"></div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3>Create an appointment</h3>
+            <form class="centered-content" action="" method="POST">
+                {% csrf_token %}
+                <div class="custom-form centered-content">
+                    {{ form.as_p }}
+                </div>
+                <input class="form-btn btn btn-success" id="submit-time" type="submit" name="submit-time"
+                    value="Create">
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
