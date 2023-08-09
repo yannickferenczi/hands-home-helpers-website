@@ -72,7 +72,7 @@ class TaskDeleteView(SuccessMessageMixin, LoginRequiredMixin, DeleteView):
 
     Users must be logged into their personal account to access this content.
     """
-    
+
     model = Task
     template_name = "tasks/delete_task.html"
     success_url = reverse_lazy("dashboard")

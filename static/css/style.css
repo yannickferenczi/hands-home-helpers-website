@@ -310,6 +310,32 @@ textarea {
 }
 
 /* ------------------------------------------- */
+/* Styling offers.html */
+/* ------------------------------------------- */
+
+.offers-card {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.offers-card h5 {
+    font-size: 22px;
+}
+
+.offers-card p {
+    font-size: 18px;
+}
+
+.offers-card i {
+    font-size: 22px;
+}
+
+.white-filter {
+    background-color: rgba(250, 250, 250, 0.7);
+}
+
+/* ------------------------------------------- */
 /* RESPONSIVENESS */
 /* ------------------------------------------- */
 
