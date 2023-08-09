@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'tasks',
     'contact',
+    'offers',
 ]
 
 SITE_ID = 1

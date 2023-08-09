@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Offers{% endblock title %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3>Our offers</h3>
+        </div>
+    </div>
+    <div class="row">
+        {% for offer in offers %}
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="dashboard-item offers-card" style="background-image: url({{offer.featured_image.url}});">
+                    <div class="white-filter p-3">
+                        <h5 class="centered-content">{{ offer.title }} subscription</h5>
+                        <p class="centered-content m-0 p-2">{{ offer.hours }} hours per week</p>
+                        <p class="centered-content m-0 p-2">{{ offer.price_per_hour }} € / hour</p>
+                        <p class="centered-content m-0 p-2">Equipment included: {% if offer.equipment_included %}<span class="green-success"><i class="fa-regular fa-thumbs-up"></i></span>{% else %}<span class="red-ant"><i class="fa-solid fa-ban"></i></span>{% endif %}</p>
+                        <p class="centered-content m-0 p-2">Cleaning product included: {% if offer.cleaning_product_included %}<span class="green-success"><i class="fa-regular fa-thumbs-up"></i></span>{% else %}<span class="red-ant"><i class="fa-solid fa-ban"></i></span>{% endif %}</p>
+                        <p class="centered-content m-0 p-2">Deferrable hours: {% if offer.deferrable_hours %}<span class="green-success"><i class="fa-regular fa-thumbs-up"></i></span>{% else %}<span class="red-ant"><i class="fa-solid fa-ban"></i></span>{% endif %}</p>
+                        <p class="centered-content m-0 p-2">Minimum duration: {{ offer.minimum_duration }} hour</p>
+                        <p class="centered-content m-0 p-2">Free cancelation period: {{ offer.minimum_time_cancelation }} hours before appointment</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}
