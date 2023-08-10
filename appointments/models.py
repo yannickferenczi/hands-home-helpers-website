@@ -94,9 +94,7 @@ class Appointment(models.Model):
         return overlap
 
     def has_minimum_time(self):
-        return timedelta((self.ending_time_as_date_time
-            - self.starting_time_as_date_time).total_seconds()
-            / 60) >= timedelta(minutes=60)
+        return timedelta((self.ending_time_as_date_time - self.starting_time_as_date_time).total_seconds() / 60) >= timedelta(minutes=60)
 
     # ---------------------------------------------
     # THE FOLLOWING FUNCTION HAS BEEN IMPORTED AND ONLY A LITTLE BIT MODIFIED
@@ -109,11 +107,13 @@ class Appointment(models.Model):
             appointment_day=self.appointment_day)
         if appointments.exists():
             for appointment in appointments:
+                if appointment.pk == self.pk:
+                    continue
                 if self.check_overlap(
                     appointment.appointment_start_time,
                     appointment.appointment_end_time,
                     self.appointment_start_time,
-                    self.appointment_end_time
+                    self.appointment_end_time,
                 ):
                     raise ValidationError(
                         'There is an overlap with another appointment: '

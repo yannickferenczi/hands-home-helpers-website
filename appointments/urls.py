@@ -18,4 +18,9 @@ urlpatterns = [
         views.AppointmentDetailView.as_view(),
         name="appointment_detail",
     ),
+    path(
+        'update/<int:pk>',
+        views.AppointmentUpdateView.as_view(),
+        name="appointment_update",
+    ),
 ]

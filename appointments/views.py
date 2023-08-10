@@ -96,3 +96,25 @@ class AppointmentDetailView(LoginRequiredMixin, generic.DetailView):
     model = Appointment
     template_name = "appointments/appointment_detail.html"
     context_object_name = "appointment"
+
+
+class AppointmentUpdateView(
+        SuccessMessageMixin,
+        LoginRequiredMixin,
+        UpdateView):
+    model = Appointment
+    form_class = BookingForm
+    template_name = "appointments/update_appointment.html"
+    # fields = [
+    #     "appointment_day",
+    #     "appointment_start_time",
+    #     "appointment_end_time",
+    #     "appointment_tasks",
+    # ]
+    success_message = "Your appointment has been successfully updated!"
+
+    def get_form_kwargs(self):
+        """Passes the request object to the form class."""
+        kwargs = super(AppointmentUpdateView, self).get_form_kwargs()
+        kwargs['request'] = self.request
+        return kwargs
