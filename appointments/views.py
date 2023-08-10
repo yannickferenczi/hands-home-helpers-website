@@ -90,3 +90,9 @@ def booking(request, year, month, day):
             "form": form,
         },
     )
+
+
+class AppointmentDetailView(LoginRequiredMixin, generic.DetailView):
+    model = Appointment
+    template_name = "appointments/appointment_detail.html"
+    context_object_name = "appointment"

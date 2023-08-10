@@ -13,4 +13,9 @@ urlpatterns = [
         views.booking,
         name="dailycalendar",
     ),
+    path(
+        'detail/<int:pk>',
+        views.AppointmentDetailView.as_view(),
+        name="appointment_detail",
+    ),
 ]
