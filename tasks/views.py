@@ -5,8 +5,10 @@ from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib import messages
+from datetime import datetime
 
 from .models import Task
+from appointments.models import Appointment
 
 
 class TaskList(LoginRequiredMixin, generic.ListView):
@@ -22,6 +24,12 @@ class TaskList(LoginRequiredMixin, generic.ListView):
 
     def get_queryset(self):
         return Task.objects.filter(owner=self.request.user)
+
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
+        appointments = Appointment.objects.filter(appointment_owner=self.request.user).order_by("appointment_day")
+        context["appointments"] = appointments
+        return context
 
 
 class TaskDetailView(LoginRequiredMixin, generic.DetailView):

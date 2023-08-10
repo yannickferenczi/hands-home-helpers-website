@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Appointment{% endblock title %}
+
+{% block content %}
+
+<h3>Your appointment details</h3>
+<div class="custom-form">
+    <h5 class="centered-content">{{ appointment.appointment_day }}</h5>
+    <div class="centered-content">
+        <p>From {{ appointment.appointment_start_time }} to {{ appointment.appointment_end_time }}</p>
+    </div>
+    <div>
+        <h6>List of tasks:</h6>
+        <ul>
+            {% for task in appointment.appointment_tasks.all %}
+            <li>{{ task }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<div class="centered-content">
+    <div class="d-inline-block">
+        <a class="form-btn btn btn-success" href="{% url 'appointment_update' appointment.pk %}">Modify</a>
+    </div>
+    <div class="d-inline-block">
+        <a class="form-btn btn btn-danger" href="{% url 'appointment_delete' appointment.pk %}">Delete</a>
+    </div>
+</div>
+
+{% endblock content %}

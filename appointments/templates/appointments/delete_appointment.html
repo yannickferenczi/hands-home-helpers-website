@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Appointment{% endblock title %}
+
+{% block content %}
+
+<form class="centered-content" method="post" class="dashboard-item">
+    {% csrf_token %}
+    <h3>Do you really want to delete the following appointment?</h3>
+
+    <div class="custom-form centered-content">
+        <p>{{ appointment.appointment_day }}</p>
+        <p>From {{ appointment.appointment_start_time }} to {{ appointment.appointment_end_time }}</p>
+        <div>
+            <h6>List of tasks:</h6>
+            <ul>
+                {% for task in appointment.appointment_tasks.all %}
+                <li>{{ task }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <input class="form-btn btn btn-danger" type="submit" value="Delete">
+</form>
+{% endblock content %}
