@@ -25,7 +25,7 @@
         <a class="form-btn btn btn-success" href="{% url 'appointment_update' appointment.pk %}">Modify</a>
     </div>
     <div class="d-inline-block">
-        <a class="form-btn btn btn-danger" href="#">Delete</a>
+        <a class="form-btn btn btn-danger" href="{% url 'appointment_delete' appointment.pk %}">Delete</a>
     </div>
 </div>
 

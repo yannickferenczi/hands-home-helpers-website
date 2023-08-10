@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
+from django.urls import reverse_lazy
 from django.views import generic, View
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.urls import reverse
@@ -118,3 +119,21 @@ class AppointmentUpdateView(
         kwargs = super(AppointmentUpdateView, self).get_form_kwargs()
         kwargs['request'] = self.request
         return kwargs
+
+
+class AppointmentDeleteView(
+        SuccessMessageMixin,
+        LoginRequiredMixin,
+        DeleteView):
+    model = Appointment
+    template_name = "appointments/delete_appointment.html"
+    success_url = reverse_lazy("dashboard")
+    success_message = "Your appointment has been successfully deleted!"
+
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message)
+        return super(AppointmentDeleteView, self).delete(
+            request,
+            *args,
+            **kwargs,
+        )

@@ -5,7 +5,7 @@
 
 {% block content %}
 <h3>Update your appointment of {{ form.appointment_day.value }}</h3>
-<p class="centered-content">If you want to change the date of your appointment, please <a class="link-style" href="#">delete it</a> and schedule a new one.</p>
+<p class="centered-content">If you want to change the date of your appointment, please <a class="link-style" href="{% url 'appointment_delete' appointment.pk %}">delete it</a> and schedule a new one.</p>
 <form class="centered-content" method="POST">
     {% csrf_token %}
     <div class="custom-form centered-content">
