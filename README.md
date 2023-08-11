@@ -320,6 +320,8 @@ Two fonts have been used within the whole website. They both are sans-serif. And
 For the minimum viable product:
 ![Database schema for the minimum viable product](documentation/erd_mvp.png)
 
+First extension of the erd:
+![Database schema with the first extension](documentation/erd_extanded_1.png)
 
 ---
 
@@ -371,9 +373,19 @@ This project is a full stack web application using a cloud-based database (Postg
 
 ![Notification system](documentation/notification_system.png)
 
+- A system for the admins to create and display their offers
+
+![Company offers](documentation/offers.png)
+
 - An authentication system
 
 ![Authentication system](documentation/authentication_system.png)
+
+- A booking system
+
+![Booking system step 1](documentation/booking_system_step_1.png)
+
+![Booking system step 2](documentation/booking_system_step_2.png)
 
 ---
 
@@ -523,7 +535,9 @@ To Fork the project:
 
 - The [Code Institute course](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+BSR102+2021_T1/courseware/5961b57ece7d4ef18749778768a9376e/3b58b5a90e7048c8a4f2344f2401cf4a/) has been used as a guideline to link EmailJS to the contact form and the [sendEmail.js](static/js/sendEmail.js) file has been entirely copied from that course.
 
+- The html calendar has been implemented using an external code found on [Stackoverflow](https://stackoverflow.com/questions/75945489/django-python-calendar-module). It has only been a little been modified to match the expectations of this project.
 
+- The check_overlap function as well as the clean function have been entirely imported from [Alexandre Pinto's website](https://alexpnt.github.io/2017/07/15/django-calendar/). Those functions help validating appointments while being created.
 
 ---
 
