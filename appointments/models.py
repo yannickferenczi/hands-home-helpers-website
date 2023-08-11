@@ -94,14 +94,14 @@ class Appointment(models.Model):
         return overlap
 
     def has_minimum_time(self):
-        return timedelta((self.ending_time_as_date_time - self.starting_time_as_date_time).total_seconds() / 60) >= timedelta(minutes=60)
+        return timedelta(seconds=((self.ending_time_as_date_time - self.starting_time_as_date_time).total_seconds())) >= timedelta(seconds=3600)
 
     # ---------------------------------------------
     # THE FOLLOWING FUNCTION HAS BEEN IMPORTED AND ONLY A LITTLE BIT MODIFIED
     # MORE DETAILS IN THE CREDITS SECTION OF THE README.md FILE
     def clean(self):
         if self.ending_time_as_date_time <= self.starting_time_as_date_time:
-            raise ValidationError('Ending time must be after starting time')
+            raise ValidationError('Ending time must be later than starting time')
 
         appointments = Appointment.objects.filter(
             appointment_day=self.appointment_day)

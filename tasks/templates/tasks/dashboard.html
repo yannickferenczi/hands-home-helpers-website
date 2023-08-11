@@ -17,13 +17,13 @@
                 </div>
                 <div class="row m-0 d-none d-md-flex">
                     <div class="col-5">
-                        <p>Description</p>
+                        <p class="my-2">Description</p>
                     </div>
                     <div class="col-2">
-                        <p class="centered-content">Repeat</p>
+                        <p class="centered-content my-2">Repeat</p>
                     </div>
                     <div class="col-4">
-                        <p>Category</p>
+                        <p class="my-2">Category</p>
                     </div>
                 </div>
                 {% for task in task_list %}
@@ -60,32 +60,32 @@
                 </div>
                 <div class="row d-none d-md-flex">
                     <div class="col-3">
-                        <p>Description</p>
+                        <p class="m-2">Description</p>
                     </div>
                     <div class="col-2">
-                        <p class="centered-content">Date</p>
+                        <p class="centered-content my-2">Date</p>
                     </div>
                     <div class="col-3">
-                        <p class="centered-content">Employee's name</p>
+                        <p class="centered-content my-2">Employee's name</p>
                     </div>
                     <div class="col-4">
-                        <p>Comments</p>
+                        <p class="my-2">Comments</p>
                     </div>
                 </div>
                 {% for task in task_list %}
                 {% if task.done %}
                 <div class="row">
                     <div class="col-6 col-md-3">
-                        <p class="grey-text task-title">{{ task.name }}</p>
+                        <p class="grey-text task-title m-2">{{ task.name }}</p>
                     </div>
                     <div class="col-6 col-md-2">
-                        <p class="centered-content">{{ task.created_on|date:"Y/m/d" }}</p>
+                        <p class="centered-content my-2">{{ task.created_on|date:"Y/m/d" }}</p>
                     </div>
                     <div class="col-6 col-md-3">
-                        <p class="centered-content">{{ task.employee.full_name }}</p>
+                        <p class="centered-content my-2">{{ task.employee.full_name }}</p>
                     </div>
                     <div class="col-6 col-md-4">
-                        <p>{% if task.comment %}{{ task.comment }}{% else %}no-comments{% endif %}</p>
+                        <p class="my-2">{% if task.comment %}{{ task.comment }}{% else %}no-comments{% endif %}</p>
                     </div>
                 </div>
                 <hr>
