@@ -4,6 +4,12 @@
     color: #9d3f3f;
 }
 
+.errorlist li {
+    color: #9d3f3f;
+    font-weight: bold;
+    border: 2px solid #9d3f3f;
+}
+
 .green-success {
     color: #3f9d3f;
 }
@@ -165,6 +171,7 @@ ul {
 }
 
 .greetings {
+    height: 34px;
     margin-bottom: 0;
     text-align: right;
     padding: 5px 50px;
@@ -229,6 +236,7 @@ ul {
     line-height: 30px;
     vertical-align: middle;
     text-align: center;
+    color: white;
 }
 
 .social-media:hover {
