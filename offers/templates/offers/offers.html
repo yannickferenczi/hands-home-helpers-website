@@ -5,13 +5,13 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col">
-            <h3>Our offers</h3>
+            <h4>Our offers</h4>
         </div>
     </div>
-    <div class="row">
+    <div class="row p-4">
         {% for offer in offers %}
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="dashboard-item offers-card" style="background-image: url({{offer.featured_image.url}});">

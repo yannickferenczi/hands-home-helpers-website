@@ -18,29 +18,25 @@
             <h3>Your task details</h3>
         </div>
     </div>
-    <div class="row">
+    <div class="row p-4">
         <div class="col-12 col-md-8 offset-md-2 dashboard-item">
             <div class="row">
-                <div class="col">
-                    <p class="content-centered">{{ task.name }}</p>
+                <div class="col-12 col-md-6">
+                    <p><span class="task-title">Description:</span> {{ task.name }}</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p><span class="task-title">Category:</span> {{ task.category }}</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-2">
-                    <p>Archived:</p>
-                    <p>{% if task.done %}Yes{% else %}No{% endif %}</p>
+                <div class="col-12 col-md-5">
+                    <p><span class="task-title">Created on:</span> {{ task.created_on }}</p>
                 </div>
-                <div class="col-2">
-                    <p>Repeat:</p>
-                    <p>{% if task.repeat %}Yes{% else %}No{% endif %}</p>
+                <div class="col-12 col-md-4">
+                    <p><span class="task-title">Archived:</span> {% if task.done %}Yes{% else %}No{% endif %}</p>
                 </div>
-                <div class="col-5">
-                    <p>Category:</p>
-                    <p>{{ task.category }}</p>
-                </div>
-                <div class="col-3">
-                    <p>Created on:</p>
-                    <p>{{ task.created_on }}</p>
+                <div class="col-12 col-md-3">
+                    <p><span class="task-title">Repeat:</span> {% if task.repeat %}Yes{% else %}No{% endif %}</p>
                 </div>
             </div>
         </div>

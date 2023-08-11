@@ -20,6 +20,15 @@
     color: white;
 }
 
+.grey-text {
+    color: #555;
+}
+
+.grey-title {
+    background-color: #555;
+    color: #ccc;
+}
+
 /* ------------------------------------------- */
 /* Styling forms */
 /* ------------------------------------------- */
@@ -95,7 +104,7 @@ h6 {
 }
 
 h4 {
-    background-color: black;
+    background-color: #3f3f9d;
     color: white;
     padding: 25px;
 }
@@ -116,6 +125,12 @@ a {
 .link-style {
     text-decoration: underline;
     color: blue;
+}
+
+.main-header {
+    background-color: white;
+    min-height: 133px;
+    z-index: 2;
 }
 
 .img-logo {
@@ -144,8 +159,7 @@ a {
     margin-bottom: 0;
     text-align: right;
     padding: 5px 50px;
-    background-color: #3f3f9d;
-    color: white;
+    background-color: #ddd;
 }
 
 .user-options {
@@ -177,6 +191,14 @@ a {
     background-color: #9d3f3f;
     color: white;
     border: 2px solid white;
+}
+
+.tool-links:hover i {
+    font-size: 25px;
+}
+
+.main-content {
+    margin-top: 133px;
 }
 
 .main-footer {
@@ -237,22 +259,30 @@ a {
     background-size: cover;
 }
 
-.catching-text {
+.special-offer {
     position: relative;
-    max-width: 600px;
+    max-width: 70%;
     top: 50px;
+    left: 5%;
     color: white;
     background-color: black;
     padding: 5px 15px;
-    font-size: 20px;
+}
+
+.catching-text h3 {
+    text-align: justify;
+    font-size: 22px;
 }
 
 .cta-btn {
-    position: relative;
-    width: 100px;
-    top: 32%;
-    left: 50%;
-    transform: translate(-60%, -50%);
+    text-align: center;
+}
+
+.cta-btn a {
+    width: 80%;
+    max-width: 220px;
+    padding: 5px 5%;
+    font-size: 20px;
 }
 
 .card {
@@ -281,6 +311,7 @@ a {
 }
 
 .btn-delete {
+    width: 30px;
     border-radius: 5px;
     box-shadow: 1px 1px 3px black;
     background-color: #9d3f3f;
@@ -288,6 +319,10 @@ a {
 
 .right-content {
     text-align: right;
+}
+
+.task-title {
+    font-weight: bold;
 }
 
 /* ------------------------------------------- */
@@ -458,6 +493,26 @@ i {
     
     .navbar-nav {
         background-color: white;
+    }
+
+    .special-offer {
+        max-width: 50%;
+        padding: 15px 30px;
+    }
+
+    .catching-text h3 {
+        text-align: justify;
+        font-size: 25px;
+    }
+
+    .cta-btn {
+        text-align: center;
+    }
+
+    .cta-btn a {
+        width: 50%;
+        padding: 5px 5%;
+        font-size: 23px;
     }
 
     .footer-rule {

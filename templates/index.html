@@ -6,17 +6,19 @@
 {% block content %}
 
 <section class="container-fluid hero-img" style="background-image: url({% static 'images/landing_page/hero_img.jpg' %});">
-    <div class="catching-text">
-        <h3 class="m-0">Let us demonstrate our competence for FREE, your first cleaning hours are on the house!</h3>
-    </div>
-    <div class="cta-btn">
-        <a class="form-btn btn btn-success" href="{% url 'account_signup' %}">Register Now</a>
+    <div class="special-offer">
+        <div class="catching-text">
+            <h3 class="m-0">Let us demonstrate our competence for FREE, your first cleaning hours are on the house!</h3>
+        </div>
+        <div class="cta-btn">
+            <a class="form-btn btn btn-success" href="{% url 'account_signup' %}">Register Now</a>
+        </div>
     </div>
 </section>
 
 <section class="container-fluid our-skills">
     <h4>What are we good at?</h4>
-    <div class="row my-4 gy-4">
+    <div class="row  p-4 gy-4">
         <div class="col-md-4">
             <div class="card mx-auto" style="width: 18rem;">
                 <h5 class="card-title">Gardening</h5>

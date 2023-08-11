@@ -34,7 +34,32 @@
 </head>
 
 <body>
-    <header>
+    <div class="user-options">
+        {% if request.user.is_superuser %}
+        <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
+            title="Go to admin panel">
+            <a class="tool-links" href="/administration_panel/">
+                <i class="fa-solid fa-screwdriver-wrench d-inline-block mt-1"></i>
+            </a>
+        </div>
+        {% endif %}
+    
+        {% if request.user.is_authenticated %}
+        <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
+            title="Add a task">
+            <a class="tool-links" href="{% url 'task_create' %}">
+                <i class="fa-solid fa-plus d-inline-block mt-1"></i></p>
+            </a>
+        </div>
+        <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
+            title="New appointment">
+            <a class="tool-links" href="{% url 'calendar' this_month %}">
+                <i class="fa-regular fa-calendar-check d-inline-block mt-1"></i>
+            </a>
+        </div>
+        {% endif %}
+    </div>
+    <header class="main-header position-fixed w-100">
         <nav class="navbar navbar-expand-md py-0">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{% url 'home' %}">
@@ -50,28 +75,6 @@
                         </div>
                     </div>
                 </a>
-                <div class="user-options">
-                    {% if request.user.is_superuser %}
-                    <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
-                        title="Go to admin panel">
-                        <a href="/administration_panel/"><i class="fa-solid fa-screwdriver-wrench d-inline-block mt-1"></i></a>
-                    </div>
-                    {% endif %}
-                
-                    {% if request.user.is_authenticated %}
-                    <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
-                        title="Add a task">
-                        <a href="{% url 'task_create' %}">
-                            <i class="fa-solid fa-plus d-inline-block mt-1"></i></p>
-                        </a>
-                    </div>
-                    <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
-                        title="New appointment">
-                        <a href="{% url 'calendar' this_month %}">
-                            <i class="fa-regular fa-calendar-check d-inline-block mt-1"></i></a>
-                    </div>
-                    {% endif %}
-                </div>
 
                 <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -118,20 +121,22 @@
             </div>
         </div>
     </header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col p-0">
-                {% for message in messages %}
-                <div class="centered-content alert {{ message.tags }} alert-dismissable fade show" id="msg" role="alert">
-                    <span>{{ message | safe }}</span>
-                    <button class="btn-close mx-5" type="button" data-bs-dismiss="alert" aria-label="close">
-                    </button>
+
+    <main class="main-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col p-0">
+                    {% for message in messages %}
+                    <div class="centered-content alert {{ message.tags }} alert-dismissable fade show" id="msg" role="alert">
+                        <span>{{ message | safe }}</span>
+                        <button class="btn-close mx-5" type="button" data-bs-dismiss="alert" aria-label="close">
+                        </button>
+                    </div>
+                    {% endfor %}
                 </div>
-                {% endfor %}
             </div>
         </div>
-    </div>
-    <main class="main-content">
+
         {% block content %}
         {% endblock content %}
     </main>
