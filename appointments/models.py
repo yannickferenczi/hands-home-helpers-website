@@ -94,14 +94,18 @@ class Appointment(models.Model):
         return overlap
 
     def has_minimum_time(self):
-        return timedelta(seconds=((self.ending_time_as_date_time - self.starting_time_as_date_time).total_seconds())) >= timedelta(seconds=3600)
+        return timedelta(seconds=(
+            (self.ending_time_as_date_time - self.starting_time_as_date_time)
+            .total_seconds())) >= timedelta(seconds=3600)
 
     # ---------------------------------------------
     # THE FOLLOWING FUNCTION HAS BEEN IMPORTED AND ONLY A LITTLE BIT MODIFIED
     # MORE DETAILS IN THE CREDITS SECTION OF THE README.md FILE
     def clean(self):
         if self.ending_time_as_date_time <= self.starting_time_as_date_time:
-            raise ValidationError('Ending time must be later than starting time')
+            raise ValidationError(
+                    'Ending time must be later than starting time'
+            )
 
         appointments = Appointment.objects.filter(
             appointment_day=self.appointment_day)
@@ -125,13 +129,14 @@ class Appointment(models.Model):
         if not self.has_minimum_time():
             raise ValidationError('You cannot schedule less than 1 hour.')
 
+
 # ---------------------------------------------
 # THE FOLLOWING CLASS HAS BEEN IMPORTED AND ONLY A LITTLE BIT MODIFIED
 # MORE DETAILS IN THE CREDITS SECTION OF THE README.md FILE
 class CustomHTMLCalendar(HTMLCalendar):
     """
-    This class creates an html calendar.
-    
+    This class creates a html calendar.
+
     Each upcoming day is a link to a daily view of the calendar.
     """
 

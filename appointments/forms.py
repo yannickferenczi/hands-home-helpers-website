@@ -5,7 +5,9 @@ from tasks.models import Task
 
 
 class BookingForm(forms.ModelForm):
-
+    """
+    This is a custom form used to create and update Appointment instances
+    """
     class Meta:
         model = Appointment
         fields = [

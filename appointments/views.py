@@ -16,6 +16,9 @@ from .forms import BookingForm
 
 
 class CustomHTMLCalendarView(LoginRequiredMixin, View):
+    """
+    This class render a Monthly HTMLcalendar
+    """
     def get(self, request, month, *args, **kwargs):
         current_year = datetime.now().year
         cal = CustomHTMLCalendar().formatmonth(current_year, month)
@@ -28,6 +31,9 @@ class CustomHTMLCalendarView(LoginRequiredMixin, View):
 
 @login_required
 def booking(request, year, month, day):
+    """
+    This function displays a form to create appointment.
+    """
     selected_day = date(year, month, day)
     day_before = selected_day - timedelta(days=1)
     day_after = selected_day + timedelta(days=1)
@@ -94,6 +100,9 @@ def booking(request, year, month, day):
 
 
 class AppointmentDetailView(LoginRequiredMixin, generic.DetailView):
+    """
+    This view render the detail of a selected appointment.
+    """
     model = Appointment
     template_name = "appointments/appointment_detail.html"
     context_object_name = "appointment"
@@ -103,6 +112,9 @@ class AppointmentUpdateView(
         SuccessMessageMixin,
         LoginRequiredMixin,
         UpdateView):
+    """
+    This view display a form to update a selected appointment.
+    """
     model = Appointment
     form_class = BookingForm
     template_name = "appointments/update_appointment.html"
@@ -125,6 +137,9 @@ class AppointmentDeleteView(
         SuccessMessageMixin,
         LoginRequiredMixin,
         DeleteView):
+    """
+    This view leads through the deletion process of a selected appointment.
+    """
     model = Appointment
     template_name = "appointments/delete_appointment.html"
     success_url = reverse_lazy("dashboard")
