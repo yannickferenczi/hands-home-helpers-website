@@ -14,18 +14,18 @@ urlpatterns = [
         name="dailycalendar",
     ),
     path(
-        'detail/<int:pk>',
+        'appointment_detail/<int:pk>',
         views.AppointmentDetailView.as_view(),
         name="appointment_detail",
     ),
     path(
-        'update/<int:pk>',
+        'update_appointment/<int:pk>',
         views.AppointmentUpdateView.as_view(),
-        name="appointment_update",
+        name="update_appointment",
     ),
     path(
-        'delete/<int:pk>',
+        'delete_appointment/<int:pk>',
         views.AppointmentDeleteView.as_view(),
-        name="appointment_delete",
+        name="delete_appointment",
     ),
 ]

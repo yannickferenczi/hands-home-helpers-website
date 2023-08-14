@@ -6,6 +6,7 @@
 {% block content %}
 
 <section class="container-fluid hero-img" style="background-image: url({% static 'images/landing_page/hero_img.jpg' %});">
+    {% if request.user.is_anonymous %}
     <div class="special-offer">
         <div class="catching-text">
             <h3 class="m-0">Let us demonstrate our competence for FREE, your first cleaning hours are on the house!</h3>
@@ -14,10 +15,15 @@
             <a class="form-btn btn btn-success" href="{% url 'account_signup' %}">Register Now</a>
         </div>
     </div>
+    {% endif %}
 </section>
 
 <section class="container-fluid our-skills">
-    <h4>What are we good at?</h4>
+    <div class="row">
+        <div class="col">
+            <h4>What are we good at?</h4>
+        </div>
+    </div>
     <div class="row  p-4 gy-4">
         <div class="col-md-4">
             <div class="card mx-auto" style="width: 18rem;">
@@ -143,5 +149,53 @@
         </div>
     </div>
 </section>
+
+{% if reviews %}
+<section class="container-fluid mt-5">
+    <div class="row">
+        <div class="col">
+            <h4>Why our customers love us?</h4>
+        </div>
+    </div>
+    <!-- Slideshow container -->
+    <div class="row justify-content-center slideshow-container">
+        <!-- Full-width slides/quotes -->
+        <div class="col-2 p-0 mx-auto centered-content">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        </div>
+        <div class="col-8 centered-content mx-auto">
+            {% for review in reviews %}
+            <div class="mySlides dashboard-item p-3 mx-auto centered-content">
+                <p class="reviews-title">{{ review.title }}</p>
+                <div>
+                    {% for i in review.filled_satisfaction_stars %}
+                    <span class="fa fa-star checked"></span>
+                    {% endfor %}
+                    {% for i in review.empty_satisfaction_stars %}
+                    <span class="fa fa-star"></span>
+                    {% endfor %}
+                </div>
+                <p class="reviews-date">({{ review.created_on|date:"jS, F Y" }})</p>
+                <q>{{ review.description | truncatewords:50 }}</q>
+                <p class="author">- {{ review.user.username }}</p>
+                {% if review.user.id == request.user.id %}
+                <div class="centered-content">
+                    <div class="d-inline-block">
+                        <a class="form-btn btn btn-success" href="{% url 'update_review' review.pk %}">Edit</a>
+                    </div>
+                    <div class="d-inline-block">
+                        <a class="form-btn btn btn-danger" href="{% url 'delete_review' review.pk %}">Delete</a>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col-2 p-0 mx-auto centered-content">
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+</section>
+{% endif %}
 
 {% endblock content %}

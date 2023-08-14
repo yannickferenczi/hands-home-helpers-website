@@ -34,9 +34,17 @@
 </head>
 
 <body>
+    <div class="user-options-trigger">
+        <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
+            title="Open the toolbox">
+            <button class="fixed-btn-trigger" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+                aria-expanded="false" aria-controls="admin-panel add-task add-appointment add-review"><i
+                    class="fa-solid fa-toolbox d-inline-block mt-1"></i></button>
+        </div>
+    </div>
     <div class="user-options">
         {% if request.user.is_superuser %}
-        <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
+        <div id="admin-panel" class="collapse multi-collapse fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
             title="Go to admin panel">
             <a class="tool-links" href="/administration_panel/">
                 <i class="fa-solid fa-screwdriver-wrench d-inline-block mt-1"></i>
@@ -45,17 +53,22 @@
         {% endif %}
     
         {% if request.user.is_authenticated %}
-        <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
+        <div id="add-task" class="collapse multi-collapse fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
             title="Add a task">
-            <a class="tool-links" href="{% url 'task_create' %}">
+            <a class="tool-links" href="{% url 'add_task' %}">
                 <i class="fa-solid fa-plus d-inline-block mt-1"></i></p>
             </a>
         </div>
-        <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
+        <div id="add-appointment" class="collapse multi-collapse fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
             title="New appointment">
             <a class="tool-links" href="{% url 'calendar' this_month %}">
                 <i class="fa-regular fa-calendar-check d-inline-block mt-1"></i>
             </a>
+        </div>
+        <div id="add-review" class="collapse multi-collapse fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
+            title="Give us feedback">
+            <a href="{% url 'add_review' %}">
+                <i class="fa-solid fa-message d-inline-block mt-1"></i></a>
         </div>
         {% endif %}
     </div>
@@ -124,12 +137,12 @@
 
     <main class="main-content">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col p-0">
+            <div class="row m-0">
+                <div class="col p-0 m-0">
                     {% for message in messages %}
-                    <div class="centered-content alert {{ message.tags }} alert-dismissable fade show" id="msg" role="alert">
+                    <div class="centered-content alert {{ message.tags }} alert-dismissable fade show m-0" id="msg" role="alert">
                         <span>{{ message | safe }}</span>
-                        <button class="btn-close mx-5" type="button" data-bs-dismiss="alert" aria-label="close">
+                        <button class="btn-close mx-5" type="button" data-bs-dismiss="alert" aria-label="Close">
                         </button>
                     </div>
                     {% endfor %}
@@ -224,4 +237,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
