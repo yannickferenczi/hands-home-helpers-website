@@ -57,6 +57,11 @@
                 <i class="fa-regular fa-calendar-check d-inline-block mt-1"></i>
             </a>
         </div>
+        <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
+            title="Give us feedback">
+            <a href="{% url 'review-add' %}">
+                <i class="fa-solid fa-message d-inline-block mt-1"></i></a>
+        </div>
         {% endif %}
     </div>
     <header class="main-header position-fixed w-100">
@@ -129,7 +134,7 @@
                     {% for message in messages %}
                     <div class="centered-content alert {{ message.tags }} alert-dismissable fade show" id="msg" role="alert">
                         <span>{{ message | safe }}</span>
-                        <button class="btn-close mx-5" type="button" data-bs-dismiss="alert" aria-label="close">
+                        <button class="btn-close mx-5" type="button" data-bs-dismiss="alert" aria-label="Close">
                         </button>
                     </div>
                     {% endfor %}
@@ -224,4 +229,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>

@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col">
+        <h4>Why our customers love us?</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width slides/quotes -->
+            {% for review in reviews %}
+            <div class="mySlides">
+                <div class="dashboard-item p-3">
+                    <p class="reviews-title">{{ review.title }}</p>
+                    <div>
+                        {% for i in review.filled_satisfaction_stars %}
+                        <span class="fa fa-star checked"></span>
+                        {% endfor %}
+                        {% for i in review.empty_satisfaction_stars %}
+                        <span class="fa fa-star"></span>
+                        {% endfor %}
+                    </div>
+                    <p class="reviews-date">({{ review.created_on|date:"jS, F Y" }})</p>
+                    <q>{{ review.description | truncatewords:50 }}</q>
+                    <p class="author">- {{ review.user.username }}</p>
+                    {% if review.user.id == request.user.id %}
+                    <div class="centered-content">
+                        <div class="d-inline-block">
+                            <a class="form-btn btn btn-success" href="#">Edit</a>
+                        </div>
+                        <div class="d-inline-block">
+                            <a class="form-btn btn btn-danger" href="#">Delete</a>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+
+            <!-- Next/prev buttons -->
+            <a class="prev ms-5" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next me-5" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+</div>

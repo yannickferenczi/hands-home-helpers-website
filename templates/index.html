@@ -17,7 +17,11 @@
 </section>
 
 <section class="container-fluid our-skills">
-    <h4>What are we good at?</h4>
+    <div class="row">
+        <div class="col">
+            <h4>What are we good at?</h4>
+        </div>
+    </div>
     <div class="row  p-4 gy-4">
         <div class="col-md-4">
             <div class="card mx-auto" style="width: 18rem;">
@@ -140,6 +144,59 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid reviews mt-5">
+    <div class="row">
+        <div class="col">
+            <h4>Why our customers love us?</h4>
+        </div>
+    </div>
+    
+    <div class="row">
+        <!-- Slideshow container -->
+        <div class="col slideshow-container">
+            <!-- Full-width slides/quotes -->
+            <div class="row">
+                <div class="col-1">
+                    <a class="prev ms-5" onclick="plusSlides(-1)">&#10094;</a>
+                </div>
+                {% for review in reviews %}
+                <div class="col-10 col-md-8 mySlides">
+                    <div class="dashboard-item p-3 centered-content">
+                        <p class="reviews-title">{{ review.title }}</p>
+                        <div>
+                            {% for i in review.filled_satisfaction_stars %}
+                            <span class="fa fa-star checked"></span>
+                            {% endfor %}
+                            {% for i in review.empty_satisfaction_stars %}
+                            <span class="fa fa-star"></span>
+                            {% endfor %}
+                        </div>
+                        <p class="reviews-date">({{ review.created_on|date:"jS, F Y" }})</p>
+                        <q>{{ review.description | truncatewords:50 }}</q>
+                        <p class="author">- {{ review.user.username }}</p>
+                        {% if review.user.id == request.user.id %}
+                        <div class="centered-content">
+                            <div class="d-inline-block">
+                                <a class="form-btn btn btn-success" href="#">Edit</a>
+                            </div>
+                            <div class="d-inline-block">
+                                <a class="form-btn btn btn-danger" href="#">Delete</a>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-1">
+                <a class="next me-5" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- Next/prev buttons -->
         </div>
     </div>
 </section>
