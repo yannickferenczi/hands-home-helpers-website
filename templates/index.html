@@ -6,6 +6,7 @@
 {% block content %}
 
 <section class="container-fluid hero-img" style="background-image: url({% static 'images/landing_page/hero_img.jpg' %});">
+    {% if request.user.is_anonymous %}
     <div class="special-offer">
         <div class="catching-text">
             <h3 class="m-0">Let us demonstrate our competence for FREE, your first cleaning hours are on the house!</h3>
@@ -14,6 +15,7 @@
             <a class="form-btn btn btn-success" href="{% url 'account_signup' %}">Register Now</a>
         </div>
     </div>
+    {% endif %}
 </section>
 
 <section class="container-fluid our-skills">
@@ -148,55 +150,48 @@
     </div>
 </section>
 
-<section class="container-fluid reviews mt-5">
+<section class="container-fluid mt-5">
     <div class="row">
         <div class="col">
             <h4>Why our customers love us?</h4>
         </div>
     </div>
-    
-    <div class="row">
-        <!-- Slideshow container -->
-        <div class="col slideshow-container">
-            <!-- Full-width slides/quotes -->
-            <div class="row">
-                <div class="col-1">
-                    <a class="prev ms-5" onclick="plusSlides(-1)">&#10094;</a>
+    <!-- Slideshow container -->
+    <div class="row justify-content-center slideshow-container">
+        <!-- Full-width slides/quotes -->
+        <div class="col-2 p-0 mx-auto centered-content">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        </div>
+        <div class="col-8 centered-content mx-auto">
+            {% for review in reviews %}
+            <div class="mySlides dashboard-item p-3 mx-auto centered-content">
+                <p class="reviews-title">{{ review.title }}</p>
+                <div>
+                    {% for i in review.filled_satisfaction_stars %}
+                    <span class="fa fa-star checked"></span>
+                    {% endfor %}
+                    {% for i in review.empty_satisfaction_stars %}
+                    <span class="fa fa-star"></span>
+                    {% endfor %}
                 </div>
-                {% for review in reviews %}
-                <div class="col-10 col-md-8 mySlides">
-                    <div class="dashboard-item p-3 centered-content">
-                        <p class="reviews-title">{{ review.title }}</p>
-                        <div>
-                            {% for i in review.filled_satisfaction_stars %}
-                            <span class="fa fa-star checked"></span>
-                            {% endfor %}
-                            {% for i in review.empty_satisfaction_stars %}
-                            <span class="fa fa-star"></span>
-                            {% endfor %}
-                        </div>
-                        <p class="reviews-date">({{ review.created_on|date:"jS, F Y" }})</p>
-                        <q>{{ review.description | truncatewords:50 }}</q>
-                        <p class="author">- {{ review.user.username }}</p>
-                        {% if review.user.id == request.user.id %}
-                        <div class="centered-content">
-                            <div class="d-inline-block">
-                                <a class="form-btn btn btn-success" href="#">Edit</a>
-                            </div>
-                            <div class="d-inline-block">
-                                <a class="form-btn btn btn-danger" href="#">Delete</a>
-                            </div>
-                        </div>
-                        {% endif %}
+                <p class="reviews-date">({{ review.created_on|date:"jS, F Y" }})</p>
+                <q>{{ review.description | truncatewords:50 }}</q>
+                <p class="author">- {{ review.user.username }}</p>
+                {% if review.user.id == request.user.id %}
+                <div class="centered-content">
+                    <div class="d-inline-block">
+                        <a class="form-btn btn btn-success" href="#">Edit</a>
+                    </div>
+                    <div class="d-inline-block">
+                        <a class="form-btn btn btn-danger" href="#">Delete</a>
                     </div>
                 </div>
-                {% endfor %}
+                {% endif %}
             </div>
-            <div class="col-1">
-                <a class="next me-5" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-
-            <!-- Next/prev buttons -->
+            {% endfor %}
+        </div>
+        <div class="col-2 p-0 mx-auto centered-content">
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </div>
 </section>

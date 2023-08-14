@@ -129,10 +129,10 @@
 
     <main class="main-content">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col p-0">
+            <div class="row m-0">
+                <div class="col p-0 m-0">
                     {% for message in messages %}
-                    <div class="centered-content alert {{ message.tags }} alert-dismissable fade show" id="msg" role="alert">
+                    <div class="centered-content alert {{ message.tags }} alert-dismissable fade show m-0" id="msg" role="alert">
                         <span>{{ message | safe }}</span>
                         <button class="btn-close mx-5" type="button" data-bs-dismiss="alert" aria-label="Close">
                         </button>

@@ -288,7 +288,7 @@ ul {
 }
 
 .catching-text h3 {
-    text-align: justify;
+    text-align: left;
     font-size: 22px;
 }
 
@@ -314,6 +314,77 @@ ul {
     height: 65px;
     line-height: 65px;
     vertical-align: middle;
+}
+
+/* ------------------------------------------- */
+/* Styling the reviews section */
+/* ------------------------------------------- */
+
+.checked {
+    color: orange;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 5px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* Add an italic font style to all quotes */
+q {
+    font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+    color: cornflowerblue;
+}
+
+.reviews-date {
+    font-size: 12px;
+    color: #888;
+    margin-top: 0;
+}
+
+.reviews-title {
+    margin-bottom: 0;
 }
 
 /* ------------------------------------------- */
@@ -557,5 +628,9 @@ i {
     .oclock {
         border-top: none;
         border-left: 1px dotted black;
+    }
+
+    .mySlides {
+        width: 70%;
     }
 }
