@@ -35,8 +35,16 @@ def booking(request, year, month, day):
     This function displays a form to create appointment.
     """
     selected_day = date(year, month, day)
-    day_before = selected_day - timedelta(days=1)
-    day_after = selected_day + timedelta(days=1)
+    if selected_day.weekday() == 0:
+        day_before = selected_day - timedelta(days=2)
+    else:
+        day_before = selected_day - timedelta(days=1)
+
+    if selected_day.weekday() == 5:
+        day_after = selected_day + timedelta(days=2)
+    else:
+        day_after = selected_day + timedelta(days=1)
+
     current_month = datetime.today().month
     daily_appointments = Appointment.objects.filter(
         appointment_day=selected_day
