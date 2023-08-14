@@ -179,11 +179,21 @@ ul {
     background-color: #ddd;
 }
 
-.user-options {
+.user-options-trigger {
+    padding: 15px;
     position: fixed;
-    right: 25px;
-    top: 50%;
-    transform: translate(0, -50%);
+    overflow: hidden;
+    right: 5vw;
+    bottom: 30px;
+    z-index: 2;
+}
+
+.user-options {
+    padding: 15px;
+    position: fixed;
+    overflow: hidden;
+    right: 5vw;
+    bottom: 100px;
     z-index: 2;
 }
 
@@ -198,7 +208,8 @@ ul {
     box-shadow: 0 0 15px white;
 }
 
-.fixed-btn a {
+.fixed-btn a,
+.fixed-btn-trigger {
     display: inline-block;
     margin: 5px 0;
     line-height: 50px;

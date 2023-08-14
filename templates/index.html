@@ -150,6 +150,7 @@
     </div>
 </section>
 
+{% if reviews %}
 <section class="container-fluid mt-5">
     <div class="row">
         <div class="col">
@@ -180,10 +181,10 @@
                 {% if review.user.id == request.user.id %}
                 <div class="centered-content">
                     <div class="d-inline-block">
-                        <a class="form-btn btn btn-success" href="#">Edit</a>
+                        <a class="form-btn btn btn-success" href="{% url 'update_review' review.pk %}">Edit</a>
                     </div>
                     <div class="d-inline-block">
-                        <a class="form-btn btn btn-danger" href="#">Delete</a>
+                        <a class="form-btn btn btn-danger" href="{% url 'delete_review' review.pk %}">Delete</a>
                     </div>
                 </div>
                 {% endif %}
@@ -195,5 +196,6 @@
         </div>
     </div>
 </section>
+{% endif %}
 
 {% endblock content %}

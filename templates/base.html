@@ -34,9 +34,17 @@
 </head>
 
 <body>
+    <div class="user-options-trigger">
+        <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
+            title="Open the toolbox">
+            <button class="fixed-btn-trigger" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+                aria-expanded="false" aria-controls="admin-panel add-task add-appointment add-review"><i
+                    class="fa-solid fa-toolbox d-inline-block mt-1"></i></button>
+        </div>
+    </div>
     <div class="user-options">
         {% if request.user.is_superuser %}
-        <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
+        <div id="admin-panel" class="collapse multi-collapse fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
             title="Go to admin panel">
             <a class="tool-links" href="/administration_panel/">
                 <i class="fa-solid fa-screwdriver-wrench d-inline-block mt-1"></i>
@@ -45,21 +53,21 @@
         {% endif %}
     
         {% if request.user.is_authenticated %}
-        <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
+        <div id="add-task" class="collapse multi-collapse fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
             title="Add a task">
-            <a class="tool-links" href="{% url 'task_create' %}">
+            <a class="tool-links" href="{% url 'add_task' %}">
                 <i class="fa-solid fa-plus d-inline-block mt-1"></i></p>
             </a>
         </div>
-        <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
+        <div id="add-appointment" class="collapse multi-collapse fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
             title="New appointment">
             <a class="tool-links" href="{% url 'calendar' this_month %}">
                 <i class="fa-regular fa-calendar-check d-inline-block mt-1"></i>
             </a>
         </div>
-        <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
+        <div id="add-review" class="collapse multi-collapse fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
             title="Give us feedback">
-            <a href="{% url 'review-add' %}">
+            <a href="{% url 'add_review' %}">
                 <i class="fa-solid fa-message d-inline-block mt-1"></i></a>
         </div>
         {% endif %}
