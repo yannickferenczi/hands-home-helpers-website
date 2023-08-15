@@ -32,7 +32,7 @@ class Task(models.Model):
         ("Home care", "Home care"),
     ]
 
-    name = models.CharField(max_length=250, )
+    name = models.CharField(max_length=250, verbose_name="Description")
     done = models.BooleanField(default=False)
     owner = models.ForeignKey(
         User,
@@ -45,7 +45,6 @@ class Task(models.Model):
         choices=CATEGORIES,
         default="CLEANING",
     )
-    repeat = models.BooleanField(default=False)
     employee = models.ForeignKey(
         Employee,
         on_delete=models.PROTECT,

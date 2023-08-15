@@ -7,7 +7,7 @@
 
 <div class="container-fluid container-lg p-2">
     <div class="row">
-        <div class="col-12 col-md-8 order-2 order-md-1">
+        <div class="col-12 col-md-6 order-2 order-md-1">
             <!-- Open tasks -->
             <div class="dashboard-item">
                 <div class="row">
@@ -15,44 +15,57 @@
                         <h4>My Tasks</h4>
                     </div>
                 </div>
-                <div class="row m-0 d-none d-md-flex">
-                    <div class="col-5">
-                        <p class="my-2">Description</p>
-                    </div>
-                    <div class="col-2">
-                        <p class="centered-content my-2">Repeat</p>
-                    </div>
-                    <div class="col-4">
-                        <p class="my-2">Category</p>
-                    </div>
-                </div>
                 {% for task in task_list %}
                 {% if not task.done %}
                 <div class="row m-0">
                     <hr>
-                    <div class="col-10 col-md-5">
-                        <a class="task-title" href="{% url 'task_detail' task.id %}">{{ task.name }}</a>
+                    <div class="col-7">
+                        <p class="task-title my-1">{{ task.name }}</p>
                     </div>
-                    <div class="col-2 order-md-4 centered-content">
+                    <div class="col-5 centered-content">
+                        <a class="form-btn btn btn-success my-1 py-1" href="{% url 'task_detail' task.id %}">Details</a>
+                    </div>
+                    <div class="col-9 my-1">
+                        <p>{{ task.category }}</p>
+                    </div>
+                    <div class="col-3 my-1 centered-content">
                         <div class="btn-delete centered-content">
                             <a href="{% url 'delete_task' task.pk %}">
                                 <p class="centered-content p-1"><i class="fa-regular fa-trash-can white-text"></i></p>
                             </a>
                         </div>
                     </div>
-                    <div class="col-4 col-md-2 centered-content">
-                        <p>
-                            <span class="d-md-none">Repeat: </span>{% if task.repeat %}
-                            <i class="fa-solid fa-square-check green-success"></i>{% else %}No{%endif %}
-                        </p>
-                    </div>
-                    <div class="col-8 col-md-3">
-                        <p>{{ task.category }}</p>
-                    </div>
                 </div>
                 {% endif %}
                 {% endfor %}
             </div>
+        </div>
+        <div class="col-12 col-md-6 order-1 order-md-2">
+            <!-- Upcoming appointments -->
+            <div class="dashboard-item">
+                <div class="row">
+                    <div class="col">
+                        <h4>My Upcoming Appointments</h4>
+                    </div>
+                </div>
+                {% for appointment in appointments %}
+                    <a class="m-0" href="#">
+                        <div class="row select-appointment p-2">
+                            <div class="col-12 col-md-6">
+                                <p class="centered-content">{{appointment.appointment_day }}</p>
+                            </div>
+                            <div class="col-12 col-md-6 dashboard-schedule">
+                                <p>from {{ appointment.appointment_start_time }} to {{ appointment.appointment_end_time }}</p>
+                            </div>
+                        </div>
+                    </a>
+                <hr>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
             <!-- Closed tasks -->
             <div class="dashboard-item bg-dark-subtle grey-text">
                 <div class="row">
@@ -90,25 +103,6 @@
                 </div>
                 <hr>
                 {% endif %}
-                {% endfor %}
-            </div>
-        </div>
-        <div class="col-12 col-md-4 order-1 order-md-2">
-            <!-- Upcoming appointments -->
-            <div class="dashboard-item">
-                <div class="row">
-                    <div class="col">
-                        <h4>Upcoming appointments</h4>
-                    </div>
-                </div>
-                {% for appointment in appointments %}
-                <div class="row">
-                    <div class="col  centered-content p-2">
-                        <a class="btn btn-secondary" href="{% url 'appointment_detail' appointment.pk %}">
-                            {{appointment.appointment_day }} at {{ appointment.appointment_start_time }}
-                        </a>
-                    </div>
-                </div>
                 {% endfor %}
             </div>
         </div>
