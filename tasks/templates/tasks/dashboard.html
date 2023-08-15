@@ -49,16 +49,17 @@
                     </div>
                 </div>
                 {% for appointment in appointments %}
-                    <a class="m-0" href="#">
-                        <div class="row select-appointment p-2">
-                            <div class="col-12 col-md-6">
-                                <p class="centered-content">{{appointment.appointment_day }}</p>
-                            </div>
-                            <div class="col-12 col-md-6 dashboard-schedule">
-                                <p>from {{ appointment.appointment_start_time }} to {{ appointment.appointment_end_time }}</p>
-                            </div>
-                        </div>
-                    </a>
+                <div class="row p-2">
+                    <div class="col-12 col-md-3">
+                        <p class="centered-content my-1">{{appointment.appointment_day }}</p>
+                    </div>
+                    <div class="col-12 col-md-5 dashboard-schedule">
+                        <p class="my-1">from {{ appointment.appointment_start_time }} to {{ appointment.appointment_end_time }}</p>
+                    </div>
+                    <div class="col-12 col-md-4 centered-content">
+                        <a class="form-btn btn btn-secondary m-0" href="{% url 'appointment_detail' appointment.pk %}">Details</a>
+                    </div>
+                </div>
                 <hr>
                 {% endfor %}
             </div>
