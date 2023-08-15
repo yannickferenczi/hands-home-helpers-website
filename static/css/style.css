@@ -22,6 +22,10 @@
     background-color: #9d3f3f;
 }
 
+.btn-luxus {
+    background-color: #3f3f9d;
+}
+
 .white-text {
     color: white;
 }
@@ -131,6 +135,10 @@ p {
 
 .centered-content {
     text-align: center;
+}
+
+.justify-content {
+    text-align: justify;
 }
 
 .container-fluid {

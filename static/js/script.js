@@ -3,11 +3,12 @@
 let toolbox = document.getElementsByClassName("user-options-trigger");
 
 console.log(toolbox);
-
-toolbox[0].addEventListener("click", function() {
-    let tools = document.getElementsByClassName("user-options");
-    tools[0].classList.toggle("show");
-});
+if (toolbox.length !== 0) {
+    toolbox[0].addEventListener("click", function () {
+        let tools = document.getElementsByClassName("user-options");
+        tools[0].classList.toggle("show");
+    });
+}
 
 /* Review showslide */
 
