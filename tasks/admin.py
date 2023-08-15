@@ -12,7 +12,6 @@ class TaskAdmin(admin.ModelAdmin):
         "owner",
         "name",
         "done",
-        "repeat",
     )
     list_display_links = ("name", )
     list_editable = ("done", )

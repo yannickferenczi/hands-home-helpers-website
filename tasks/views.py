@@ -53,7 +53,7 @@ class TaskCreateView(SuccessMessageMixin, LoginRequiredMixin, CreateView):
 
     model = Task
     template_name = "tasks/create_task.html"
-    fields = ["name", "repeat", "category", ]
+    fields = ["name", "category", ]
     success_message = "Your task has been successfully added!"
 
     def form_valid(self, form):
@@ -70,7 +70,7 @@ class TaskUpdateView(SuccessMessageMixin, LoginRequiredMixin, UpdateView):
 
     model = Task
     template_name = "tasks/update_task.html"
-    fields = ["name", "repeat", "category", ]
+    fields = ["name", "category", ]
     success_message = "Your task has been successfully updated!"
 
 
