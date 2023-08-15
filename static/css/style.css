@@ -22,6 +22,10 @@
     background-color: #9d3f3f;
 }
 
+.btn-luxus {
+    background-color: #3f3f9d;
+}
+
 .white-text {
     color: white;
 }
@@ -133,6 +137,10 @@ p {
     text-align: center;
 }
 
+.justify-content {
+    text-align: justify;
+}
+
 .container-fluid {
     padding: 0;
 }
@@ -194,16 +202,18 @@ ul {
     overflow: hidden;
     right: 5vw;
     bottom: 30px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .user-options {
-    padding: 15px;
+    padding: 15px 15px 90px;
+    display: none;
     position: fixed;
     overflow: hidden;
     right: 5vw;
-    bottom: 100px;
+    bottom: 25px;
     z-index: 2;
+    transition: height 1s;
 }
 
 .fixed-btn {
@@ -232,6 +242,10 @@ ul {
 
 .tool-links:hover i {
     font-size: 25px;
+}
+
+.show {
+    display: block;
 }
 
 .main-content {

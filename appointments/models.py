@@ -7,6 +7,7 @@ from datetime import date, timedelta, datetime, time
 from math import floor
 
 from tasks.models import Task
+from .utils import get_day_link
 
 
 class Appointment(models.Model):
@@ -174,7 +175,7 @@ class CustomHTMLCalendar(HTMLCalendar):
                     cssclass += ' high-availability'
 
             return f'<td class="{cssclass}">'\
-                f'{self._get_day_link(self._year, self._month, day)}</td>'
+                f'{get_day_link(self._year, self._month, day)}</td>'
 
     def formatmonth(
             self,
@@ -185,7 +186,3 @@ class CustomHTMLCalendar(HTMLCalendar):
         self._month = themonth
         self.cssclass_month += ' dashboard-item'
         return super().formatmonth(theyear, themonth, withyear)
-
-    def _get_day_link(self, year, month, day_number):
-        return f'<a href="/appointments/dailycalendar/{year}/'\
-            f'{month}/{day_number}/">{day_number}</a>'

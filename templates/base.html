@@ -34,10 +34,11 @@
 </head>
 
 <body>
+    {% if request.user.is_authenticated %}
     <div class="user-options-trigger">
         <div class="fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
             title="Open the toolbox">
-            <button class="fixed-btn-trigger" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+            <button class="fixed-btn-trigger tool-links" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
                 aria-expanded="false" aria-controls="admin-panel add-task add-appointment add-review"><i
                     class="fa-solid fa-toolbox d-inline-block mt-1"></i></button>
         </div>
@@ -51,8 +52,6 @@
             </a>
         </div>
         {% endif %}
-    
-        {% if request.user.is_authenticated %}
         <div id="add-task" class="collapse multi-collapse fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
             title="Add a task">
             <a class="tool-links" href="{% url 'add_task' %}">
@@ -67,10 +66,10 @@
         </div>
         <div id="add-review" class="collapse multi-collapse fixed-btn d-flex justify-content-center" data-bs-toggle="tooltip" data-bs-placement="left"
             title="Give us feedback">
-            <a href="{% url 'add_review' %}">
+            <a class="tool-links" href="{% url 'add_review' %}">
                 <i class="fa-solid fa-message d-inline-block mt-1"></i></a>
         </div>
-        {% endif %}
+    {% endif %}
     </div>
     <header class="main-header position-fixed w-100">
         <nav class="navbar navbar-expand-md py-0">

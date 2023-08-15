@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block title %}Error{% endblock title %}
+
 {% block content %}
 
 <h3>Error 400 - Bad Request</h3>
 
-<p>For sacurity reasons, your request could not be treated!</p>
+<p class="centered-content">For security reasons, your request could not be treated!</p>
 
 <div class="centered-content">
-    <div class="btn-luxus d-inline-block">
-        <a class="form-btn btn btn-success" href="{% url 'home' %}">Back home <i class="fa-solid fa-house-flag"></i></a>
-    </div>
+    <a class="form-btn btn btn-luxus" href="{% url 'home' %}">Back home <i class="fa-solid fa-house-flag"></i></a>
 </div>
 
 {% endblock content %}
