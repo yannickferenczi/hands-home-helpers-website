@@ -24,6 +24,16 @@
 
 .btn-luxus {
     background-color: #3f3f9d;
+    color: white;
+}
+
+.btn-luxus a,
+.btn-luxus i {
+    color: white;
+}
+
+.btn-luxus:hover {
+    background-color: #303078;
 }
 
 .white-text {

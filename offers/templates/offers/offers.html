@@ -22,8 +22,8 @@
                         <p class="centered-content m-0 p-2">Equipment included: {% if offer.equipment_included %}<span class="green-success"><i class="fa-regular fa-thumbs-up"></i></span>{% else %}<span class="red-ant"><i class="fa-solid fa-ban"></i></span>{% endif %}</p>
                         <p class="centered-content m-0 p-2">Cleaning product included: {% if offer.cleaning_product_included %}<span class="green-success"><i class="fa-regular fa-thumbs-up"></i></span>{% else %}<span class="red-ant"><i class="fa-solid fa-ban"></i></span>{% endif %}</p>
                         <p class="centered-content m-0 p-2">Deferrable hours: {% if offer.deferrable_hours %}<span class="green-success"><i class="fa-regular fa-thumbs-up"></i></span>{% else %}<span class="red-ant"><i class="fa-solid fa-ban"></i></span>{% endif %}</p>
-                        <p class="centered-content m-0 p-2">Minimum duration: {{ offer.minimum_duration }} hour</p>
-                        <p class="centered-content m-0 p-2">Free cancelation period: {{ offer.minimum_time_cancelation }} hours before appointment</p>
+                        <p class="centered-content m-0 p-2">Minimum appointment duration: {{ offer.minimum_duration }} hour</p>
+                        <p class="centered-content m-0 p-2">Free appointment cancelation period: {{ offer.minimum_time_cancelation }} hours before starting time</p>
                     </div>
                 </div>
             </div>
