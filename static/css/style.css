@@ -32,8 +32,16 @@
     color: white;
 }
 
+.btn-luxus i {
+    padding-left: 5px;
+}
+
 .btn-luxus:hover {
     background-color: #303078;
+}
+
+.btn-luxus a:hover {
+    color: white;
 }
 
 .white-text {
