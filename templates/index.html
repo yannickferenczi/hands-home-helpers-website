@@ -19,6 +19,17 @@
 </section>
 
 <section class="container-fluid our-skills">
+    <div class="row bg-danger white-text p-2">
+        <div class="col-12 col-md-4 centered-content p-1"><i class="fa-solid fa-check"></i> More free time</div>
+        <div class="col-12 col-md-4 centered-content p-1"><i class="fa-solid fa-check"></i> All-in-one solution</div>
+        <div class="col-12 col-md-4 centered-content p-1"><i class="fa-solid fa-check"></i> Less stress</div>
+    </div>
+    <div class="row">
+        <div class="col p-3">
+            <p class="uppercase-content justify-content mx-5 py-2">We are everything you need to keep your home a nice place to live... without
+                spending your free time to keep it clean and tidy.</p>
+        </div>
+    </div>
     <div class="row">
         <div class="col">
             <h4>What are we good at?</h4>
@@ -148,10 +159,46 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col">
+            <h4>4 EASY steps to enjoy our services!</h4>
+            <div class="centered-content">
+                <div class="row">
+                    <div class="col-12 col-md-3 px-5 px-md-3">
+                        <div class="onboarding-steps">
+                            <i class="fa-solid fa-1"></i>
+                            <p>Create an account on our website. <a class="link-style" href="{% url 'account_signup' %}">Register now!</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 px-5 px-md-3">
+                        <div class="onboarding-steps">
+                            <i class="fa-solid fa-2"></i>
+                            <p>Choose the subscription that covers your needs. <a class="link-style" href="{% url 'offers' %}">See our
+                                    offers!</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 px-5 px-md-3">
+                        <div class="onboarding-steps">
+                            <i class="fa-solid fa-3"></i>
+                            <p>Use your amazing personal dashboard to let us know what to do and when to do it.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 px-5 px-md-3">
+                        <div class="onboarding-steps">
+                            <i class="fa-solid fa-4"></i>
+                            <p>Finally enjoy being home with your friends and family.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 {% if reviews %}
-<section class="container-fluid mt-5">
+<section class="container-fluid">
     <div class="row">
         <div class="col">
             <h4>Why our customers love us?</h4>
