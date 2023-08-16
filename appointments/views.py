@@ -11,6 +11,7 @@ from django.contrib import messages
 from django.views import View
 from datetime import datetime, date, time, timedelta
 
+from config.base_settings import OPENING_HOUR, CLOSING_HOUR
 from .models import CustomHTMLCalendar, Appointment
 from .forms import BookingForm
 
@@ -19,6 +20,7 @@ class CustomHTMLCalendarView(LoginRequiredMixin, View):
     """
     This class render a Monthly HTMLcalendar
     """
+
     def get(self, request, month, *args, **kwargs):
         current_year = datetime.now().year
         cal = CustomHTMLCalendar().formatmonth(current_year, month)
@@ -52,7 +54,7 @@ def booking(request, year, month, day):
 
     # check for every half-hour if it is already booked or not
     daily_schedule = []
-    for i in range(7, 19):
+    for i in range(OPENING_HOUR, CLOSING_HOUR):
         hourly_schedule = [False, False]
         datetime_to_check_1 = datetime.combine(
             selected_day,
