@@ -81,6 +81,7 @@ def booking(request, year, month, day):
         form = BookingForm(
             query,
             request=request,
+            update=False,
         )
         if form.is_valid():
             new_appointment = form.save(commit=False)
@@ -97,7 +98,7 @@ def booking(request, year, month, day):
             )
             return HttpResponseRedirect(reverse('dashboard'))
     else:
-        form = BookingForm(request=request)
+        form = BookingForm(request=request, update=False, )
     return render(
         request,
         "appointments/dailycalendar.html",
@@ -143,6 +144,7 @@ class AppointmentUpdateView(
         """Passes the request object to the form class."""
         kwargs = super(AppointmentUpdateView, self).get_form_kwargs()
         kwargs['request'] = self.request
+        kwargs['update'] = True
         return kwargs
 
 
