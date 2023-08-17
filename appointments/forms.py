@@ -1,4 +1,5 @@
 from django import forms
+from itertools import chain
 
 from .models import Appointment
 from tasks.models import Task
@@ -19,10 +20,24 @@ class BookingForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         self.request = kwargs.pop('request')
+        self.update = kwargs.pop('update')
         super(BookingForm, self).__init__(*args, **kwargs)
-        self.fields["appointment_tasks"].queryset = Task.objects.filter(
-            owner=self.request.user
-        ).filter(done=False).filter(due_date=None)
+        if self.update:
+            self.fields["appointment_tasks"].queryset = (
+                Task.objects.filter(
+                    owner=self.request.user
+                ).filter(
+                    done=False
+                ).filter(
+                    due_date=None
+                )) | self.instance.appointment_tasks.all()
+        else:
+            self.fields["appointment_tasks"].queryset = (
+                Task.objects.filter(
+                    owner=self.request.user
+                ).filter(
+                    done=False
+                ).filter(due_date=None))
         field = self.fields["appointment_day"]
         field.widget = field.hidden_widget()
     appointment_tasks = forms.ModelMultipleChoiceField(

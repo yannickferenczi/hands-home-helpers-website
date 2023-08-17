@@ -81,18 +81,16 @@ def booking(request, year, month, day):
         form = BookingForm(
             query,
             request=request,
+            update=False,
         )
         if form.is_valid():
             new_appointment = form.save(commit=False)
             new_appointment.appointment_owner = request.user
             new_appointment.save()
             form.save_m2m()
-            appointment_date = new_appointment.appointment_day
-            list_of_tasks = new_appointment.appointment_tasks.all()
-            for task in list_of_tasks:
-                task.due_date = appointment_date
+            for task in new_appointment.appointment_tasks.all():
+                task.due_date = new_appointment.appointment_day
                 task.save()
-            a = "stop"
             messages.add_message(
                 request,
                 messages.SUCCESS,
@@ -100,7 +98,7 @@ def booking(request, year, month, day):
             )
             return HttpResponseRedirect(reverse('dashboard'))
     else:
-        form = BookingForm(request=request)
+        form = BookingForm(request=request, update=False, )
     return render(
         request,
         "appointments/dailycalendar.html",
@@ -146,6 +144,7 @@ class AppointmentUpdateView(
         """Passes the request object to the form class."""
         kwargs = super(AppointmentUpdateView, self).get_form_kwargs()
         kwargs['request'] = self.request
+        kwargs['update'] = True
         return kwargs
 
 
