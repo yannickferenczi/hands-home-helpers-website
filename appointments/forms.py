@@ -1,5 +1,4 @@
 from django import forms
-from itertools import chain
 
 from .models import Appointment
 from tasks.models import Task
