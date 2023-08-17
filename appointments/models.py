@@ -53,10 +53,7 @@ class Appointment(models.Model):
         choices=POSSIBLE_TIME,
         verbose_name="Ending time"
     )
-    appointment_tasks = models.ManyToManyField(
-        Task,
-        related_name="associated_tasks",
-    )
+    appointment_tasks = models.ManyToManyField(Task)
 
     def __str__(self):
         return f"{self.appointment_day}"

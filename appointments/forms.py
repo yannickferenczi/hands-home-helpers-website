@@ -22,7 +22,7 @@ class BookingForm(forms.ModelForm):
         super(BookingForm, self).__init__(*args, **kwargs)
         self.fields["appointment_tasks"].queryset = Task.objects.filter(
             owner=self.request.user
-        ).filter(done=False)
+        ).filter(done=False).filter(due_date=None)
         field = self.fields["appointment_day"]
         field.widget = field.hidden_widget()
     appointment_tasks = forms.ModelMultipleChoiceField(

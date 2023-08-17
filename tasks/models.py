@@ -53,6 +53,10 @@ class Task(models.Model):
         null=True,
     )
     comment = models.CharField(max_length=250, blank=True, null=True)
+    due_date = models.DateField(
+        null=True,
+        blank=True,
+    )
 
     class Meta:
         ordering = ["-created_on"]
