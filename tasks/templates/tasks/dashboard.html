@@ -77,7 +77,7 @@
                         <p class="m-2">Description</p>
                     </div>
                     <div class="col-2">
-                        <p class="centered-content my-2">Date</p>
+                        <p class="centered-content my-2">Due date</p>
                     </div>
                     <div class="col-3">
                         <p class="centered-content my-2">Employee's name</p>
@@ -93,7 +93,7 @@
                         <p class="grey-text task-title m-2">{{ task.name }}</p>
                     </div>
                     <div class="col-6 col-md-2">
-                        <p class="centered-content my-2">{{ task.created_on|date:"Y/m/d" }}</p>
+                        <p class="centered-content my-2">{{ task.due_date|date:"Y/m/d" }}</p>
                     </div>
                     <div class="col-6 col-md-3">
                         <p class="centered-content my-2">{{ task.employee.full_name }}</p>
