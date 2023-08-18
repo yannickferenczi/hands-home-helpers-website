@@ -12,5 +12,5 @@ class ContactAdmin(admin.ModelAdmin):
         "subject",
     )
     list_display_links = ["email", ]
-    list_filter = ["answered", "subject",]
+    list_filter = ["answered", "subject", ]
     list_editable = ["answered", ]
