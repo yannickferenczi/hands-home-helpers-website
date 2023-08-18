@@ -18,10 +18,9 @@ class AppointmentAdmin(admin.ModelAdmin):
         "appointment_start_time",
         "appointment_end_time",
     )
-    list_display_links = ("appointment_owner", )
-    list_filter = ("appointment_day", )
-    ordering = ["appointment_day", "appointment_start_time"]
-    readonly_fields = ["appointment_owner", ]
+    list_display_links = ("appointment_day", )
+    list_filter = ("appointment_day", "appointment_owner", )
+    ordering = ["appointment_day", "appointment_start_time", ]
 
     def formfield_for_manytomany(self, db_field, request, **kwargs):
         if db_field.name == "appointment_tasks":
