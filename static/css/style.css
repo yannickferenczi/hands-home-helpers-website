@@ -391,6 +391,9 @@ ul {
 /* ------------------------------------------- */
 /* Styling the reviews section */
 /* ------------------------------------------- */
+/* THIS FULL SECTION HAS BEEN IMPORTED FROM W3SCHOOL AND */
+/* ONLY A LITTLE BIT MODIFIED TO ADAPT IT TO THIS PROJECT */
+/* ------------------------------------------- */
 
 .checked {
     color: orange;
@@ -628,9 +631,11 @@ i {
     border-top: 1px dotted black;
 }
 
-/* ------------------------------------------- */
-/* RESPONSIVENESS */
-/* ------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* ----------------------- RESPONSIVENESS ------------------------ */
+/* --------------------------------------------------------------- */
+/* --------------- FOR ------ BIGGER ------ SCREENS -------------- */
+/* --------------------------------------------------------------- */
 
 @media only screen and (min-width: 768px) {
     /* ------------------------------------------- */
@@ -666,6 +671,17 @@ i {
         background-color: white;
     }
 
+    .footer-rule {
+        border-left: 2px solid white;
+        width: 0;
+        height: 150px;
+        margin: 15px auto;
+    }
+
+    /* ------------------------------------------- */
+    /* Styling index.html */
+    /* ------------------------------------------- */
+
     .special-offer {
         max-width: 50%;
         padding: 15px 30px;
@@ -686,17 +702,22 @@ i {
         font-size: 23px;
     }
 
-    .footer-rule {
-        border-left: 2px solid white;
-        width: 0;
-        height: 150px;
-        margin: 15px auto;
+    .mySlides {
+        width: 70%;
     }
+
+    /* ------------------------------------------- */
+    /* Styling forms */
+    /* ------------------------------------------- */
 
     .custom-form {
         width: 75%;
         margin: 15px auto;
     }
+
+    /* ------------------------------------------- */
+    /* Styling calendar.html */
+    /* ------------------------------------------- */
 
     th,
     td {
@@ -712,9 +733,9 @@ i {
         border-left: 1px dotted black;
     }
 
-    .mySlides {
-        width: 70%;
-    }
+    /* ------------------------------------------- */
+    /* Styling dashboard.html */
+    /* ------------------------------------------- */
 
     .dashboard-schedule {
         text-align: left;
