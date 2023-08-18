@@ -508,4 +508,4 @@ The coverage library has been used to get a visual report of automated testing.
 
   For some reasons that could not be identified, EmailJS does not send email when using firefox or safari browsers. As the issue has not been identified, the bug could not be resolved.
 
-Return to the [README.md](README.md#deployment) file
+Return to the [README.md](README.md) file
