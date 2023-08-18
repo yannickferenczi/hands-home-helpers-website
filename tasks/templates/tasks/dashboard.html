@@ -23,14 +23,14 @@
                         <p class="task-title my-1">{{ task.name }}</p>
                     </div>
                     <div class="col-5 centered-content">
-                        <a class="form-btn btn btn-success my-1 py-1" href="{% url 'task_detail' task.id %}">Details</a>
+                        <a class="form-btn btn btn-success my-1 py-1" aria-label="See task's details" href="{% url 'task_detail' task.id %}">Details</a>
                     </div>
                     <div class="col-9 my-1">
                         <p>{{ task.category }}</p>
                     </div>
                     <div class="col-3 my-1 centered-content">
                         <div class="btn-delete centered-content">
-                            <a href="{% url 'delete_task' task.pk %}">
+                            <a aria-label="Delete the task" href="{% url 'delete_task' task.pk %}">
                                 <p class="centered-content p-1"><i class="fa-regular fa-trash-can white-text"></i></p>
                             </a>
                         </div>
@@ -57,7 +57,7 @@
                         <p class="my-1">from {{ appointment.appointment_start_time }} to {{ appointment.appointment_end_time }}</p>
                     </div>
                     <div class="col-12 col-md-4 centered-content">
-                        <a class="form-btn btn btn-secondary m-0" href="{% url 'appointment_detail' appointment.pk %}">Details</a>
+                        <a class="form-btn btn btn-secondary m-0" aria-label="See appointment's details" href="{% url 'appointment_detail' appointment.pk %}">Details</a>
                     </div>
                 </div>
                 <hr>
