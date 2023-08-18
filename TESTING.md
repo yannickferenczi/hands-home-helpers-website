@@ -457,6 +457,39 @@ Every python file has been ran through the [CI Python Linter](https://pep8ci.her
 | Only content related to the user is displayed | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
 </details>
 
+## Automated testing
+
+![Total coverage of the project](documentation/total_coverage.png)
+
+Some automated tests have been implemented using unittest.
+
+The coverage library has been used to get a visual report of automated testing.
+
+### Appointments app
+
+![Appointments app coverage](documentation/appointments_coverage_highlighted.png)
+
+### Config app
+
+![Config app coverage](documentation/config_coverage_highlighted.png)
+
+### Contact app
+
+![Contact app coverage](documentation/contact_coverage_highlighted.png)
+
+### Offers app
+
+![Appointments app coverage](documentation/offers_coverage_highlighted.png)
+
+### Reviews app
+
+![Reviews app coverage](documentation/reviews_coverage_highlighted.png)
+
+### Tasks app
+
+![Tasks app coverage](documentation/tasks_coverage_highlighted.png)
+
+
 ## Bugs
 
 - Deployment not working - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
