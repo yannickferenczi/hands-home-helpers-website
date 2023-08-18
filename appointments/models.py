@@ -97,7 +97,7 @@ class Appointment(models.Model):
 
     @property
     def has_minimum_time(self):
-        return (self.appointment_duration >= APPOINTMENT_MINIMUM_DURATION)
+        return self.appointment_duration >= APPOINTMENT_MINIMUM_DURATION
 
     # ---------------------------------------------
     # THE FOLLOWING FUNCTION HAS BEEN IMPORTED AND ONLY A LITTLE BIT MODIFIED
@@ -127,7 +127,7 @@ class Appointment(models.Model):
                         + str(appointment.appointment_end_time)
                     )
 
-        if not self.has_minimum_time():
+        if not self.has_minimum_time:
             raise ValidationError('You cannot schedule less than 1 hour.')
 
 

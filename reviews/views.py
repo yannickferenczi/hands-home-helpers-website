@@ -20,7 +20,7 @@ class ReviewCreateView(SuccessMessageMixin, LoginRequiredMixin, CreateView):
     model = Review
     template_name = "reviews/create_review.html"
     fields = ["title", "satisfaction", "description", ]
-    success_message = "Your review has been successfully added!"
+    success_message = "Your review has been successfully submitted!"
 
     def form_valid(self, form):
         form.instance.user_id = self.request.user.id
