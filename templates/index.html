@@ -12,7 +12,7 @@
             <h3 class="m-0">Let us demonstrate our competence for FREE, your first cleaning hours are on the house!</h3>
         </div>
         <div class="cta-btn">
-            <a class="form-btn btn btn-success" href="{% url 'account_signup' %}">Register Now</a>
+            <a class="form-btn btn btn-success" aria-label="Go to the registration page" href="{% url 'account_signup' %}">Register Now</a>
         </div>
     </div>
     {% endif %}
@@ -43,11 +43,11 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="{% static 'images/landing_page/gardening_1.jpg' %}" class="d-block w-100"
-                                alt="...">
+                                alt="¨Private garden very well maintened">
                         </div>
                         <div class="carousel-item">
                             <img src="{% static 'images/landing_page/gardening_2.jpg' %}" class="d-block w-100"
-                                alt="...">
+                                alt="Private peaceful garden very well maintened">
                         </div>
                     </div>
                 </div>
@@ -60,15 +60,15 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="{% static 'images/landing_page/cleaning_1.jpg' %}" class="d-block w-100"
-                                alt="...">
+                                alt="Someone cleaning a kitchen">
                         </div>
                         <div class="carousel-item">
                             <img src="{% static 'images/landing_page/cleaning_2.jpg' %}" class="d-block w-100"
-                                alt="...">
+                                alt="Someone cleaning an owen">
                         </div>
                         <div class="carousel-item">
                             <img src="{% static 'images/landing_page/cleaning_3.jpg' %}" class="d-block w-100"
-                                alt="...">
+                                alt="Someone cleaning a toilet">
                         </div>
                     </div>
                 </div>
@@ -81,15 +81,15 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="{% static 'images/landing_page/small_installation_and_repair_1.jpg' %}"
-                                class="d-block w-100" alt="...">
+                                class="d-block w-100" alt="Someone painting a wall">
                         </div>
                         <div class="carousel-item">
                             <img src="{% static 'images/landing_page/small_installation_and_repair_2.jpg' %}"
-                                class="d-block w-100" alt="...">
+                                class="d-block w-100" alt="Someone painting a bathroom wall">
                         </div>
                         <div class="carousel-item">
                             <img src="{% static 'images/landing_page/small_installation_and_repair_3.jpg' %}"
-                                class="d-block w-100" alt="...">
+                                class="d-block w-100" alt="Someone fixing pipes under a sink">
                         </div>
                     </div>
                 </div>
@@ -103,11 +103,11 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="{% static 'images/landing_page/swimming_pool_1.jpg' %}" class="d-block w-100"
-                                alt="...">
+                                alt="A swimming pool">
                         </div>
                         <div class="carousel-item">
                             <img src="{% static 'images/landing_page/swimming_pool_2.jpg' %}" class="d-block w-100"
-                                alt="...">
+                                alt="A swimming pool">
                         </div>
                     </div>
                 </div>
@@ -121,15 +121,15 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="{% static 'images/landing_page/home_care_1.jpg' %}" class="d-block w-100"
-                                alt="...">
+                                alt="Someone folding towels">
                         </div>
                         <div class="carousel-item">
                             <img src="{% static 'images/landing_page/home_care_2.jpg' %}" class="d-block w-100"
-                                alt="...">
+                                alt="Someone doing some food shopping">
                         </div>
                         <div class="carousel-item">
                             <img src="{% static 'images/landing_page/home_care_3.jpg' %}" class="d-block w-100"
-                                alt="...">
+                                alt="Someone taking notes">
                         </div>
                     </div>
                 </div>
@@ -143,15 +143,15 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="{% static 'images/landing_page/garden_patch_1.jpg' %}" class="d-block w-100"
-                                alt="...">
+                                alt="Tomatoes">
                         </div>
                         <div class="carousel-item">
                             <img src="{% static 'images/landing_page/garden_patch_2.jpg' %}" class="d-block w-100"
-                                alt="...">
+                                alt="Strawberries">
                         </div>
                         <div class="carousel-item">
                             <img src="{% static 'images/landing_page/garden_patch_3.jpg' %}" class="d-block w-100"
-                                alt="...">
+                                alt="Lettuce">
                         </div>
                     </div>
                 </div>
@@ -166,14 +166,14 @@
                     <div class="col-12 col-md-3 px-5 px-md-3">
                         <div class="onboarding-steps">
                             <i class="fa-solid fa-1"></i>
-                            <p>Create an account on our website. <a class="link-style" href="{% url 'account_signup' %}">Register now!</a>
+                            <p>Create an account on our website. <a class="link-style" aria-label="Go to the registration page" href="{% url 'account_signup' %}">Register now!</a>
                             </p>
                         </div>
                     </div>
                     <div class="col-12 col-md-3 px-5 px-md-3">
                         <div class="onboarding-steps">
                             <i class="fa-solid fa-2"></i>
-                            <p>Choose the subscription that covers your needs. <a class="link-style" href="{% url 'offers' %}">See our
+                            <p>Choose the subscription that covers your needs. <a class="link-style" aria-label="Go to our offers" href="{% url 'offers' %}">See our
                                     offers!</a>
                             </p>
                         </div>
@@ -207,7 +207,7 @@
     <div class="row justify-content-center slideshow-container">
         <!-- Full-width slides/quotes -->
         <div class="col-2 p-0 mx-auto centered-content">
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="prev" aria-label="Display the previous review" onclick="plusSlides(-1)">&#10094;</a>
         </div>
         <div class="col-8 centered-content mx-auto">
             {% for review in reviews %}
@@ -227,10 +227,10 @@
                 {% if review.user.id == request.user.id %}
                 <div class="centered-content">
                     <div class="d-inline-block">
-                        <a class="form-btn btn btn-success" href="{% url 'update_review' review.pk %}">Edit</a>
+                        <a class="form-btn btn btn-success" aria-label="Update the review" href="{% url 'update_review' review.pk %}">Edit</a>
                     </div>
                     <div class="d-inline-block">
-                        <a class="form-btn btn btn-danger" href="{% url 'delete_review' review.pk %}">Delete</a>
+                        <a class="form-btn btn btn-danger" aria-label="Delete the review" href="{% url 'delete_review' review.pk %}">Delete</a>
                     </div>
                 </div>
                 {% endif %}
@@ -238,7 +238,7 @@
             {% endfor %}
         </div>
         <div class="col-2 p-0 mx-auto centered-content">
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="next" aria-label="Display the next review" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </div>
 </section>

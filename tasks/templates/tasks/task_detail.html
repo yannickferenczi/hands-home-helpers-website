@@ -28,16 +28,13 @@
                 <div class="col-12 col-md-6">
                     <p><span class="task-title">Archived:</span> {% if task.done %}Yes{% else %}No{% endif %}</p>
                 </div>
-                <!-- <div class="col-12 col-md-3">
-                    <p><span class="task-title">Repeat:</span> {% if task.repeat %}Yes{% else %}No{% endif %}</p>
-                </div> -->
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col centered-content">
-            <a class="form-btn btn btn-secondary" href="{% url 'dashboard' %}">Back</a>
-            <a class="form-btn btn btn-success" href="{% url 'update_task' task.pk %}">Modify</a>
+            <a class="form-btn btn btn-secondary" aria-label="Go back to the personal dashboard" href="{% url 'dashboard' %}">Back</a>
+            <a class="form-btn btn btn-success" aria-label="Edit the task" href="{% url 'update_task' task.pk %}">Modify</a>
         </div>
     </div>
 </div>

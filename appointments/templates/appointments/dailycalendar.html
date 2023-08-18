@@ -8,19 +8,19 @@
 <div class="container">
     <div class="row my-3">
         <div class="col-3 col-md-4">
-            <a href="{% url 'dailycalendar' day_before.year day_before.month day_before.day %}">
+            <a aria-label="Access a calendar of the previous day" href="{% url 'dailycalendar' day_before.year day_before.month day_before.day %}">
                 <i class="fa-solid fa-backward"></i>
                 <span class="d-none d-md-inline">{{ day_before|date:"l jS" }}</span>
             </a>
         </div>
         <div class="col-6 col-md-4 centered-content">
-            <a href="{% url 'calendar' selected_day|date:'n' %}">
+            <a aria-label="Access a calendar of the current month" href="{% url 'calendar' selected_day|date:'n' %}">
                 <h3 class="d-inline">{{ selected_day|date:'F Y' }}</h3>
                 <i class="fa-solid fa-arrow-rotate-left"></i>
             </a>
         </div>
         <div class="col-3 col-md-4 right-content">
-            <a href="{% url 'dailycalendar' day_after.year day_after.month day_after.day %}">
+            <a aria-label="Access a calendar of the next day" href="{% url 'dailycalendar' day_after.year day_after.month day_after.day %}">
                 <span class="d-none d-md-inline">{{ day_after|date:"l jS" }}</span>
                 <i class="fa-solid fa-forward"></i>
             </a>
@@ -103,7 +103,7 @@
                 </div>
                 <input class="form-btn btn btn-success" id="submit-time" type="submit" name="submit-time"
                     value="Create">
-                <a class="form-btn btn btn-secondary" href="{% url 'dashboard' %}">Cancel</a>
+                <a class="form-btn btn btn-secondary" aria-label="Go back to the personal dashboard" href="{% url 'dashboard' %}">Cancel</a>
             </form>
         </div>
     </div>

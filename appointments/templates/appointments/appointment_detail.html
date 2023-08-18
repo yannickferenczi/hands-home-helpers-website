@@ -22,10 +22,10 @@
 </div>
 <div class="centered-content">
     <div class="d-inline-block">
-        <a class="form-btn btn btn-success" href="{% url 'update_appointment' appointment.pk %}">Modify</a>
+        <a class="form-btn btn btn-success" aria-label="Edit the appointment" href="{% url 'update_appointment' appointment.pk %}">Modify</a>
     </div>
     <div class="d-inline-block">
-        <a class="form-btn btn btn-danger" href="{% url 'delete_appointment' appointment.pk %}">Delete</a>
+        <a class="form-btn btn btn-danger" aria-label="Delete the appointment" href="{% url 'delete_appointment' appointment.pk %}">Delete</a>
     </div>
 </div>
 
