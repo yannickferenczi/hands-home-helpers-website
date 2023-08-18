@@ -14,7 +14,7 @@
 
 ![w3c markup validator results for the landing page](documentation/w3c_markup_validator_results_landing-page.png)
 
-- w3c markup validator results for the about page:
+- w3c markup validator results for the About page:
 
 ![w3c markup validator results for the about page](documentation/w3c_markup_validator_results_about-page.png)
 
@@ -34,7 +34,7 @@
 
 ![w3c markup validator results for the calendar](documentation/w3c_markup_validator_results_calendar.png)
 
-- w3c markup validator results for the dailycalendar:
+- w3c markup validator results for the daily calendar:
 
 ![w3c markup validator results for the dailycalendar](documentation/w3c_markup_validator_results_daily_calendar.png)
 
@@ -46,7 +46,7 @@
   
 ### Python
 
-Every python file has been ran through the [CI Python Linter](https://pep8ci.herokuapp.com/) and for all of them the result was:
+Every Python file has been ran through the [CI Python Linter](https://pep8ci.herokuapp.com/) and for all of them the result was:
 > All clear, no errors found
 
 ## Lighthouse
@@ -76,7 +76,7 @@ Every python file has been ran through the [CI Python Linter](https://pep8ci.her
 ---
 
 <details>
-<summary style="background-color: #005500;">User Story 10 : As a Site User, I can log into my personal account so that I can access personal settings and data.</summary>
+<summary style="background-color: #005500;">User Story 10: As a Site User, I can log into my personal account so that I can access personal settings and data.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -93,7 +93,7 @@ Every python file has been ran through the [CI Python Linter](https://pep8ci.her
 ---
 
 <details>
-<summary style="background-color: #005500;">User Story 11 : As a Logged in Site User, I can log out so that my personal data are safe.</summary>
+<summary style="background-color: #005500;">User Story 11: As a Logged in Site User, I can log out so that my personal data are safe.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -108,7 +108,7 @@ Every python file has been ran through the [CI Python Linter](https://pep8ci.her
 ---
 
 <details>
-<summary style="background-color: #005500;">User Story 12 : As a Registered Site User, I can create a new task so that I can add it to my list of tasks.</summary>
+<summary style="background-color: #005500;">User Story 12: As a Registered Site User, I can create a new task so that I can add it to my list of tasks.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -128,7 +128,7 @@ Every python file has been ran through the [CI Python Linter](https://pep8ci.her
 ---
 
 <details>
-<summary style="background-color: #005500;">User Story 13 : As a Registered Site User, I can access my tasks so that I can list them.</summary>
+<summary style="background-color: #005500;">User Story 13: As a Registered Site User, I can access my tasks so that I can list them.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -142,7 +142,7 @@ Every python file has been ran through the [CI Python Linter](https://pep8ci.her
 ---
 
 <details>
-<summary style="background-color: #005500;">User Story 14 : As a Registered Site User, I can modify my personal tasks so that I can update their information.</summary>
+<summary style="background-color: #005500;">User Story 14: As a Registered Site User, I can modify my personal tasks so that I can update their information.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -164,7 +164,7 @@ Every python file has been ran through the [CI Python Linter](https://pep8ci.her
 ---
 
 <details>
-<summary style="background-color: #005500;">User Story 15 : As a Registered Site User, I can delete my personal tasks so that I can get rid of them.</summary>
+<summary style="background-color: #005500;">User Story 15: As a Registered Site User, I can delete my personal tasks so that I can get rid of them.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -181,7 +181,7 @@ Every python file has been ran through the [CI Python Linter](https://pep8ci.her
 ---
 
 <details>
-<summary style="background-color: #005500;">EPIC 4 : As a Site User, I can get notified of my actions so that I know if theY were successful or not.</summary>
+<summary style="background-color: #005500;">EPIC 4: As a Site User, I can get notified of my actions so that I know if theY were successful or not.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -199,7 +199,7 @@ Every python file has been ran through the [CI Python Linter](https://pep8ci.her
 ---
 
 <details>
-<summary style="background-color: #005500;">User Story 33 : As a Site User, I can land on a home page explaining the purpose of the website so that I know if it is answering my request.</summary>
+<summary style="background-color: #005500;">User Story 33: As a Site User, I can land on a home page explaining the purpose of the website so that I know if it is answering my request.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -218,7 +218,7 @@ Every python file has been ran through the [CI Python Linter](https://pep8ci.her
 ---
 
 <details>
-<summary style="background-color: #005500;">User Story 41 : As a Site User, I can open an about page so that I can find more information about the company.</summary>
+<summary style="background-color: #005500;">User Story 41: As a Site User, I can open an about page so that I can find more information about the company.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -237,7 +237,7 @@ Every python file has been ran through the [CI Python Linter](https://pep8ci.her
 ---
 
 <details>
-<summary style="background-color: #005500;">User Story 42 : As a Site User, I am redirected to a custom 404-page when using the wrong URLs so that I know I am still on the website and I have a way to go back to a working page.</summary>
+<summary style="background-color: #005500;">User Story 42: As a Site User, I am redirected to a custom 404-page when using the wrong URLs so that I know I am still on the website and I have a way to go back to a working page.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -255,7 +255,7 @@ Every python file has been ran through the [CI Python Linter](https://pep8ci.her
 ---
 
 <details>
-<summary style="background-color: #005500;">User Story 43 : As a Site User, I am redirected to a custom 500-page when the server cannot handle my request so that I know what is the issue.</summary>
+<summary style="background-color: #005500;">User Story 43: As a Site User, I am redirected to a custom 500-page when the server cannot handle my request so that I know what is the issue.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -273,7 +273,7 @@ Every python file has been ran through the [CI Python Linter](https://pep8ci.her
 ---
 
 <details>
-<summary style="background-color: #005500;">User Story 56 : As a Site Owner, I can redirect users to a custom 400-page when their request is suspicious so that the website is less exposed to security matter.</summary>
+<summary style="background-color: #005500;">User Story 56: As a Site Owner, I can redirect users to a custom 400-page when their request is suspicious so that the website is less exposed to security matters.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -291,7 +291,7 @@ Every python file has been ran through the [CI Python Linter](https://pep8ci.her
 ---
 
 <details>
-<summary style="background-color: #bb0000;">User Story 44 : As a Site User, I can use a contact form so that I can contact the company in a way that I am sure they will get my request.</summary>
+<summary style="background-color: #bb0000;">User Story 44: As a Site User, I can use a contact form so that I can contact the company in a way that I am sure will get my request.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -316,7 +316,7 @@ Every python file has been ran through the [CI Python Linter](https://pep8ci.her
 ---
 
 <details>
-<summary style="background-color: #005500;">EPIC 61 : As a Site User, I can handle my appointments directly online so that I am more flexible.</summary>
+<summary style="background-color: #005500;">EPIC 61: As a Site User, I can handle my appointments directly online so I am more flexible.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -416,7 +416,7 @@ Every python file has been ran through the [CI Python Linter](https://pep8ci.her
 ---
 
 <details>
-<summary style="background-color: #005500;">A footer with links to social medias and extra resources.</summary>
+<summary style="background-color: #005500;">A footer with links to social media and extra resources.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -494,18 +494,18 @@ The coverage library has been used to get a visual report of automated testing.
 
 - Deployment not working - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
 
-  Deployment did not work at first. I have created 3 setting files. One for development, one for production and one common to both. Therefore, I needed to modify the manage.py and the wsgi.py files. However, I only had modified the manage.py file so the deployment work fine but the application was not working. I fixed this issue by modifying the wsgi.py file.
+  The deployment did not work at first. I have created 3 setting files. One for development, one for production, and one common to both. Therefore, I needed to modify the manage.py and the wsgi.py files. However, I only had modified the manage.py file so the deployment work fine but the application was not working. I fixed this issue by modifying the wsgi.py file.
 
 - Hero image was not displayed - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
   
-  On the deployed version, the Hero image on the landing page would not show up. It was a background-image of a div element. So the file path to the image was used within the css file. I had the background-image property to the style attribute of the div within the html file using the static tag. This fixed the problem.
+  On the deployed version, the Hero image on the landing page would not show up. It was a background image of a div element. So the file path to the image was used within the CSS file. I had the background-image property to the style attribute of the div within the HTML file using the static tag. This fixed the problem.
 
 - Emailjs does not work - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
 
-  On the deployed version, the EmailJS API would not send email. I realised that I called my file and my function with the same name. I changed it to give them different names and the problem was solved.
+  On the deployed version, the EmailJS API would not send emails. I realized that I called my file and my function with the same name. I changed it to give them different names and the problem was solved.
 
-- Emailjs only works when using the chrome browser - ![bug status](https://img.shields.io/static/v1?label=fixed&message=No&color=bb0000&style=plastic)
+- EmailJS only works when using the Chrome browser - ![bug status](https://img.shields.io/static/v1?label=fixed&message=No&color=bb0000&style=plastic)
 
-  For some reasons that could not be identified, EmailJS does not send email when using firefox or safari browsers. As the issue has not been identified, the bug could not be resolved.
+  For some reasons that could not be identified, EmailJS does not send emails when using Firefox or Safari browsers. As the issue has not been identified, the bug could not be resolved.
 
 Return to the [README.md](README.md) file
