@@ -222,7 +222,7 @@
                     {% endfor %}
                 </div>
                 <p class="reviews-date">({{ review.created_on|date:"jS, F Y" }})</p>
-                <q>{{ review.description | truncatewords:50 }}</q>
+                <q>{{ review.description }}</q>
                 <p class="author">- {{ review.user.username }}</p>
                 {% if review.user.id == request.user.id %}
                 <div class="centered-content">
