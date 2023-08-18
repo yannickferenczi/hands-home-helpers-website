@@ -3,7 +3,8 @@
 # Hands Home Helpers
 
 ![deployment](https://img.shields.io/static/v1?label=deployed&message=Yes&color=success&style=plastic)
-![deployment](https://img.shields.io/static/v1?label=plateform&message=Heroku&color=634987&style=plastic)
+![deployment platform](https://img.shields.io/static/v1?label=plateform&message=Heroku&color=634987&style=plastic)
+![coverage](https://img.shields.io/static/v1?label=coverage&message=85%&color=success&style=plastic)
 
 This project aims to create a website for the Hands Home Helpers company, based in NRW, GERMANY, so they can have an online presence to promote their activity and reach new customers. The website also aims to provide a user-friendly interface to make contacts between the company and its customers easier.
 
