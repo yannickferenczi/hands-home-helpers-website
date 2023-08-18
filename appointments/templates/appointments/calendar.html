@@ -14,7 +14,7 @@
     <div class="row g-0 align-items-center">
         <div class="col-1 offset-4 offset-md-1 order-2 order-md-1 my-3">
             <div class="prev-month centered-content">
-                <a href="{% url 'calendar' current_month|add:'-1' %}"><i
+                <a aria-label="Access a calendar of the previous month" href="{% url 'calendar' current_month|add:'-1' %}"><i
                         class="fa-solid fa-circle-chevron-left"></i></a>
             </div>
         </div>
@@ -38,7 +38,7 @@
         </div>
         <div class="col-1 offset-2 offset-md-0 order-3 my-3">
             <div class="next-month centered-content">
-                <a href="{% url 'calendar' current_month|add:'1' %}"><i
+                <a aria-label="Access a calendar of the next month" href="{% url 'calendar' current_month|add:'1' %}"><i
                         class="fa-solid fa-circle-chevron-right"></i></a>
             </div>
         </div>
