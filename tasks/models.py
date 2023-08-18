@@ -43,7 +43,7 @@ class Task(models.Model):
     category = models.CharField(
         max_length=50,
         choices=CATEGORIES,
-        default="CLEANING",
+        default="Cleaning",
     )
     employee = models.ForeignKey(
         Employee,
