@@ -14,7 +14,7 @@
     </div>
     <div class="row">
         <div class="col-md-6 mt-3 offset-md-3">
-            <p class="centered-content">{% blocktrans %}Already have an account? Then please <a class="link-style" href="{{ login_url }}">sign
+            <p class="centered-content">{% blocktrans %}Already have an account? Then please <a class="link-style" aria-label="Go to the login page" href="{{ login_url }}">sign
                     in</a>.{%endblocktrans %}</p>
             <form class="signup centered-content py-4" id="signup_form" method="post" action="{% url 'account_signup' %}">
                 {% csrf_token %}
@@ -24,7 +24,7 @@
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
-                <button class="form-btn btn btn-success" type="submit">{% trans "Sign Up" %} &raquo;</button>
+                <button class="form-btn btn btn-success" aria-label="Submit the registration form" type="submit">{% trans "Sign Up" %} &raquo;</button>
             </form>
         </div>
     </div>
