@@ -336,7 +336,46 @@ The project development has been managed with an agile project manager on GitHub
 
 ### The workflow
 
-The workflow of the project has been broken down into small organized pieces to help realise the amount of work and help spread it over the given period.
+The workflow of the project has been broken down into small organized pieces to help realise the amount of work and help spread it over the given period. It organize a hierarchy as below:
+
+
+<details>
+    <summary>the full project (represented by the project manager)</summary>
+    <p>The project manager has been a roadbook, leading the developmet of this project to its success, handling quite well the stress of such a challenge.</p>
+</details>
+
+
+<details>
+    <summary>Milestones</summary>
+    <p>4 Milestones were developped for this project, leading the web application to a more and more powerful tool.
+    <ul>
+    <li>The first Milestone was a guideline toward the minimum viable product. When that was achieved, the project could already be submitted.</li>
+    <li>The second and the third Milestones were there to bring more features to the project and implement some automated testing to develop a more robust project.</li>
+    <li>Finally, the fourth Milestone is there to help submit a project where attention has been given to details.</li>
+    </ul>
+    </p>
+</details>
+
+<details>
+    <summary>EPICS</summary>
+    <p>Milestones have been broken into Epics. They correspond to important achievement for the project such as "implement an authentication system" or "implement a task management system". They were there to help concentrate on concrete things to work on while developping the project. It gave some clear direction to take, knowing that they serve the general purpose of the project.</p>
+</details>
+
+<details>
+    <summary>User Stories</summary>
+    <p>User stories were backlog product items that could be done on quite a short time. So they could be contained within a sprint and therefore allow every sprint to have its number of achievements. Some user stories together usually fulfill an EPIC.</p>
+</details>
+
+<details>
+    <summary>tasks</summary>
+    <p>Finally, tasks were defined within the user stories to remind the stakeholder what to develop. They were there to help define the user story, giving more precise things to work on.</p>
+</details>
+
+### Labels
+
+Labels have been created to quickly visualize the type of backlog product item and its priority. Below is a screenshot of the labels used for the project.
+
+![Labels of the project](documentation/labels.png)
 
 ### The views of the project manager
 
@@ -358,6 +397,12 @@ The project manager contains 4 views. The three first ones have been very useful
 
     The fourth view is just an overview on the three weeks of work which led to this project. It did not really bring help to the development of the project.
 
+### The story points
+
+Story points have been assigned to epics and user stories to be able to submit the project as much developped as possible and, of course, on time. It was clear that the final product would not be done on such a short time, especially because it was my first full stack project and I wanted to go down some unknown part of the Django framework (so far not explain within the code institute course). Nevertheless, I took the challenge to make a first version of this project which could already be used. Now because there was a lot of uncertain abilities of doing what I planned to, it made tricky the story point assignment.
+
+My priority was as expected to develop a minimum viable product (MVP) which corresponds to the expected project from the assessment criteria of code institute. This milestone has 182 story points which is 45% of the total amount represented with 400 story points.
+
 ### The sprints
 
 The project has been developped in 11 Sprints of 2 days.
@@ -377,7 +422,7 @@ Each sprint counts a certain amount of story points based on their Epics, User S
 | Sprint 10 | 80 |
 | Sprint 11 | N/A |
 
-To conclude, it was complicated to evaluate the amount of story points depending on how difficult or how long a task would be. This is the reason why the amount of points from one sprint to another one can be so different. It still pretty much look like the average could be between 30 and 40 points/sprint.
+To conclude, it was complicated to evaluate the amount of story points depending on how difficult or how long a task would be. This is the reason why the amount of points from one sprint to another one can be so different. Another reason is also that some backlog product items were already in development at the end of a sprint already fully accomplished and would count only for the following sprint. It still pretty much look like the average could be between 30 and 40 points/sprint.
 
 ---
 
