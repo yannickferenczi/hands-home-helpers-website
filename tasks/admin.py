@@ -9,14 +9,18 @@ class TaskAdmin(admin.ModelAdmin):
     This class displays instances of the Task model in the admin panel
     """
     list_display = (
+        "due_date",
+        "done",
         "owner",
         "name",
-        "done",
+        "employee",
+        "comment",
     )
     list_display_links = ("name", )
-    list_editable = ("done", )
-    list_filter = ("done", )
-    search_field = ("owner", "category", )
+    list_editable = ("done", "comment", "employee", )
+    list_filter = ("done", "due_date", "employee", "owner", )
+    search_fields = ["category", "name", ]
+    ordering = ["due_date", ]
 
 
 @admin.register(Employee)
