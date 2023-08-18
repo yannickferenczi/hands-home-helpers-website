@@ -12,6 +12,8 @@ if (toolbox.length !== 0) {
 
 /* Review showslide */
 
+/* THIS PART OF CODE HAS BEEN IMPORTED FROM W3SCHOOL */
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -36,12 +38,14 @@ function showSlides(n) {
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
-        slides[slideIndex - 1].style.display = "block";
-}
+    slides[slideIndex - 1].style.display = "block";
+    }
 }
 
 
 /* Messages disapearance */
+
+/* THIS PART OF CODE HAS BEEN FROM CODE INSTITUTE COURSE */
 
 setTimeout(function () {
     let messages = document.getElementById("msg");

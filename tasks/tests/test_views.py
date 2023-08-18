@@ -21,7 +21,7 @@ class TestViews(TestCase):
             name='task test',
             owner=self.user,
         )
-    
+
     def test_tasklist_get(self):
         self.client.login(username='test', password='test')
         response = self.client.get(self.list_url, follow=True)

@@ -27,7 +27,9 @@ class TaskList(LoginRequiredMixin, generic.ListView):
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
-        appointments = Appointment.objects.filter(appointment_owner=self.request.user).order_by("appointment_day")
+        appointments = Appointment.objects.filter(
+            appointment_owner=self.request.user
+        ).order_by("appointment_day")
         context["appointments"] = appointments
         return context
 
