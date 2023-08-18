@@ -387,6 +387,35 @@ This project is a full stack web application using a cloud-based database (Postg
 
 ![Booking system step 2](documentation/booking_system_step_2.png)
 
+### More features to implement
+
+The final goal of the Hands Home Helpers website is to give customers and employees a powerful tools to communicate the easiest possible way.
+
+Therefore, this web application should implement at least 2 different profiles: 1 customer profile and 1 employee profile, both inheriting from the User model.
+
+To stick to the deadline, this concept could not be implemented to its apogee. So profiles were not within the scope of this project.
+
+That said, I have listed below some features that should be implemented to have a completed and powerful project.
+
+- A customer profile based on the User model, including:
+    - the subscription of the customer
+    - the remaining working hours for the month
+    - the name of their dedicated employee
+
+- An employee profile based on the User model, including:
+    - the day they started to work
+    - their total amount of working hours (weekly, monthly, yearly)
+
+- Each profile could have access to different dashboards. The customer dashboard has already been partially implemented. The employee dashboard could contain the following:
+    - A list of their appointments,
+    - Each appointment could lead to a detail view from which the employee could update info about the tasks that have been done.
+
+- The authentication system could be improved:
+    - a backend email could be implemented to allow users to reset their password.
+    - a feature could be implemented so users could register with third party.
+
+- A blog system could be implemented to allow employees to share technical tips on how they do their job. That could help for the seo and carry more visitors to the website.
+
 ---
 
 <div align="center">
@@ -539,6 +568,8 @@ To Fork the project:
 
 - The check_overlap function as well as the clean function have been entirely imported from [Alexandre Pinto's website](https://alexpnt.github.io/2017/07/15/django-calendar/). Those functions help validating appointments while being created.
 
+- The star rating system has been implemented using some code from "How to" on [W3schools](https://www.w3schools.com/howto/howto_css_star_rating.asp)
+
 ---
 
 <div align="center">
@@ -546,3 +577,13 @@ To Fork the project:
 ## Acknowledgements
 
 </div>
+
+- A huge thanks to my wonderful wife for letting me spend so much time on this project (over 250 hours) even though we have a beautiful 4 month old daughter who also needs some attention.
+
+- A big thanks also to [Alan Bushell](https://github.com/Alan-Bushell) for all the resources and tips he shared with us on our weekly meetings and for his positive vibes and his support when things went hardcore.
+
+- Thank you to [Code Institute](https://codeinstitute.net/de/) for providing such a great content helping me to implement such a full stack project in 3 weeks time after less than 6 month of learning.
+
+- Thank you to [Docstring](https://www.docstring.fr/) and its amazing community for answering many question as stupid as they possibly be, at any time (day and night).
+
+- And finally thanks to my mentor [Akshat Garg](https://github.com/akshatnitd) who provided me with some resources to assist me in this project.

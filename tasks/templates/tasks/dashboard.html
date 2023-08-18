@@ -51,7 +51,7 @@
                 {% for appointment in appointments %}
                 <div class="row p-2">
                     <div class="col-12 col-md-3">
-                        <p class="centered-content my-1">{{appointment.appointment_day }}</p>
+                        <p class="centered-content my-1"><strong>{{appointment.appointment_day }}</strong></p>
                     </div>
                     <div class="col-12 col-md-5 dashboard-schedule">
                         <p class="my-1">from {{ appointment.appointment_start_time }} to {{ appointment.appointment_end_time }}</p>

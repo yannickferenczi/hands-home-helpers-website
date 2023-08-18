@@ -6,6 +6,7 @@ from django.contrib.auth.models import User
 from datetime import date, timedelta, datetime, time
 from math import floor
 
+from config.base_settings import APPOINTMENT_MINIMUM_DURATION
 from tasks.models import Task
 from .utils import get_day_link
 
@@ -70,9 +71,12 @@ class Appointment(models.Model):
 
     @property
     def appointment_duration(self):
+        """Return the duration of the appointment in minutes."""
         return floor(
-            (self.ending_time_as_date_time - self.starting_time_as_date_time)
-            .total_seconds() / 3600)
+            (
+                self.ending_time_as_date_time - self.starting_time_as_date_time
+            ).total_seconds() / 60
+        )
 
     def get_absolute_url(self):
         return reverse('dashboard')
@@ -91,10 +95,9 @@ class Appointment(models.Model):
             overlap = True
         return overlap
 
+    @property
     def has_minimum_time(self):
-        return timedelta(seconds=(
-            (self.ending_time_as_date_time - self.starting_time_as_date_time)
-            .total_seconds())) >= timedelta(seconds=3600)
+        return (self.appointment_duration >= APPOINTMENT_MINIMUM_DURATION)
 
     # ---------------------------------------------
     # THE FOLLOWING FUNCTION HAS BEEN IMPORTED AND ONLY A LITTLE BIT MODIFIED
