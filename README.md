@@ -38,11 +38,11 @@ Hands Home Helpers is a premium housekeeping company with a wide range of servic
 
 <div align="center">
 
-## 1. Table of content
+## 1. Table of Content
 
 </div>
 
-  - [1. Table of content](#1-table-of-content)
+  - [1. Table of Content](#1-table-of-content)
   - [2. UX Design](#2-ux-design)
     - [2.1. Strategy Plane](#21-strategy-plane)
       - [2.1.1. Business Plan](#211-business-plan)
@@ -380,6 +380,8 @@ For the minimum viable product:
 The first extension of the erd:
 ![Database schema with the first extension](documentation/erd_extanded_1.png)
 
+[Back to the Table of Content](#1-table-of-content)
+
 ---
 
 <div align="center">
@@ -480,6 +482,8 @@ Each sprint counts a certain amount of story points based on their Epics, User S
 
 To conclude, it was complicated to evaluate the number of story points depending on how difficult or how long a task would be. This is the reason why the number of points from one sprint to another one can be so different. Another reason is also that some backlog product items were already in development at the end of a sprint already fully accomplished and would count only for the following sprint. It still pretty much looks like the average could be between 30 and 40 points/sprint.
 
+[Back to the Table of Content](#1-table-of-content)
+
 ---
 
 <div align="center">
@@ -575,6 +579,8 @@ That said, I have listed below some features that should be implemented to have 
 
 - A blog system could be implemented to allow employees to share technical tips on how they do their job. That could help the SEO and carry more visitors to the website.
 
+[Back to the Table of Content](#1-table-of-content)
+
 ---
 
 <div align="center">
@@ -625,6 +631,8 @@ That said, I have listed below some features that should be implemented to have 
   - [Accessibility Checker](https://www.accessibilitychecker.org/) has been used to test the accessibility of the website
   - [Am I responsive](https://ui.dev/amiresponsive) has been used to create a mockup of responsiveness
   - [Shields.io](https://shields.io/) has been used to create badges within the README.md file
+
+[Back to the Table of Content](#1-table-of-content)
 
 ---
 
@@ -713,6 +721,8 @@ To Fork the project:
 2. Click on the 'Fork' button at the top right of the page and select 'Create a new fork'
 3. This will duplicate the project for you to work on
 
+[Back to the Table of Content](#1-table-of-content)
+
 ---
 
 <div align="center">
@@ -737,6 +747,8 @@ To Fork the project:
 - The star rating system has been implemented using some code from "How to" on [W3schools](https://www.w3schools.com/howto/howto_css_star_rating.asp). It means the HTML, as well as the CSS, have been taken from their website and inserted into my project.
 
 - The slideshow to display reviews of the customers has been taken from [W3schools](https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp). It includes some HTML, CSS, and JavaScript.
+
+[Back to the Table of Content](#1-table-of-content)
 
 ---
 
