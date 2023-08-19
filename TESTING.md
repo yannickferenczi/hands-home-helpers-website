@@ -6,9 +6,39 @@
 
 </div>
 
-## Code Validation
+## 1.1. Table of content
 
-### HTML
+- [Hands Home Helpers](#hands-home-helpers)
+  - [1.1. Table of content](#11-table-of-content)
+  - [1.2. Code Validation](#12-code-validation)
+    - [1.2.1. HTML](#121-html)
+    - [1.2.2. CSS ](#122-css-)
+    - [1.2.3. JavaScript](#123-javascript)
+      - [1.2.3.1. The result for the script.js file shows three errors:](#1231-the-result-for-the-scriptjs-file-shows-three-errors)
+    - [1.2.4. Python](#124-python)
+  - [1.3. Lighthouse](#13-lighthouse)
+    - [1.3.1. The home page](#131-the-home-page)
+    - [1.3.2. The dashboard](#132-the-dashboard)
+    - [1.3.3. The offers page](#133-the-offers-page)
+    - [1.3.4. The about page](#134-the-about-page)
+    - [1.3.5. The contact page](#135-the-contact-page)
+    - [1.3.6. The calendar page](#136-the-calendar-page)
+  - [1.4. Manual Testing](#14-manual-testing)
+    - [1.4.1. User Stories Testing](#141-user-stories-testing)
+    - [1.4.2. Features Testing](#142-features-testing)
+  - [1.5. Automated testing](#15-automated-testing)
+    - [1.5.1. Appointments app](#151-appointments-app)
+    - [1.5.2. Config app](#152-config-app)
+    - [1.5.3. Contact app](#153-contact-app)
+    - [1.5.4. Offers app](#154-offers-app)
+    - [1.5.5. Reviews app](#155-reviews-app)
+    - [1.5.6. Tasks app](#156-tasks-app)
+  - [1.6. Bugs](#16-bugs)
+
+
+## 1.2. Code Validation
+
+### 1.2.1. HTML
 
 - w3c markup validator results for the landing page:
 
@@ -38,17 +68,17 @@
 
 ![w3c markup validator results for the dailycalendar](documentation/w3c_markup_validator_results_daily_calendar.png)
 
-### CSS <a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a></p>
+### 1.2.2. CSS <a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a></p>
 
 ![w3c css validator results](documentation/w3c_css_validator_results.png)
 
-### JavaScript
+### 1.2.3. JavaScript
 
 There are two javascript files for this project. As the sendEmail function using EmailJS API does not work properly, I have decided to keep it in a different file so it does not disturb the execution of the rest of the JaviScript functionalities.
 
 Both files were checked with JSHint.
 
-#### The result for the script.js file shows three errors:
+#### 1.2.3.1. The result for the script.js file shows three errors:
 
 - One undefined variable: bootstrap
 
@@ -73,18 +103,18 @@ The result for the script.js file shows three errors:
 ![jshint results of the sendEmail.js file](documentation/jshint_results_sendEmail.png)
 
 
-### Python
+### 1.2.4. Python
 
 Every Python file has been ran through the [CI Python Linter](https://pep8ci.herokuapp.com/) and for all of them the result was:
 > All clear, no errors found
 
-## Lighthouse
+## 1.3. Lighthouse
 
 The main pages of the website have been tested with the Lighthouse validator from Google Chrome.
 
 The results are shown below.
 
-### The home page
+### 1.3.1. The home page
 
 <details>
     <summary>Desktop</summary>
@@ -96,7 +126,7 @@ The results are shown below.
     <img src="documentation/lighthouse_home_mobile.png" alt="Lighthouse results of the home page on mobile">
 </details>
 
-### The dashboard
+### 1.3.2. The dashboard
 
 <details>
     <summary>Desktop</summary>
@@ -108,7 +138,7 @@ The results are shown below.
     <img src="documentation/lighthouse_dashboard_mobile.png" alt="Lighthouse results of the dashboard on mobile">
 </details>
 
-### The offers page
+### 1.3.3. The offers page
 
 <details>
     <summary>Desktop</summary>
@@ -120,7 +150,7 @@ The results are shown below.
     <img src="documentation/lighthouse_offers_mobile.png" alt="Lighthouse results of the offers page on mobile">
 </details>
 
-### The about page
+### 1.3.4. The about page
 
 <details>
     <summary>Desktop</summary>
@@ -132,7 +162,7 @@ The results are shown below.
     <img src="documentation/lighthouse_about_mobile.png" alt="Lighthouse results of the about page on mobile">
 </details>
 
-### The contact page
+### 1.3.5. The contact page
 
 <details>
     <summary>Desktop</summary>
@@ -144,7 +174,7 @@ The results are shown below.
     <img src="documentation/lighthouse_contact_mobile.png" alt="Lighthouse results of the contact page on mobile">
 </details>
 
-### The calendar page
+### 1.3.6. The calendar page
 
 <details>
     <summary>Desktop</summary>
@@ -156,9 +186,9 @@ The results are shown below.
     <img src="documentation/lighthouse_calendar_mobile.png" alt="Lighthouse results of the calendar page on mobile">
 </details>
 
-## Manual Testing
+## 1.4. Manual Testing
 
-### User Stories Testing
+### 1.4.1. User Stories Testing
 
 <details>
 <summary style="background-color: #005500;">User Story 9: As a Site User, I can register so that I can access restricted features.</summary>
@@ -459,7 +489,7 @@ The results are shown below.
 | offers are properly displayed on the website | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
 </details>
 
-### Features Testing
+### 1.4.2. Features Testing
 
 <details>
 <summary style="background-color: #005500;">A branding with a logo, a name, and the colors of the company.</summary>
@@ -569,7 +599,7 @@ The results are shown below.
 | Only content related to the user is displayed | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> | <img src="https://img.shields.io/static/v1?label=&message=PASS&color=success&style=plastic" alt="test status"> |
 </details>
 
-## Automated testing
+## 1.5. Automated testing
 
 ![Total coverage of the project](documentation/total_coverage.png)
 
@@ -577,32 +607,32 @@ Some automated tests have been implemented using unittest.
 
 The coverage library has been used to get a visual report of automated testing.
 
-### Appointments app
+### 1.5.1. Appointments app
 
 ![Appointments app coverage](documentation/appointments_coverage_highlighted.png)
 
-### Config app
+### 1.5.2. Config app
 
 ![Config app coverage](documentation/config_coverage_highlighted.png)
 
-### Contact app
+### 1.5.3. Contact app
 
 ![Contact app coverage](documentation/contact_coverage_highlighted.png)
 
-### Offers app
+### 1.5.4. Offers app
 
 ![Appointments app coverage](documentation/offers_coverage_highlighted.png)
 
-### Reviews app
+### 1.5.5. Reviews app
 
 ![Reviews app coverage](documentation/reviews_coverage_highlighted.png)
 
-### Tasks app
+### 1.5.6. Tasks app
 
 ![Tasks app coverage](documentation/tasks_coverage_highlighted.png)
 
 
-## Bugs
+## 1.6. Bugs
 
 - Deployment not working - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
 
@@ -624,9 +654,9 @@ The coverage library has been used to get a visual report of automated testing.
 
     By default, reviews are not directly online. They must be approved by an administrator to be published on the website. However, when a review is approved and then modified by the author of the given review, it stays online without the enhancements having been approved. This bug was not resolved because it was not a priority and time was missing.
 
-- Tasks booked and unbooked keep their due_date - ![bug status](https://img.shields.io/static/v1?label=fixed&message=No&color=bb0000&style=plastic)
+- Tasks booked and unbooked keep their due date - ![bug status](https://img.shields.io/static/v1?label=fixed&message=No&color=bb0000&style=plastic)
 
-    When a task is created, its due_date value is None. Then when a task is assigned to an appointment, the date of the appointment becomes the due date of the task. However, if the task would be unassigned or the appointment is deleted, the task keeps its due date. This is not only problematic because it has a wrong due date, but also because the task would not be displayed in the options when creating a new appointment. So the task can never be assigned again. An easy and quick fix could be to change the on_delete argument in the model to delete the task when the appointment would be deleted. But it would only solve half of the problem. In fact, if the task would be unassigned, it would still keep its due date. Time is missing and this issue might remain unresolved.
+    When a task is created, its due date value is None. Then when a task is assigned to an appointment, the date of the appointment becomes the due date of the task. However, if the task would be unassigned or the appointment is deleted, the task keeps its due date. This is not only problematic because it has a wrong due date, but also because the task would not be displayed in the options when creating a new appointment. So the task can never be assigned again. An easy and quick fix could be to change the on_delete argument in the model to delete the task when the appointment would be deleted. But it would only solve half of the problem. In fact, if the task would be unassigned, it would still keep its due date. Time is missing and this issue might remain unresolved.
 
 - No way to access the full content of a review when longer than 50 characters - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
 
