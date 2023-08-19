@@ -44,7 +44,7 @@
 
 ### JavaScript
 
-There is two javascript files for this project. As the sendEmail function using EmailJS API does not work properly, I have decided to keep it in a different file so it does not disturb the execution of the rest of the JaviScript functionalities.
+There are two javascript files for this project. As the sendEmail function using EmailJS API does not work properly, I have decided to keep it in a different file so it does not disturb the execution of the rest of the JaviScript functionalities.
 
 Both files were checked with JSHint.
 
@@ -64,7 +64,7 @@ The result for the script.js file shows three errors:
 
 - One undefined variable: emailjs
 
-    there is no need to defined emailjs in the sendEmail.js file as the init method is defined in the base.html file.
+    there is no need to define emailjs in the sendEmail.js file as the init method is defined in the base.html file.
 
 - One unused variable: sendEmail
 
@@ -161,7 +161,7 @@ The results are shown below.
 ### User Stories Testing
 
 <details>
-<summary style="background-color: #005500;">User Story 9 : As a Site User, I can register so that I can access restricted features.</summary>
+<summary style="background-color: #005500;">User Story 9: As a Site User, I can register so that I can access restricted features.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -447,7 +447,7 @@ The results are shown below.
 ---
 
 <details>
-<summary style="background-color: #005500;">User Story 60 : As a Site Administrator, I can manage offers of the company to customers so that I can adapt them to the market.</summary>
+<summary style="background-color: #005500;">User Story 60: As a Site Administrator, I can manage offers of the company to customers so that I can adapt them to the market.</summary>
 
 - Browser compatibility and responsiveness testing:
 
@@ -622,27 +622,27 @@ The coverage library has been used to get a visual report of automated testing.
 
 - Reviews stay online after modification - ![bug status](https://img.shields.io/static/v1?label=fixed&message=No&color=bb0000&style=plastic)
 
-    By default, reviews are not directly online. They must be approved by an administrator to be published on the website. However, when a review is approved and then modified by the author of the given review, it stays online without that the changements have been approved. This bug was not resolved because it was not a priority and time was missing.
+    By default, reviews are not directly online. They must be approved by an administrator to be published on the website. However, when a review is approved and then modified by the author of the given review, it stays online without the enhancements having been approved. This bug was not resolved because it was not a priority and time was missing.
 
 - Tasks booked and unbooked keep their due_date - ![bug status](https://img.shields.io/static/v1?label=fixed&message=No&color=bb0000&style=plastic)
 
-    When a task is created, its due_date value is None. Then when a task is being assigned to an appointment, the date of the appointment becomes the due_date of the task. However, if the task would be unassigned or the appointment deleted, the task keeps its due_date. This is not only problematic because it has a wrong due_date, but also because the task would not be displayed in the options when creating a new appointment. So the task can never be assigned again. An easy and quick fix could be to change the on_delete argument in the model to delete the task when the appointment would be deleted. But it would only save half of the problem. In fact, if the task would be unassigned, it would still keep its due_date. Time is missing and this issue might remain unresolved.
+    When a task is created, its due_date value is None. Then when a task is assigned to an appointment, the date of the appointment becomes the due date of the task. However, if the task would be unassigned or the appointment is deleted, the task keeps its due date. This is not only problematic because it has a wrong due date, but also because the task would not be displayed in the options when creating a new appointment. So the task can never be assigned again. An easy and quick fix could be to change the on_delete argument in the model to delete the task when the appointment would be deleted. But it would only solve half of the problem. In fact, if the task would be unassigned, it would still keep its due date. Time is missing and this issue might remain unresolved.
 
 - No way to access the full content of a review when longer than 50 characters - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
 
-  The first idea was to display only the beginning of reviews if they would be to long. But some how, in the implementation, I have lost focus and thought that there was no needs of a review detailled view. The direct consequence is that there was no way to read the full reviews for the ones being truncated. A quick fix was to take off the truncate filter from the template.
+  The first idea was to display only the beginning of reviews if they would be too long. But somehow, in the implementation, I lost focus and thought that there was no need for a review detailed view. The direct consequence is that there was no way to read the full reviews for the ones being truncated. A quick fix was to take off the truncate filter from the template.
 
-- User should not be able to book appointment on Sundays - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
+- User should not be able to book an appointment on Sundays - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
 
-  The monthly calendar has been implemented with links for every single day to lead to a daily view of the selected day. With if statements, past days and sundays would not offer that link anymore so users could not select those days to book an appointment.
-  Nervertheless, from the daily calendar of a valid day, users could navigate with the next or previous button until a Sunday and create an appointment from there. This problem has been solved with an if statement whithin the django template to add two days to the selected day instead of one if the selected day is a Saturday when clicking the next button and same logic inverse to mondays when clicking the previous button.
+  The monthly calendar has been implemented with links for every single day to lead to a daily view of the selected day. With if statements, past days and Sundays would not offer that link anymore so users could not select those days to book an appointment.
+  Nevertheless, from the daily calendar of a valid day, users could navigate with the next or previous button until a Sunday and create an appointment from there. This problem has been solved with an if statement within the Django template to add two days to the selected day instead of one if the selected day is a Saturday when clicking the next button and the same logic inverse to Mondays when clicking the previous button.
 
-- User should not be able to book appointment on past days - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
+- User should not be able to book an appointment on past days - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
 
-    While I was writing the previous bug, I realised that there was a similar issue with the past days. This issue has been fixed by adding a variable called upcoming day to the booking view in the appointments app.
+    While I was writing the previous bug, I realized that there was a similar issue in the past days. This issue has been fixed by adding a variable called upcoming day to the booking view in the appointments app and an if statement in the template to only display the link to the previous day if that day is still in the future.
 
 - Success notifications not displayed on deletion - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
 
-  With the mixin it was quite simple to display a notification to users when they create, update, login, logout, or register. But it was not the case for the class based delete view. I had to override the delete method of that view so that the notification would be displayed.
+  With the Django mixins, it was quite simple to display a notification to users when they create, update, login, log out, or register. But it was not the case for the class-based delete view. I had to override the delete method of that view so that the notification would be displayed.
 
 Return to the [README.md](README.md) file
