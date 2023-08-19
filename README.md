@@ -2,6 +2,8 @@
 
 # Hands Home Helpers
 
+![last update](https://img.shields.io/badge/Last_update:-19.08.2023-9d3f3f)
+
 ![deployment](https://img.shields.io/static/v1?label=deployed&message=Yes&color=success&style=plastic)
 ![deployment platform](https://img.shields.io/static/v1?label=plateform&message=Heroku&color=634987&style=plastic)
 ![coverage](https://img.shields.io/static/v1?label=coverage&message=85%&color=success&style=plastic)
@@ -10,7 +12,7 @@ This project aims to create a website for the Hands Home Helpers company, based 
 
 Hands Home Helpers is a premium housekeeping company with a wide range of services. They offer to take care of your house and garden duties as well as maintain your swimming pool and fix small issues or do small renovations. Finally, they also provide a home care service to assist you in your everyday life.
 
-![Mockup responsive]()
+![Mockup responsive](documentation/amiresponsive_home.png)
 
 **- by Yannick Ferenczi -**
 
