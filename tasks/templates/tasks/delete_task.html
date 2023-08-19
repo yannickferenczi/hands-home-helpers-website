@@ -16,7 +16,7 @@
             <form class="centered-content" method="post" class="dashboard-item">
                 {% csrf_token %}
                 <div class="custom-form centered-content">
-                    <p class="centered-content">{{ task.name }}</p>
+                    <p class="centered-content"><strong>{{ task.name }}</strong></p>
                     <p class="centered-content">{{ task.category }}</p>
                 </div>
                 <input class="form-btn btn btn-danger" type="submit" value="Delete">
