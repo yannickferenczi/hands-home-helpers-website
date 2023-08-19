@@ -1,6 +1,6 @@
 <div align=center>
 
-# 1. Hands Home Helpers
+# Hands Home Helpers
 
 ![last update](https://img.shields.io/badge/Last_update:-19.08.2023-9d3f3f)
 
@@ -38,64 +38,63 @@ Hands Home Helpers is a premium housekeeping company with a wide range of servic
 
 <div align="center">
 
-## 1.1. Table of content
+## 1. Table of content
 
 </div>
 
-- [1. Hands Home Helpers](#1-hands-home-helpers)
-  - [1.1. Table of content](#11-table-of-content)
-  - [1.2. UX Design](#12-ux-design)
-    - [1.2.1. Strategy Plane](#121-strategy-plane)
-      - [1.2.1.1. Business Plan](#1211-business-plan)
-      - [1.2.1.2. Goals and objectives](#1212-goals-and-objectives)
-      - [1.2.1.3. Target Audience](#1213-target-audience)
-        - [1.2.1.3.1. User Research](#12131-user-research)
-        - [1.2.1.3.2. Buyer Personas](#12132-buyer-personas)
-    - [1.2.2. Scope Plane](#122-scope-plane)
-      - [1.2.2.1. Define Must-Have Features](#1221-define-must-have-features)
-      - [1.2.2.2. Define Information to provide (content requirements)](#1222-define-information-to-provide-content-requirements)
-    - [1.2.3. Structure Plane](#123-structure-plane)
-      - [1.2.3.1. Interaction Design (IXD)](#1231-interaction-design-ixd)
-        - [1.2.3.1.1. Define Pages](#12311-define-pages)
-        - [1.2.3.1.2. Handle errors](#12312-handle-errors)
-        - [1.2.3.1.3. Flow Chart](#12313-flow-chart)
-      - [1.2.3.2. Information Architecture (IA)](#1232-information-architecture-ia)
-    - [1.2.4. Skeleton Plane](#124-skeleton-plane)
-      - [1.2.4.1. Wireframes](#1241-wireframes)
-    - [1.2.5. Surface Plane](#125-surface-plane)
-      - [1.2.5.1. Color Palette](#1251-color-palette)
-      - [1.2.5.2. Font Choices](#1252-font-choices)
-    - [1.2.6. Database Schema](#126-database-schema)
-  - [1.3. Agile Development](#13-agile-development)
-    - [1.3.1. The workflow](#131-the-workflow)
-    - [1.3.2. Labels](#132-labels)
-    - [1.3.3. The views of the project manager](#133-the-views-of-the-project-manager)
-    - [1.3.4. The story points](#134-the-story-points)
-    - [1.3.5. The sprints](#135-the-sprints)
-  - [1.4. Features](#14-features)
-    - [1.4.1. Features currently available](#141-features-currently-available)
-    - [1.4.2. More features to implement](#142-more-features-to-implement)
-  - [1.5. Technology Used](#15-technology-used)
-  - [1.6. Testing](#16-testing)
-  - [1.7. Deployment](#17-deployment)
-    - [1.7.1. Project Creation](#171-project-creation)
-    - [1.7.2. Deployment to Heroku](#172-deployment-to-heroku)
-    - [1.7.3. Local Development](#173-local-development)
-  - [1.8. Credits](#18-credits)
-  - [1.9. Acknowledgements](#19-acknowledgements)
+  - [1. Table of content](#11-table-of-content)
+  - [2. UX Design](#12-ux-design)
+    - [2.1. Strategy Plane](#121-strategy-plane)
+      - [2.1.1. Business Plan](#1211-business-plan)
+      - [2.1.2. Goals and objectives](#1212-goals-and-objectives)
+      - [2.1.3. Target Audience](#1213-target-audience)
+        - [2.1.3.1. User Research](#12131-user-research)
+        - [2.1.3.2. Buyer Personas](#12132-buyer-personas)
+    - [2.2. Scope Plane](#122-scope-plane)
+      - [2.2.1. Define Must-Have Features](#1221-define-must-have-features)
+      - [2.2.2. Define Information to provide (content requirements)](#1222-define-information-to-provide-content-requirements)
+    - [2.3. Structure Plane](#123-structure-plane)
+      - [2.3.1. Interaction Design (IXD)](#1231-interaction-design-ixd)
+        - [2.3.1.1. Define Pages](#12311-define-pages)
+        - [2.3.1.2. Handle errors](#12312-handle-errors)
+        - [2.3.1.3. Flow Chart](#12313-flow-chart)
+      - [2.3.2. Information Architecture (IA)](#1232-information-architecture-ia)
+    - [2.4. Skeleton Plane](#124-skeleton-plane)
+      - [2.4.1. Wireframes](#1241-wireframes)
+    - [2.5. Surface Plane](#125-surface-plane)
+      - [2.5.1. Color Palette](#1251-color-palette)
+      - [2.5.2. Font Choices](#1252-font-choices)
+    - [2.6. Database Schema](#126-database-schema)
+  - [3. Agile Development](#13-agile-development)
+    - [3.1. The workflow](#131-the-workflow)
+    -   3.2. Labels](#132-labels)
+    - [3.3. The views of the project manager](#133-the-views-of-the-project-manager)
+    - [3.4. The story points](#134-the-story-points)
+    - [3.5. The sprints](#135-the-sprints)
+  - [4. Features](#14-features)
+    - [4.1. Features currently available](#141-features-currently-available)
+    - [4.2. More features to implement](#142-more-features-to-implement)
+  - [5. Technology Used](#15-technology-used)
+  - [6. Testing](#16-testing)
+  - [7. Deployment](#17-deployment)
+    - [7.1. Project Creation](#171-project-creation)
+    - [7.2. Deployment to Heroku](#172-deployment-to-heroku)
+    - [7.3. Local Development](#173-local-development)
+  - [8. Credits](#18-credits)
+  - [9. Acknowledgements](#19-acknowledgements)
 
 
 ---
 
 <div align="center">
 
-## 1.2. UX Design
+## 2. UX Design
 
 </div>
 
-### 1.2.1. Strategy Plane
+### 2.1. Strategy Plane
 
-#### 1.2.1.1. Business Plan
+#### 2.1.1. Business Plan
 
 What problem will the business solve?
 
@@ -141,7 +140,7 @@ How much money do you need to start and operate the business?
 
 > 0, the business owner will start with their own funds.
 
-#### 1.2.1.2. Goals and objectives
+#### 2.1.2. Goals and objectives
 
 Objectives for the website are:
 
@@ -162,11 +161,11 @@ The goals for the site user are:
 - get insights and tips on how they could improve the quality of their housekeeping
 - list their home tasks
 
-#### 1.2.1.3. Target Audience
+#### 2.1.3. Target Audience
 
 Hands Home Helpers is a B2C company.
 
-##### 1.2.1.3.1. User Research
+##### 2.1.3.1. User Research
 
 A user research has been ran on 85 persons.
 
@@ -225,7 +224,7 @@ Important information out of it is as below:
   1. the price
   2. all in one (they could replace their different providers for house cleaning, gardening, and repairs with one single provider)
 
-##### 1.2.1.3.2. Buyer Personas
+##### 2.1.3.2. Buyer Personas
 
 Out of the user research, two personas have been created to understand and illustrate in a more concrete representation the ideal customer of Hands Home Helpers.
 
@@ -235,14 +234,14 @@ Persona 1:
 Persona 2:
 ![Persona 2](documentation/Persona_2.png)
 
-### 1.2.2. Scope Plane
+### 2.2. Scope Plane
 
 In this particular project, there are two kinds of minimum viable products (MVP).
 
 1. The first one, which is educationally oriented, is to provide everything expected for the assessment criteria to pass. So everything will at first be developed regarding this scope.
 2. Nevertheless, with the first MVP, the business would not be competitive. So the second MVP, which is more business-oriented, is to provide the website with a real value that could give the business an edge over its competitors. This must be developed too.
 
-#### 1.2.2.1. Define Must-Have Features
+#### 2.2.1. Define Must-Have Features
 
 EVERY WEB PROJECT MUST-HAVE FEATURES:
 
@@ -286,18 +285,18 @@ CONTACT FORM
 
 A contact form should be available for users to contact the company in the most convenient way.
 
-#### 1.2.2.2. Define Information to provide (content requirements)
+#### 2.2.2. Define Information to provide (content requirements)
 
 In the first MVP scope, the needed information is:
 
 - explain the purpose of the website
 - indicate users how to use the website by naming links and features with intuitive words
 
-### 1.2.3. Structure Plane
+### 2.3. Structure Plane
 
-#### 1.2.3.1. Interaction Design (IXD)
+#### 2.3.1. Interaction Design (IXD)
 
-##### 1.2.3.1.1. Define Pages
+##### 2.3.1.1. Define Pages
 
 - landing page
 - registration page
@@ -309,17 +308,17 @@ In the first MVP scope, the needed information is:
 - edit the task page
 - about page (including meet the team section, FAQ section, and review section)
 
-##### 1.2.3.1.2. Handle errors
+##### 2.3.1.2. Handle errors
 
 Error-404 and error-500 pages are also to be implemented within the MVP scope.
 
-##### 1.2.3.1.3. Flow Chart
+##### 2.3.1.3. Flow Chart
 
 A flowchart has been design to help stakeholders with the development of the website:
 
 ![flowchart for the minimum viable product](documentation/flowchart_mvp.png)
 
-#### 1.2.3.2. Information Architecture (IA)
+#### 2.3.2. Information Architecture (IA)
 
 information is organized with some known patterns so that users easily find what they are looking for such as:
 
@@ -328,9 +327,9 @@ information is organized with some known patterns so that users easily find what
 - social media links in the footer
 - company address and contact in the footer
 
-### 1.2.4. Skeleton Plane
+### 2.4. Skeleton Plane
 
-#### 1.2.4.1. Wireframes
+#### 2.4.1. Wireframes
 
 Wireframes have been adapted during the development phase to offer a better user experience.
 
@@ -358,20 +357,20 @@ Error-404 page:
 Error-500 page:
 ![Error 500 page wireframe](documentation/error-500_wireframe.png)
 
-### 1.2.5. Surface Plane
+### 2.5. Surface Plane
 
-#### 1.2.5.1. Color Palette
+#### 2.5.1. Color Palette
 
 Three colors have been chosen on top of black and white.
 The first color (#9d3f3f) is the color of the logo: The ant. This logo has been picked to communicate how brave and hardworking are the employees and how efficient will be the working hours. The other colors have been selected using a color calculator to be the best fit for this very first color.
 
 ![Color palette of the project](documentation/color_palette.png)
 
-#### 1.2.5.2. Font Choices
+#### 2.5.2. Font Choices
 
 Two fonts have been used within the whole website. They both are sans-serif. Andika has been picked for the titles to give users a feeling of soberness and neatness. And Merriweather Sans has been picked for the standard text as it is a good match for Andika.
 
-### 1.2.6. Database Schema
+### 2.6. Database Schema
 
 The database schema has been modified during the development phase to provide a more powerful tool.
 
@@ -385,13 +384,13 @@ The first extension of the erd:
 
 <div align="center">
 
-## 1.3. Agile Development
+## 3. Agile Development
 
 </div>
 
 The project development has been managed with an agile project manager on GitHub. It is public [here](https://github.com/users/yannickferenczi/projects/15/views/1).
 
-### 1.3.1. The workflow
+### 3.1. The workflow
 
 The workflow of the project has been broken down into small organized pieces to help realize the amount of work and help spread it over the given period. It organizes a hierarchy as below:
 
@@ -428,13 +427,13 @@ The workflow of the project has been broken down into small organized pieces to 
     <p>Finally, tasks were defined within the user stories to remind the stakeholder what to develop. They were there to help define the user story, giving more precise things to work on.</p>
 </details>
 
-### 1.3.2. Labels
+### 3.2. Labels
 
 Labels have been created to quickly visualize the type of backlog product item and its priority. Below is a screenshot of the labels used for the project.
 
 ![Labels of the project](documentation/labels.png)
 
-### 1.3.3. The views of the project manager
+### 3.3. The views of the project manager
 
 The project manager contains 4 views. The three first have been very useful during the development. The fourth one is more of a nice overview of the efforts spread over time.
 
@@ -454,13 +453,13 @@ The project manager contains 4 views. The three first have been very useful duri
 
     The fourth view is just an overview of the three weeks of work that led to this project. It did not really bring help to the development of the project.
 
-### 1.3.4. The story points
+### 3.4. The story points
 
 Story points have been assigned to epics and user stories to be able to submit the project as much developed as possible and, of course, on time. It was clear that the final product would not be done in such a short time, especially because it was my first full stack project and I wanted to go down some unknown part of the Django framework (so far not explained within the code institute course). Nevertheless, I took the challenge to make the first version of this project which could already be used. Now because there were a lot of uncertain abilities to do what I planned to do, it made tricky the story point assignment.
 
 My priority was as expected to develop a minimum viable product (MVP) that corresponds to the expected project from the assessment criteria of Code Institute. This milestone has 182 story points which are 45% of the total amount represented with 400 story points.
 
-### 1.3.5. The sprints
+### 3.5. The sprints
 
 The project has been developed in 11 Sprints of 2 days.
 Each sprint counts a certain amount of story points based on their Epics, User Stories, and tasks. They are as below:
@@ -485,13 +484,13 @@ To conclude, it was complicated to evaluate the number of story points depending
 
 <div align="center">
 
-## 1.4. Features
+## 4. Features
 
 </div>
 
 This project is a full-stack web application using a cloud-based database (PostgreSQL) to record data.
 
-### 1.4.1. Features currently available
+### 4.1. Features currently available
 
 - A branding with a logo, a name, and the colors of the company
 
@@ -547,7 +546,7 @@ The booking system is the highlight of this project. I absolutely wanted to tack
 
 ![Booking system step 2](documentation/booking_system_step_2.png)
 
-### 1.4.2. More features to implement
+### 4.2. More features to implement
 
 The final goal of the Hands Home Helpers website is to give customers and employees a powerful tool to communicate in the easiest possible way.
 
@@ -580,7 +579,7 @@ That said, I have listed below some features that should be implemented to have 
 
 <div align="center">
 
-## 1.5. Technology Used
+## 5. Technology Used
 
 </div>
 
@@ -631,7 +630,7 @@ That said, I have listed below some features that should be implemented to have 
 
 <div align="center">
 
-## 1.6. Testing
+## 6. Testing
 
 </div>
 
@@ -641,11 +640,11 @@ Testing details can be found separately in the [TESTING.md](TESTING.md) file
 
 <div align="center">
 
-## 1.7. Deployment
+## 7. Deployment
 
 </div>
 
-### 1.7.1. Project Creation
+### 7.1. Project Creation
 
 I have created the project from the [ci-full-template](https://github.com/Code-Institute-Org/ci-full-template) following the steps below:
 
@@ -658,7 +657,7 @@ I have created the project from the [ci-full-template](https://github.com/Code-I
 7. Paste the GitHub repo URL into the 'Repository URL' box
 8. Click 'Create'
 
-### 1.7.2. Deployment to Heroku
+### 7.2. Deployment to Heroku
 
 I used Heroku to deploy this project.
 
@@ -689,7 +688,7 @@ To deploy to Heroku:
 2. Click deploy branch
 3. Once the build is complete click on 'Open app' to launch the new app
 
-### 1.7.3. Local Development
+### 7.3. Local Development
 
 > NB: To run this project locally, you will need to create an env.py file (within the root directory) configuring the above environment variables as these are not included in the GitHub files for security reasons.
 > This file should look like this:
@@ -718,7 +717,7 @@ To Fork the project:
 
 <div align="center">
 
-## 1.8. Credits
+## 8. Credits
 
 </div>
 
@@ -743,7 +742,7 @@ To Fork the project:
 
 <div align="center">
 
-## 1.9. Acknowledgements
+## 9. Acknowledgements
 
 </div>
 
