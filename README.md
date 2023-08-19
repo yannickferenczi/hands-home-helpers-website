@@ -281,6 +281,8 @@ information is organized with some known patterns so that users easily find what
 
 #### 1.2.4.1. Wireframes
 
+Wireframes have been adapted during the development phase to offer a better user experience.
+
 Landing page:
 ![Landing page wireframe](documentation/index_wireframe.png)
 
@@ -319,6 +321,8 @@ The first color (#9d3f3f) is the color of the logo: The ant. This logo has been 
 Two fonts have been used within the whole website. They both are sans-serif. Andika has been picked for the titles to give users a feeling of sober and neat. And Merriweather Sans has been picked for the standard text has it is a good match to Andika.
 
 ### 1.2.6. Database Schema
+
+The database schema have been modified during the development phase to provide a more powerful tool.
 
 For the minimum viable product:
 ![Database schema for the minimum viable product](documentation/erd_mvp.png)
@@ -485,6 +489,8 @@ This project is a full stack web application using a cloud-based database (Postg
 ![Authentication system](documentation/authentication_system.png)
 
 - A booking system
+
+The booking system is the highlight of this project. I absolutely wanted to tackle this challenge as I think it is a nice to have skill in a professional environment. To be confronted to the problems it can raise was a very interesting and satisfying learning journey.
 
 ![Booking system step 1](documentation/booking_system_step_1.png)
 
