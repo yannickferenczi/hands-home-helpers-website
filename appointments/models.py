@@ -103,6 +103,13 @@ class Appointment(models.Model):
     # THE FOLLOWING FUNCTION HAS BEEN IMPORTED AND ONLY A LITTLE BIT MODIFIED
     # MORE DETAILS IN THE CREDITS SECTION OF THE README.md FILE
     def clean(self):
+        """
+        Check if the appointment can be booked
+        
+        It cannot be if an appointment already exists in that period
+        It cannot be booked if the appointment duration is shorter than
+        the minimum required.
+        """
         if self.ending_time_as_date_time <= self.starting_time_as_date_time:
             raise ValidationError(
                     'Ending time must be later than starting time'

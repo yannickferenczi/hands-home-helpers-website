@@ -37,6 +37,9 @@ def booking(request, year, month, day):
     This function displays a form to create appointment.
     """
     selected_day = date(year, month, day)
+
+    # The following code block the user from booking on Sundays or
+    # on days in the past
     upcoming_day = selected_day > (date.today() + timedelta(days=2))
     if selected_day.weekday() == 0:
         day_before = selected_day - timedelta(days=2)
@@ -53,7 +56,9 @@ def booking(request, year, month, day):
         appointment_day=selected_day
     )
 
-    # check for every half-hour if it is already booked or not
+    # Check for every half-hour if it is already booked or not
+    # This will render a daily calendar with different colors
+    # depending on their availabilities
     daily_schedule = []
     for i in range(OPENING_HOUR, CLOSING_HOUR):
         hourly_schedule = [False, False]
@@ -82,6 +87,7 @@ def booking(request, year, month, day):
         form = BookingForm(
             query,
             request=request,
+            # this kwarg is to differentiate between create and update:
             update=False,
         )
         if form.is_valid():
@@ -134,12 +140,6 @@ class AppointmentUpdateView(
     model = Appointment
     form_class = BookingForm
     template_name = "appointments/update_appointment.html"
-    # fields = [
-    #     "appointment_day",
-    #     "appointment_start_time",
-    #     "appointment_end_time",
-    #     "appointment_tasks",
-    # ]
     success_message = "Your appointment has been successfully updated!"
 
     def get_form_kwargs(self):
