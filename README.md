@@ -8,7 +8,7 @@
 ![deployment platform](https://img.shields.io/static/v1?label=plateform&message=Heroku&color=634987&style=plastic)
 ![coverage](https://img.shields.io/static/v1?label=coverage&message=85%&color=success&style=plastic)
 
-This project aims to create a website for the Hands Home Helpers company, based in NRW, GERMANY, so they can have an online presence to promote their activity and reach new customers. The website also aims to provide a user-friendly interface to make contacts between the company and its customers easier.
+This project aims to create a website for the Hands Home Helpers company, based in NRW, GERMANY, so they can have an online presence to promote their activity and reach new customers. The website also aims to provide a user-friendly interface to make contact between the company and its customers easier.
 
 Hands Home Helpers is a premium housekeeping company with a wide range of services. They offer to take care of your house and garden duties as well as maintain your swimming pool and fix small issues or do small renovations. Finally, they also provide a home care service to assist you in your everyday life.
 
@@ -42,9 +42,9 @@ Hands Home Helpers is a premium housekeeping company with a wide range of servic
 
 </div>
 
-### 1.2.1. Strategy Plane
+### Strategy Plane
 
-#### 1.2.1.1. Business Plan
+#### Business Plan
 
 What problem will the business solve?
 
@@ -56,21 +56,21 @@ What will the business provide to solve that problem?
 
 How will the business make money?
 
-> The business makes money by providing really high-quality work and 'all-in-one' solution to the housekeeping matter.
+> The business makes money by providing really high-quality work and an 'all-in-one' solution to the housekeeping matter.
 
 Who will purchase our products or services?
 
 > The potential customers of the business can be:
-> - retired people in need of assistance for some particular tasks (they have time to take care of most of their duties but need help for the heavy ones)
+> - retired people in need of assistance for some particular tasks (they have time to take care of most of their duties but need help with the heavy ones)
 > - High-standing people with big properties, including facilities such as a swimming pool for instance, which are nice to have when well maintained but mean too much care.
 
 How will our target customers learn about our business?
 
-> Promotion on social media, in Gardening shops and with an online presence.
+> Promotion on social media, in Gardening shops, and with an online presence.
 
 What will the business do better than the competitors?
 
-> The business will bring efficiency (with the all-in-one concept), high-quality results and flexibility.
+> The business will bring efficiency (with the all-in-one concept), high-quality results, and flexibility.
 
 How much money do you
 
@@ -78,7 +78,7 @@ How much money do you
 - spend every month?
 - earn every month?
 
-  > To be able to run fully featured, the business needs two employees (one competent within gardening, swimming pool caring and doing small repairs/installation and one competent within cleaning)
+  > To be able to run fully featured, the business needs two employees (one competent in gardening, swimming pool caring, and doing small repairs/installation and one competent in cleaning)
   > To start: 7 000 € | every month: + 8 712 € / - 5 200 €
   > This brings a 40% margin to the business which should be spread like below:
   > - 10% employee training
@@ -88,40 +88,40 @@ How much money do you
 
 How much money do you need to start and operate the business?
 
-> 0, the business owner will start with their own fonds.
+> 0, the business owner will start with their own funds.
 
-#### 1.2.1.2. Goals and objectives
+#### Goals and objectives
 
 Objectives for the website are:
 
-- An easy to navigate website with clear purpose
+- An easy-to-navigate website with a clear purpose
 - Allow users to create a personal account
 - To provide users with insights or tips on how to take good care of their home and garden.
 
-Goals for the site owner are:
+The goals for the site owner are:
 
 - have an online presence
 - promote their business
 - reduce customer solicitations by providing them an online booking system and a FAQs page
 
-Goals for the site user are:
+The goals for the site user are:
 
 - discover the purpose of the business
 - discover the offers of the business
 - get insights and tips on how they could improve the quality of their housekeeping
 - list their home tasks
 
-#### 1.2.1.3. Target Audience
+#### Target Audience
 
 Hands Home Helpers is a B2C company.
 
-##### 1.2.1.3.1. User Research
+##### User Research
 
-A user reseach has been ran on 85 persons.
+A user research has been ran on 85 persons.
 
-Important information out of it are as below:
+Important information out of it is as below:
 
-- nearly 100% of household with an income higher than 7 000 € per month use housekeeping services
+- nearly 100% of households with an income higher than 7 000 € per month use housekeeping services
 
 - what they value most is personal growth, time with their friends and family, health and wellness
 
@@ -137,7 +137,7 @@ Important information out of it are as below:
   2. physical presence nearby
   3. easy-to-use services
 
-- important when choosing housekeeping provider:
+- important when choosing a housekeeping provider:
 
   1. trustworthy (qualified workers and clear insurance policy)
   2. reliability
@@ -151,7 +151,7 @@ Important information out of it are as below:
   2. gardening
   3. swimming pool caring
   4. fixing or installing things at home
-  5. garden patch caring (70% would appreciate to have their own vegetables but do not have time to take care of their garden patch)
+  5. garden patch caring (70% would appreciate having their own vegetables but do not have time to take care of their garden patch)
 
 - specific areas with special attention:
 
@@ -164,17 +164,17 @@ Important information out of it are as below:
   2. smaller full help required => 12 hours per week (2 days x 6 hours) => 1 673 € per month (32 € per hour)
   3. minimum help required => 5 hours per week (on 1 day) => 762.5 € per month (35 € per hour)
 
-- the preferred payment method for housekeeping services is the subscription for 85% of those service users. They would also mostly appreciate to keep the benefit of unused hours for the following month.
+- the preferred payment method for housekeeping services is the subscription for 85% of those service users. They would also mostly appreciate keeping the benefit of unused hours for the following month.
 
 - the preferred booking method is online booking with 68% and then calling with 25%
 
-- the preferred communication method are online chat and calling with 40% for both
+- the preferred communication method is online chat and calling with 40% for both
 
 - most reasons they would change their housekeeping services are:
   1. the price
-  2. all in one (they could replace their different providers for house cleaning, gardening and repairs with one single provider)
+  2. all in one (they could replace their different providers for house cleaning, gardening, and repairs with one single provider)
 
-##### 1.2.1.3.2. Buyer Personas
+##### Buyer Personas
 
 Out of the user research, two personas have been created to understand and illustrate in a more concrete representation the ideal customer of Hands Home Helpers.
 
@@ -184,14 +184,14 @@ Persona 1:
 Persona 2:
 ![Persona 2](documentation/Persona_2.png)
 
-### 1.2.2. Scope Plane
+### Scope Plane
 
-In this particular project, there is two kind of minimum viable product (MVP).
+In this particular project, there are two kinds of minimum viable products (MVP).
 
-1. The first one, which is educational oriented, is to provide everything expected for the assessment criteria to pass. So everything will at first be developed regarding this scope.
-2. Nevertheless, with the first mvp, the business would not be competitive. So the second mvp, which is more business oriented, is to provide the website with a real value that could give the business an edge over its competitors. This must be developed too.
+1. The first one, which is educationally oriented, is to provide everything expected for the assessment criteria to pass. So everything will at first be developed regarding this scope.
+2. Nevertheless, with the first MVP, the business would not be competitive. So the second MVP, which is more business-oriented, is to provide the website with a real value that could give the business an edge over its competitors. This must be developed too.
 
-#### 1.2.2.1. Define Must-Have Features
+#### Define Must-Have Features
 
 EVERY WEB PROJECT MUST-HAVE FEATURES:
 
@@ -206,11 +206,11 @@ NOTIFICATIONS:
 
 To create a positive user experience, notifications will be provided when users are taking actions such as:
 
-- confirmation on registration
-- confirmation on login
-- confirmation on item created
+- confirmation of registration
+- confirmation of login
+- confirmation of item created
 - confirmation on item successfully edited
-- confirmation request when user wants to delete item
+- confirmation request when the user wants to delete an item
 - confirmation item successfully deleted
 
 AUTHENTICATION SYSTEM:
@@ -219,12 +219,12 @@ An authentication system is mandatory and should allow users to
 
 - register
 - login
-- logout
+- Logout
 - have access to restricted features
 
 TASK MANAGEMENT SYSTEM:
 
-A task management system will help users to communicate with the company on their task in an easy way. This system should allow users to
+A task management system will help users to communicate with the company on their tasks in an easy way. This system should allow users to
 
 - create new tasks (C)
 - list their tasks (R)
@@ -233,42 +233,42 @@ A task management system will help users to communicate with the company on thei
 
 CONTACT FORM
 
-A contact form should be available for users to contact the company in a most convenient way.
+A contact form should be available for users to contact the company in the most convenient way.
 
-#### 1.2.2.2. Define Information to provide (content requirements)
+#### Define Information to provide (content requirements)
 
-In the first mvp scope, the needed information are:
+In the first MVP scope, the needed information is:
 
 - explain the purpose of the website
 - indicate users how to use the website by naming links and features with intuitive words
 
-### 1.2.3. Structure Plane
+### Structure Plane
 
-#### 1.2.3.1. Interaction Design (IXD)
+#### Interaction Design (IXD)
 
-##### 1.2.3.1.1. Define Pages
+##### Define Pages
 
 - landing page
 - registration page
 - login page
-- logout page
+- Logout page
 - tasks list page
 - add task page
 - task detail page
-- edit task page
-- about page (including meet the team section, FAQ section, review section)
+- edit the task page
+- about page (including meet the team section, FAQ section, and review section)
 
-##### 1.2.3.1.2. Handle errors
+##### Handle errors
 
-Error 404 and error 500 pages are also to be implemented within the mvp scope.
+Error-404 and error-500 pages are also to be implemented within the MVP scope.
 
-##### 1.2.3.1.3. Flow Chart
+##### Flow Chart
 
 A flowchart has been design to help stakeholders with the development of the website:
 
 ![flowchart for the minimum viable product](documentation/flowchart_mvp.png)
 
-#### 1.2.3.2. Information Architecture (IA)
+#### Information Architecture (IA)
 
 information is organized with some known patterns so that users easily find what they are looking for such as:
 
@@ -277,9 +277,9 @@ information is organized with some known patterns so that users easily find what
 - social media links in the footer
 - company address and contact in the footer
 
-### 1.2.4. Skeleton Plane
+### Skeleton Plane
 
-#### 1.2.4.1. Wireframes
+#### Wireframes
 
 Wireframes have been adapted during the development phase to offer a better user experience.
 
@@ -301,33 +301,33 @@ Task detail page:
 Edit task page:
 ![Edit task page wireframe](documentation/edit-task_wireframe.png)
 
-Error 404 page:
+Error-404 page:
 ![Error 404 page wireframe](documentation/error-404_wireframe.png)
 
-Error 500 page:
+Error-500 page:
 ![Error 500 page wireframe](documentation/error-500_wireframe.png)
 
-### 1.2.5. Surface Plane
+### Surface Plane
 
 #### Color Palette
 
 Three colors have been chosen on top of black and white.
-The first color (#9d3f3f) is the color of the logo: The ant. This logo has been pick to communicate how brave and hardworking are the employees and how efficient will be the working hours. The other colors have been selected using a color calculator to be the best fit to this very first color.
+The first color (#9d3f3f) is the color of the logo: The ant. This logo has been picked to communicate how brave and hardworking are the employees and how efficient will be the working hours. The other colors have been selected using a color calculator to be the best fit for this very first color.
 
 ![Color palette of the project](documentation/color_palette.png)
 
 #### Font Choices
 
-Two fonts have been used within the whole website. They both are sans-serif. Andika has been picked for the titles to give users a feeling of sober and neat. And Merriweather Sans has been picked for the standard text has it is a good match to Andika.
+Two fonts have been used within the whole website. They both are sans-serif. Andika has been picked for the titles to give users a feeling of soberness and neatness. And Merriweather Sans has been picked for the standard text as it is a good match for Andika.
 
-### 1.2.6. Database Schema
+### Database Schema
 
-The database schema have been modified during the development phase to provide a more powerful tool.
+The database schema has been modified during the development phase to provide a more powerful tool.
 
 For the minimum viable product:
 ![Database schema for the minimum viable product](documentation/erd_mvp.png)
 
-First extension of the erd:
+The first extension of the erd:
 ![Database schema with the first extension](documentation/erd_extanded_1.png)
 
 ---
@@ -342,18 +342,18 @@ The project development has been managed with an agile project manager on GitHub
 
 ### The workflow
 
-The workflow of the project has been broken down into small organized pieces to help realise the amount of work and help spread it over the given period. It organize a hierarchy as below:
+The workflow of the project has been broken down into small organized pieces to help realize the amount of work and help spread it over the given period. It organizes a hierarchy as below:
 
 
 <details>
-    <summary>the full project (represented by the project manager)</summary>
-    <p>The project manager has been a roadbook, leading the developmet of this project to its success, handling quite well the stress of such a challenge.</p>
+    <summary>The full project (represented by the project manager)</summary>
+    <p>The project manager has been a roadbook, leading the development of this project to its success, handling quite well the stress of such a challenge.</p>
 </details>
 
 
 <details>
     <summary>Milestones</summary>
-    <p>4 Milestones were developped for this project, leading the web application to a more and more powerful tool.
+    <p>4 Milestones were developed for this project, leading the web application to a more and more powerful tool.
     <ul>
     <li>The first Milestone was a guideline toward the minimum viable product. When that was achieved, the project could already be submitted.</li>
     <li>The second and the third Milestones were there to bring more features to the project and implement some automated testing to develop a more robust project.</li>
@@ -364,12 +364,12 @@ The workflow of the project has been broken down into small organized pieces to 
 
 <details>
     <summary>EPICS</summary>
-    <p>Milestones have been broken into Epics. They correspond to important achievement for the project such as "implement an authentication system" or "implement a task management system". They were there to help concentrate on concrete things to work on while developping the project. It gave some clear direction to take, knowing that they serve the general purpose of the project.</p>
+    <p>Milestones have been broken into Epics. They correspond to important achievements for the project such as "implementing an authentication system" or "implementing a task management system". They were there to help me concentrate on concrete things to work on while developing the project. It gave some clear direction to take, knowing that they serve the general purpose of the project.</p>
 </details>
 
 <details>
     <summary>User Stories</summary>
-    <p>User stories were backlog product items that could be done on quite a short time. So they could be contained within a sprint and therefore allow every sprint to have its number of achievements. Some user stories together usually fulfill an EPIC.</p>
+    <p>User stories were backlog product items that could be done in quite a short time. So they could be contained within a sprint and therefore allow every sprint to have its number of achievements. Some user stories together usually fulfill an EPIC.</p>
 </details>
 
 <details>
@@ -385,15 +385,15 @@ Labels have been created to quickly visualize the type of backlog product item a
 
 ### The views of the project manager
 
-The project manager contains 4 views. The three first ones have been very usefull during the development. The fourth one is more a nice overview of the efforts spread over the time.
+The project manager contains 4 views. The three first have been very useful during the development. The fourth one is more of a nice overview of the efforts spread over time.
 
 - The first view: Home
 
-    The first view, called home, has been used during the development phase with the filter `is:open`. It was the first and the last view to look at on a working day. It helped to know what needsd to be done, what needed to be prioritized and help organized the upcoming days.
+    The first view, called home, has been used during the development phase with the filter `is:open`. It was the first and the last view to look at on a working day. It helped to know what needed to be done, and what needed to be prioritized and help organized the upcoming days.
 
 - The second view: Current sprint
 
-    The second view was just a nice to have when tasks where done and the goal of the current sprint was getting closer and closer. It gave a nice feeling of achievement while pushing the backlog product items to the "Ready" column and then to the "Deployed" column when they were respectively done and deployed to the live website.
+    The second view was just nice to have when tasks were done and the goal of the current sprint was getting closer and closer. It gave a nice feeling of achievement while pushing the backlog product items to the "Ready" column and then to the "Deployed" column when they were respectively done and deployed to the live website.
 
 - The third view: Sprints
 
@@ -401,18 +401,18 @@ The project manager contains 4 views. The three first ones have been very useful
 
 - The fourth view: Roadmap
 
-    The fourth view is just an overview on the three weeks of work which led to this project. It did not really bring help to the development of the project.
+    The fourth view is just an overview of the three weeks of work that led to this project. It did not really bring help to the development of the project.
 
 ### The story points
 
-Story points have been assigned to epics and user stories to be able to submit the project as much developped as possible and, of course, on time. It was clear that the final product would not be done on such a short time, especially because it was my first full stack project and I wanted to go down some unknown part of the Django framework (so far not explain within the code institute course). Nevertheless, I took the challenge to make a first version of this project which could already be used. Now because there was a lot of uncertain abilities of doing what I planned to, it made tricky the story point assignment.
+Story points have been assigned to epics and user stories to be able to submit the project as much developed as possible and, of course, on time. It was clear that the final product would not be done in such a short time, especially because it was my first full stack project and I wanted to go down some unknown part of the Django framework (so far not explained within the code institute course). Nevertheless, I took the challenge to make the first version of this project which could already be used. Now because there were a lot of uncertain abilities to do what I planned to do, it made tricky the story point assignment.
 
-My priority was as expected to develop a minimum viable product (MVP) which corresponds to the expected project from the assessment criteria of code institute. This milestone has 182 story points which is 45% of the total amount represented with 400 story points.
+My priority was as expected to develop a minimum viable product (MVP) that corresponds to the expected project from the assessment criteria of Code Institute. This milestone has 182 story points which are 45% of the total amount represented with 400 story points.
 
 ### The sprints
 
-The project has been developped in 11 Sprints of 2 days.
-Each sprint counts a certain amount of story points based on their Epics, User Stories and tasks. They are as below:
+The project has been developed in 11 Sprints of 2 days.
+Each sprint counts a certain amount of story points based on their Epics, User Stories, and tasks. They are as below:
 
 | Sprints | Total Story Points |
 | --- | :---: |
@@ -428,7 +428,7 @@ Each sprint counts a certain amount of story points based on their Epics, User S
 | Sprint 10 | 80 |
 | Sprint 11 | N/A |
 
-To conclude, it was complicated to evaluate the amount of story points depending on how difficult or how long a task would be. This is the reason why the amount of points from one sprint to another one can be so different. Another reason is also that some backlog product items were already in development at the end of a sprint already fully accomplished and would count only for the following sprint. It still pretty much look like the average could be between 30 and 40 points/sprint.
+To conclude, it was complicated to evaluate the number of story points depending on how difficult or how long a task would be. This is the reason why the number of points from one sprint to another one can be so different. Another reason is also that some backlog product items were already in development at the end of a sprint already fully accomplished and would count only for the following sprint. It still pretty much looks like the average could be between 30 and 40 points/sprint.
 
 ---
 
@@ -438,7 +438,7 @@ To conclude, it was complicated to evaluate the amount of story points depending
 
 </div>
 
-This project is a full stack web application using a cloud-based database (PostgreSQL) to record data.
+This project is a full-stack web application using a cloud-based database (PostgreSQL) to record data.
 
 ### Features currently available
 
@@ -460,11 +460,11 @@ This project is a full stack web application using a cloud-based database (Postg
 
 ![Call to action](documentation/cta_on_hero-image.png)
 
-- Caroussels to present the company's activities
+- Carousels to present the company's activities
 
 ![Company's activities](documentation/caroussel_of_activities.png)
 
-- A footer with links to social medias and extra resources
+- A footer with links to social media and extra resources
 
 ![Footer](documentation/footer.png)
 
@@ -490,7 +490,7 @@ This project is a full stack web application using a cloud-based database (Postg
 
 - A booking system
 
-The booking system is the highlight of this project. I absolutely wanted to tackle this challenge as I think it is a nice to have skill in a professional environment. To be confronted to the problems it can raise was a very interesting and satisfying learning journey.
+The booking system is the highlight of this project. I absolutely wanted to tackle this challenge as I think it is nice to have skills in a professional environment. To be confronted with the problems it can raise was a very interesting and satisfying learning journey.
 
 ![Booking system step 1](documentation/booking_system_step_1.png)
 
@@ -498,7 +498,7 @@ The booking system is the highlight of this project. I absolutely wanted to tack
 
 ### More features to implement
 
-The final goal of the Hands Home Helpers website is to give customers and employees a powerful tools to communicate the easiest possible way.
+The final goal of the Hands Home Helpers website is to give customers and employees a powerful tool to communicate in the easiest possible way.
 
 Therefore, this web application should implement at least 2 different profiles: 1 customer profile and 1 employee profile, both inheriting from the User model.
 
@@ -517,13 +517,13 @@ That said, I have listed below some features that should be implemented to have 
 
 - Each profile could have access to different dashboards. The customer dashboard has already been partially implemented. The employee dashboard could contain the following:
     - A list of their appointments,
-    - Each appointment could lead to a detail view from which the employee could update info about the tasks that have been done.
+    - Each appointment could lead to a detailed view from which the employee could update info about the tasks that have been done.
 
 - The authentication system could be improved:
     - a backend email could be implemented to allow users to reset their password.
-    - a feature could be implemented so users could register with third party.
+    - a feature could be implemented so users could register with a third party.
 
-- A blog system could be implemented to allow employees to share technical tips on how they do their job. That could help for the seo and carry more visitors to the website.
+- A blog system could be implemented to allow employees to share technical tips on how they do their job. That could help the SEO and carry more visitors to the website.
 
 ---
 
@@ -533,7 +533,7 @@ That said, I have listed below some features that should be implemented to have 
 
 </div>
 
-- Languages, Databases and Frameworks:
+- Languages, Databases, and Frameworks:
 
   - HTML5
   - CSS3
@@ -543,6 +543,10 @@ That said, I have listed below some features that should be implemented to have 
   - Django 3.2.20
   - PostgreSQL
   - psycopg2 2.9.6
+  - django-allauth 0.54.0
+  - gunicorn 21.2.0
+  - cloudinary 1.33.0
+  - coverage 7.3.0
   - Markdown
 
 - Other tools:
@@ -555,7 +559,7 @@ That said, I have listed below some features that should be implemented to have 
   - [Balsamiq](https://balsamiq.com/) has been used to create the wireframes
   - [Font Awesome](https://fontawesome.com/) has been used for the icons
   - [Pexels](https://www.pexels.com/) has been used to find free pictures
-  - [Tiny PNG](https://tinypng.com/) has been used to further optimise the images for the site and reduce file size
+  - [Tiny PNG](https://tinypng.com/) has been used to further optimize the images for the site and reduce the file size
   - [EmailJS](https://www.emailjs.com/) has been used to link the contact form to an email address
   - [ElephantSQL](https://customer.elephantsql.com/) has been used to store the database
   - [Heroku](https://www.heroku.com/) has been used to deploy the live website
@@ -600,7 +604,7 @@ I have created the project from the [ci-full-template](https://github.com/Code-I
 4. From the new GitHub repository, click on the button '<> Code', then select local and copy the https link of the repository
 5. Open Code Anywhere and navigate to the 'workspaces' page
 6. Click on 'New Workspace'
-7. Paste the GitHub repo URL in to the 'Repository URL' box
+7. Paste the GitHub repo URL into the 'Repository URL' box
 8. Click 'Create'
 
 ### Deployment to Heroku
@@ -619,9 +623,9 @@ To deploy to Heroku:
 
 3. Push the 2 new files to the GitHub repository
 
-4. Login to Heroku, select 'Create New App', create a unique name for the app and select your nearest region. Click 'Create App'
+4. log in to Heroku, select 'Create New App', create a unique name for the app, and select your nearest region. Click 'Create App'
 
-5. Navigate to 'settings', click reveal config vars and input the the following:
+5. Navigate to 'settings', click reveal config vars, and input the following:
 
 | Key | Value |
 | :---: | :---: |
@@ -630,16 +634,16 @@ To deploy to Heroku:
 | DATABASE_URL | elephantSQL_url |
 | SECRET_KEY | django_secret_key |
 
-1. Navigate to the Deploy tab on Heroku dashboard and select Github, search for your repository by name and click 'connect'.
+1. Navigate to the Deploy tab on the Heroku dashboard and select Github, search for your repository by name, and click 'connect'.
 2. Click deploy branch
-3. Once build is complete click on 'Open app' to launch the new app
+3. Once the build is complete click on 'Open app' to launch the new app
 
 ### Local Development
 
 > NB: To run this project locally, you will need to create an env.py file (within the root directory) configuring the above environment variables as these are not included in the GitHub files for security reasons.
 > This file should look like this:
 
-```python
+```Python
 import os
 
 os.environ["DATABASE_URL"] = "elephantSQL_url"
@@ -651,7 +655,7 @@ os.environ["DEVELOPMENT"] = "True"
 To Run Locally:
 
 1. Navigate to the [GitHub Repository](https://github.com/yannickferenczi/hands-home-helpers-website)
-2. Click on the button '<> Code', then 'Local' and select 'Download Zip' to download the files locally and open with an IDE
+2. Click on the button '<> Code', then 'Local' and select 'Download Zip' to download the files locally and open them with an IDE
 
 To Fork the project:
 
@@ -678,11 +682,11 @@ To Fork the project:
 
 - The html calendar has been implemented using an external code found on [Stackoverflow](https://stackoverflow.com/questions/75945489/django-python-calendar-module). It has only been a little been modified to match the expectations of this project.
 
-- The check_overlap function as well as the clean function have been entirely imported from [Alexandre Pinto's website](https://alexpnt.github.io/2017/07/15/django-calendar/). Those functions help validating appointments while being created.
+- The check_overlap function as well as the clean function have been entirely imported from [Alexandre Pinto's website](https://alexpnt.github.io/2017/07/15/django-calendar/). Those functions help validate appointments while being created.
 
-- The star rating system has been implemented using some code from "How to" on [W3schools](https://www.w3schools.com/howto/howto_css_star_rating.asp). It means the HTML as well as the CSS have been taken from their website and inserted into my project.
+- The star rating system has been implemented using some code from "How to" on [W3schools](https://www.w3schools.com/howto/howto_css_star_rating.asp). It means the HTML, as well as the CSS, have been taken from their website and inserted into my project.
 
-- The slideshow to display reviews of the customers has been taken from [W3schools](https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp). It includes some HTML, CSS and JavaScript.
+- The slideshow to display reviews of the customers has been taken from [W3schools](https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp). It includes some HTML, CSS, and JavaScript.
 
 ---
 
@@ -692,12 +696,12 @@ To Fork the project:
 
 </div>
 
-- A huge thanks to my wonderful wife for letting me spend so much time on this project (over 250 hours) even though we have a beautiful 4 month old daughter who also needs some attention.
+- A huge thanks to my wonderful wife for letting me spend so much time on this project (over 250 hours) even though we have a beautiful 4-month-old daughter who also needs some attention.
 
-- A big thanks also to [Alan Bushell](https://github.com/Alan-Bushell) for all the resources and tips he shared with us on our weekly meetings and for his positive vibes and his support when things went hardcore.
+- A big thanks also to [Alan Bushell](https://github.com/Alan-Bushell) for all the resources and tips he shared with us during our weekly meetings and for his positive vibes and his support when things went hardcore.
 
-- Thank you to [Code Institute](https://codeinstitute.net/de/) for providing such a great content helping me to implement such a full stack project in 3 weeks time after less than 6 month of learning.
+- Thank you to [Code Institute](https://codeinstitute.net/de/) for providing such great content and helping me to implement such a full-stack project in 3 weeks' time after less than 6 months of learning.
 
-- Thank you to [Docstring](https://www.docstring.fr/) and its amazing community for answering many question as stupid as they possibly be, at any time (day and night).
+- Thank you to [Docstring](https://www.docstring.fr/) and its amazing community for answering many questions as stupid as they possibly are, at any time (day and night).
 
 - And finally thanks to my mentor [Akshat Garg](https://github.com/akshatnitd) who provided me with some resources to assist me in this project.
