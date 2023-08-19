@@ -105,7 +105,7 @@ class Appointment(models.Model):
     def clean(self):
         """
         Check if the appointment can be booked
-        
+
         It cannot be if an appointment already exists in that period
         It cannot be booked if the appointment duration is shorter than
         the minimum required.
