@@ -37,6 +37,7 @@ def booking(request, year, month, day):
     This function displays a form to create appointment.
     """
     selected_day = date(year, month, day)
+    upcoming_day = selected_day > (date.today() + timedelta(days=2))
     if selected_day.weekday() == 0:
         day_before = selected_day - timedelta(days=2)
     else:
@@ -104,6 +105,7 @@ def booking(request, year, month, day):
         "appointments/dailycalendar.html",
         {
             "selected_day": selected_day,
+            "upcoming_day": upcoming_day,
             "day_before": day_before,
             "day_after": day_after,
             "current_month": current_month,

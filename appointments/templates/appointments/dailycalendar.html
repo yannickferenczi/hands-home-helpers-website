@@ -8,10 +8,12 @@
 <div class="container">
     <div class="row my-3">
         <div class="col-3 col-md-4">
+            {% if upcoming_day %}
             <a aria-label="Access a calendar of the previous day" href="{% url 'dailycalendar' day_before.year day_before.month day_before.day %}">
                 <i class="fa-solid fa-backward"></i>
                 <span class="d-none d-md-inline">{{ day_before|date:"l jS" }}</span>
             </a>
+            {% endif %}
         </div>
         <div class="col-6 col-md-4 centered-content">
             <a aria-label="Access a calendar of the current month" href="{% url 'calendar' selected_day|date:'n' %}">

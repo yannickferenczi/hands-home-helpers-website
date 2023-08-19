@@ -630,9 +630,9 @@ The coverage library has been used to get a visual report of automated testing.
   The monthly calendar has been implemented with links for every single day to lead to a daily view of the selected day. With if statements, past days and sundays would not offer that link anymore so users could not select those days to book an appointment.
   Nervertheless, from the daily calendar of a valid day, users could navigate with the next or previous button until a Sunday and create an appointment from there. This problem has been solved with an if statement whithin the django template to add two days to the selected day instead of one if the selected day is a Saturday when clicking the next button and same logic inverse to mondays when clicking the previous button.
 
-- User should not be able to book appointment on past days - ![bug status](https://img.shields.io/static/v1?label=fixed&message=No&color=bb0000&style=plastic)
+- User should not be able to book appointment on past days - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
 
-    While I was writing the previous bug, I realised that there was a similar issue with the past days. This issue has not been fixed yet and the remaining time allocated to the project might not change this sad outcome.
+    While I was writing the previous bug, I realised that there was a similar issue with the past days. This issue has been fixed by adding a variable called upcoming day to the booking view in the appointments app.
 
 - Success notifications not displayed on deletion - ![bug status](https://img.shields.io/static/v1?label=fixed&message=Yes&color=success&style=plastic)
 
