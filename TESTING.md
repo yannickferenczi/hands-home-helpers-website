@@ -43,13 +43,118 @@
 ![w3c css validator results](documentation/w3c_css_validator_results.png)
 
 ### JavaScript
-  
+
+There is two javascript files for this project. As the sendEmail function using EmailJS API does not work properly, I have decided to keep it in a different file so it does not disturb the execution of the rest of the JaviScript functionalities.
+
+Both files were checked with JSHint.
+
+#### The result for the script.js file shows three errors:
+
+- One undefined variable: bootstrap
+
+    bootstrap has been integrated to the project using the minified bootstrap.js (in the base.html template). Therefore there is no need to explicitly import bootstrap in the script.js file.
+
+- Two unused variables: plusSlides and currentSlides
+
+    Those two functions are defined in the script.js file but called in the index.html template.
+
+![jshint results of the script.js file](documentation/jshint_results_script.png)
+
+The result for the script.js file shows three errors:
+
+- One undefined variable: emailjs
+
+    there is no need to defined emailjs in the sendEmail.js file as the init method is defined in the base.html file.
+
+- One unused variable: sendEmail
+
+    This function is defined in the sendEmail.js file but called in the base.html template.
+
+![jshint results of the sendEmail.js file](documentation/jshint_results_sendEmail.png)
+
+
 ### Python
 
 Every Python file has been ran through the [CI Python Linter](https://pep8ci.herokuapp.com/) and for all of them the result was:
 > All clear, no errors found
 
 ## Lighthouse
+
+The main pages of the website have been tested with the Lighthouse validator from Google Chrome.
+
+The results are shown below.
+
+### The home page
+
+<details>
+    <summary>Desktop</summary>
+    <img src="documentation/lighthouse_home_desktop.png" alt="Lighthouse results of the home page on desktop">
+</details>
+
+<details>
+    <summary>Mobile</summary>
+    <img src="documentation/lighthouse_home_mobile.png" alt="Lighthouse results of the home page on mobile">
+</details>
+
+### The dashboard
+
+<details>
+    <summary>Desktop</summary>
+    <img src="documentation/lighthouse_dashboard_desktop.png" alt="Lighthouse results of the dashboard on desktop">
+</details>
+
+<details>
+    <summary>Mobile</summary>
+    <img src="documentation/lighthouse_dashboard_mobile.png" alt="Lighthouse results of the dashboard on mobile">
+</details>
+
+### The offers page
+
+<details>
+    <summary>Desktop</summary>
+    <img src="documentation/lighthouse_offers_desktop.png" alt="Lighthouse results of the offers page on desktop">
+</details>
+
+<details>
+    <summary>Mobile</summary>
+    <img src="documentation/lighthouse_offers_mobile.png" alt="Lighthouse results of the offers page on mobile">
+</details>
+
+### The about page
+
+<details>
+    <summary>Desktop</summary>
+    <img src="documentation/lighthouse_about_desktop.png" alt="Lighthouse results of the about page on desktop">
+</details>
+
+<details>
+    <summary>Mobile</summary>
+    <img src="documentation/lighthouse_about_mobile.png" alt="Lighthouse results of the about page on mobile">
+</details>
+
+### The contact page
+
+<details>
+    <summary>Desktop</summary>
+    <img src="documentation/lighthouse_contact_desktop.png" alt="Lighthouse results of the contact page on desktop">
+</details>
+
+<details>
+    <summary>Mobile</summary>
+    <img src="documentation/lighthouse_contact_mobile.png" alt="Lighthouse results of the contact page on mobile">
+</details>
+
+### The calendar page
+
+<details>
+    <summary>Desktop</summary>
+    <img src="documentation/lighthouse_calendar_desktop.png" alt="Lighthouse results of the calendar page on desktop">
+</details>
+
+<details>
+    <summary>Mobile</summary>
+    <img src="documentation/lighthouse_calendar_mobile.png" alt="Lighthouse results of the calendar page on mobile">
+</details>
 
 ## Manual Testing
 
